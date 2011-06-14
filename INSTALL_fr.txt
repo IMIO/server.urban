@@ -30,7 +30,7 @@ On crée maintenant une arborescence de dossiers
 > mkdir zinstances
 > cd install
 
-On va installer un python2.4 qui sera utilisé dans notre buildout
+On va installer un python 2.6 qui sera utilisé dans notre buildout
 > wget http://www.python.org/ftp/python/2.6.6/Python-2.6.6.tgz
 > tar xvzf Python-2.6.6.tgz
 > cd Python-2.6.6
@@ -60,7 +60,7 @@ Il faut remplacer la ligne "virtualenv266 --no-site-packages ." par
     "/srv/python266/bin/virtualenv --no-site-packages ."
 OU
 On peut créer un lien symbolique vers notre virtualenv sans modifier alors le fichier Makefile
-    "ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv266"
+    "ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv-2.6"
 
 On initialise le buildout
 > make bootstrap

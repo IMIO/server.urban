@@ -29,7 +29,7 @@ We create some directories
 > mkdir zinstances
 > cd install
 
-We install python2.4 that will be used to run the buildout and zope instance
+We install python2.6 that will be used to run the buildout and zope instance
 > wget http://www.python.org/ftp/python/2.6.6/Python-2.6.6.tgz
 > tar xvzf Python-2.6.6.tgz
 > cd Python-2.6.6
@@ -59,7 +59,7 @@ It's necessary to replace the line "virtualenv266 --no-site-packages ." by
     "/srv/python266/bin/virtualenv --no-site-packages ."
 OR
 You can create a link to our virtualenv without modifying Makefile
-    "ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv"
+    "ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv-2.6"
 
 we initialize the buildout
 > make bootstrap
