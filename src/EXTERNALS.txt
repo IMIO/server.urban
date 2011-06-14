@@ -1,4 +1,7 @@
 #
 # taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
 #
-atreal.mailservices -r240226 http://svn.plone.org/svn/collective/atreal.mailservices/trunk
+Products.urban -r7541 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk/
+Products.urbanskin -r7541 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
+archetypes.referencebrowserwidget -r13677 http://svn.plone.org/svn/archetypes/MoreFieldsAndWidgets/archetypes.referencebrowserwidget/branches/livesearch
+collective.referencedatagridfield -r240866 http://svn.plone.org/svn/collective/collective.referencedatagridfield/branches/more-columns
