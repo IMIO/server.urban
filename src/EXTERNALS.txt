@@ -1,0 +1,4 @@
+#
+# taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
+#
+atreal.mailservices -r240226 http://svn.plone.org/svn/collective/atreal.mailservices/trunk
