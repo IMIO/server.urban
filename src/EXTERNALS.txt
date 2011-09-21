@@ -1,7 +1,9 @@
 #
 # taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
 #
-Products.urban -r7567 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk/
-Products.urbanskin -r7567 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
-archetypes.referencebrowserwidget -r13677 http://svn.plone.org/svn/archetypes/MoreFieldsAndWidgets/archetypes.referencebrowserwidget/branches/livesearch
-collective.referencedatagridfield -r240866 http://svn.plone.org/svn/collective/collective.referencedatagridfield/branches/more-columns
+Products.urban -r8369 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk/
+Products.urbanskin -r8369 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
+communesplone.schedule -r8369 http://svn.communesplone.org/svn/communesplone/communesplone.schedule/trunk/
+communesplone.urban.schedule -r8369 http://svn.communesplone.org/svn/communesplone/communesplone.urban.schedule/trunk/
+plone.app.referenceintegrity -r52189 http://svn.plone.org/svn/plone/plone.app.referenceintegrity/trunk/
+plone.app.linkintegrity -r52189 http://svn.plone.org/svn/plone/plone.app.linkintegrity/trunk/
