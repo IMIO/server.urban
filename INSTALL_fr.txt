@@ -60,7 +60,7 @@ Il faut remplacer la ligne "virtualenv266 --no-site-packages ." par
     "/srv/python266/bin/virtualenv --no-site-packages ."
 OU
 On peut créer un lien symbolique vers notre virtualenv sans modifier alors le fichier Makefile
-    "ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv-2.6"
+    "sudo ln -s /srv/python266/bin/virtualenv /usr/local/bin/virtualenv-2.6"
 
 On initialise le buildout
 > make bootstrap
