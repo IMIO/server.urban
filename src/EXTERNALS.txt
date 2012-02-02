@@ -1,7 +1,7 @@
 #
 # taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
 #
-Products.urban -r9233 http://svn.communesplone.org/svn/communesplone/Products.urban/tags/1.0
+Products.urban -r9233 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk
 Products.urbanskin -r9233 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
 communesplone.layout -r9233 http://svn.communesplone.org/svn/communesplone/communesplone.layout/trunk/
 communesplone.schedule -r9233 http://svn.communesplone.org/svn/communesplone/communesplone.schedule/trunk/
