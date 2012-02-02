@@ -1,10 +1,10 @@
 #
 # taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
 #
-Products.urban -r9233 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk
-Products.urbanskin -r9233 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
-communesplone.layout -r9233 http://svn.communesplone.org/svn/communesplone/communesplone.layout/trunk/
-communesplone.schedule -r9233 http://svn.communesplone.org/svn/communesplone/communesplone.schedule/trunk/
-communesplone.urban.schedule -r9233 http://svn.communesplone.org/svn/communesplone/communesplone.urban.schedule/trunk/
+Products.urban -r9244 http://svn.communesplone.org/svn/communesplone/Products.urban/trunk
+Products.urbanskin -r9244 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
+communesplone.layout -r9244 http://svn.communesplone.org/svn/communesplone/communesplone.layout/trunk/
+communesplone.schedule -r9244 http://svn.communesplone.org/svn/communesplone/communesplone.schedule/trunk/
+communesplone.urban.schedule -r9244 http://svn.communesplone.org/svn/communesplone/communesplone.urban.schedule/trunk/
 plone.app.referenceintegrity -r52421 http://svn.plone.org/svn/plone/plone.app.referenceintegrity/trunk/
 plone.app.linkintegrity -r52421 http://svn.plone.org/svn/plone/plone.app.linkintegrity/trunk/
