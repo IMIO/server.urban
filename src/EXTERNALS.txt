@@ -3,6 +3,7 @@
 #
 Products.urban http://svn.communesplone.org/svn/communesplone/Products.urban/tags/1.1.3
 Products.urbanskin -r10621 http://svn.communesplone.org/svn/communesplone/Products.urbanskin/trunk/
+communesplone.iconified_document_actions -r10621 http://svn.communesplone.org/svn/communesplone/communesplone.iconified_document_actions/trunk/
 communesplone.layout -r10621 http://svn.communesplone.org/svn/communesplone/communesplone.layout/trunk/
 communesplone.schedule -r10621 http://svn.communesplone.org/svn/communesplone/communesplone.schedule/trunk/
 communesplone.urban.schedule -r10621 http://svn.communesplone.org/svn/communesplone/communesplone.urban.schedule/trunk/
