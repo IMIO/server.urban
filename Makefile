@@ -43,7 +43,7 @@ bin/templates_per_site:
 mount_points.conf: bin/templates $(mountpoints)
 	bin/templates -i $(mountpoints) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > $@
 
-pre_extras: bin/templates_per_site $(extras)
+pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon_instances.txt
 	bin/templates_per_site -i $(extras) -d pre_extras -e py -s /srv/urbanmap/urbanMap/config/pylon_instances.txt
 
 plonesites.cfg: bin/templates $(plonesites) pre_extras
