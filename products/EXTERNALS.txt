@@ -1,4 +1,0 @@
-#
-# taken into account by: svn propset svn:externals -F ./EXTERNALS.txt .
-#
-ZopeRepositoryLocalPassword http://svn.communesplone.org/svn/communesplone/ZopeRepositoryLocalPassword
