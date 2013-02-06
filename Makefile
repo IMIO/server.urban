@@ -18,6 +18,12 @@ bootstrap:
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
 	bin/buildout -vt 5
+	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
+
+.PHONY: standard-config
+standard-config:
+	if ! test -f bin/buildout;then make bootstrap;fi
+	bin/buildout -vt 5 -c standard-config.cfg
 
 .PHONY: run
 run:
