@@ -33,7 +33,7 @@ run:
 
 .PHONY: cleanall
 cleanall:
-	rm -fr develop-eggs downloads eggs parts .installed.cfg
+	rm -fr develop-eggs downloads eggs parts .installed.cfg bin/buildout bin/instance1
 
 .PHONY: libraries
 libraries: 
