@@ -10,9 +10,8 @@ all: run
 
 .PHONY: bootstrap
 bootstrap:
-	virtualenv-2.7 --no-site-packages .
-	./bin/easy_install -U setuptools
-	./bin/python bootstrap.py -v 2.5.0
+	virtualenv-2.7
+	./bin/python bootstrap.py
 	./bin/subproducts.sh
 
 .PHONY: buildout
