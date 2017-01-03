@@ -11,19 +11,19 @@ all: run
 .PHONY: bootstrap
 bootstrap:
 	virtualenv-2.7 .
-	./bin/python bootstrap.py
+	bin/python2.7 bootstrap.py
 	./bin/subproducts.sh
 
 .PHONY: buildout
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 5
+	bin/buildout -t 5
 	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
 
 .PHONY: standard-config
 standard-config:
 	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 5 -c standard-config.cfg
+	bin/buildout -t 5 -c standard-config.cfg
 
 .PHONY: run
 run:
@@ -32,18 +32,18 @@ run:
 
 .PHONY: cleanall
 cleanall:
-	rm -fr bin/instance1 lib develop-eggs downloads eggs parts .installed.cfg
+	rm -fr bin/instance* develop-eggs downloads eggs lib parts .installed.cfg
 
 .PHONY: libraries
 libraries: 
 	./bin/subproducts.sh
 
 bin/templates:
-	./bin/buildout -vt 5 install templates
+	./bin/buildout -t 5 install templates
 	touch $@
 
 bin/templates_per_site: 
-	./bin/buildout -vt 5 install templates
+	./bin/buildout -t 5 install templates
 	touch $@
 
 mount_points.conf: bin/templates $(mountpoints)
@@ -56,4 +56,4 @@ plonesites.cfg: bin/templates $(plonesites) pre_extras
 	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
 
 portals: portals.cfg
-	./bin/buildout -vt 5 -c portals.cfg
+	./bin/buildout -t 5 -c portals.cfg
