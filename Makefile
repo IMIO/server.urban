@@ -10,7 +10,7 @@ all: run
 
 .PHONY: bootstrap
 bootstrap:
-	virtualenv-2.7
+	virtualenv-2.7 .
 	./bin/python bootstrap.py
 	./bin/subproducts.sh
 
