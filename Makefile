@@ -31,3 +31,10 @@ docker-image:
 .PHONY: cleanall
 cleanall:
 	rm -fr bin include lib develop-eggs downloads eggs parts .installed.cfg
+	docker-compose down
+
+build:
+	docker-compose build --pull
+
+up:
+	docker-compose up

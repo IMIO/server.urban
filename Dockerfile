@@ -4,15 +4,20 @@ RUN buildDeps="libpq-dev wget git python-virtualenv gcc libc6-dev libpcre3-dev l
   && runDeps="poppler-utils wv rsync lynx netcat libxml2 libxslt1.1 libjpeg62 libtiff5 libopenjp2-7" \
   && apt-get update \
   && apt-get install -y --no-install-recommends $buildDeps \
-  && mkdir /home/imio/urban
+  && mkdir -p /home/imio/urban /data/filestorage /data/blobstorage \
+  && chown imio:imio -R /home/imio/urban/ /data
 COPY *.cfg *.py *.txt /home/imio/urban/
-RUN chown imio:imio -R /home/imio/urban/
 WORKDIR /home/imio/urban
 USER imio
 ENV PATH="/home/imio/.local/bin:${PATH}"
+ENV ZEO_HOST db
+ENV ZEO_PORT 8100
 RUN pip install --user -I -r requirements.txt \
- && buildout -c prod.cfg
+ && buildout -c prod.cfg \
+ && ln -s /data/filestorage/ /home/imio/urban/var/filestorage \
+ && ln -s /data/blobstorage /home/imio/urban/var/blobstorage
 USER root
+VOLUME /data
 RUN apt-get purge -y --auto-remove $buildDeps \
   && apt-get install -y --no-install-recommends $runDeps \
   && rm -rf /var/lib/apt/lists/* \
