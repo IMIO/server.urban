@@ -19,11 +19,14 @@ bin/buildout: bin/pip
 
 .PHONY: buildout
 buildout: bin/buildout buildout.cfg
-	bin/buildout -vt 60
+	bin/buildout -t 60
 
 .PHONY: run
 run: bin/buildout
 	bin/instance1 fg
+
+docker-image:
+	docker build --pull -t docker-staging.imio.be/iaurban/mutual:latest .
 
 .PHONY: cleanall
 cleanall:

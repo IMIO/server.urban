@@ -16,3 +16,4 @@ versions-picked.cfg
 buildout.cfg
 pip-selfcheck.json
 bin
+.mr.developer.cfg
