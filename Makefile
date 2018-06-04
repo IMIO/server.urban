@@ -2,58 +2,29 @@
 #
 
 options =
-plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg 
+plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg
 extras = parts/omelette/Products/urban/scripts/config/extras.py.tmpl
 mountpoints = parts/omelette/Products/urban/scripts/config/mount_points.conf
 
 all: run
 
-.PHONY: bootstrap
-bootstrap:
+buildout.cfg:
+	ln -fs dev.cfg buildout.cfg
+
+bin/pip:
 	virtualenv-2.7 .
-	./bin/python bootstrap.py
-	./bin/subproducts.sh
+
+bin/buildout: bin/pip
+	./bin/pip install -r requirements.txt
 
 .PHONY: buildout
-buildout:
-	if ! test -f bin/buildout;then make bootstrap;fi
+buildout: bin/buildout buildout.cfg
 	bin/buildout -vt 60
-	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
-
-.PHONY: standard-config
-standard-config:
-	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 60 -c standard-config.cfg
 
 .PHONY: run
-run:
-	if ! test -f bin/instance1;then make buildout;fi
+run: bin/buildout
 	bin/instance1 fg
 
 .PHONY: cleanall
 cleanall:
-	rm -fr bin/instance1 develop-eggs downloads eggs parts .installed.cfg
-
-.PHONY: libraries
-libraries: 
-	./bin/subproducts.sh
-
-bin/templates:
-	./bin/buildout -vt 60 install templates
-	touch $@
-
-bin/templates_per_site: 
-	./bin/buildout -vt 60 install templates
-	touch $@
-
-mount_points.conf: bin/templates $(mountpoints)
-	bin/templates -i $(mountpoints) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > $@
-
-pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon_instances.txt
-	bin/templates_per_site -i $(extras) -d pre_extras -e py -s /srv/urbanmap/urbanMap/config/pylon_instances.txt
-
-plonesites.cfg: bin/templates $(plonesites) pre_extras
-	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
-
-portals: portals.cfg
-	./bin/buildout -vt 60 -c portals.cfg
+	rm -fr bin include lib develop-eggs downloads eggs parts .installed.cfg

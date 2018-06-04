@@ -13,3 +13,6 @@ parts
 python-eggs
 src
 versions-picked.cfg
+buildout.cfg
+pip-selfcheck.json
+bin
