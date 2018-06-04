@@ -9,8 +9,8 @@ COPY *.cfg *.py *.txt /home/imio/urban/
 RUN chown imio:imio -R /home/imio/urban/
 WORKDIR /home/imio/urban
 USER imio
+ENV PATH="/home/imio/.local/bin:${PATH}"
 RUN pip install --user -I -r requirements.txt \
- && PATH=/home/imio/.local/bin:$PATH \
  && buildout -c prod.cfg
 USER root
 RUN apt-get purge -y --auto-remove $buildDeps \
