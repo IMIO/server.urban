@@ -26,7 +26,7 @@ pipeline {
         //     when {
         //         beforeAgent true
         //         expression {
-        //             ${params.imageName} == "iaurban/mutual"
+        //             "${params.imageName}" == "iaurban/mutual"
         //         }
         //     }
         //     steps {
@@ -42,8 +42,8 @@ pipeline {
             agent any
             steps {
                 pushImageToRegistry (
-                    ${env.BUILD_ID},
-                    ${params.imageName}
+                    "${env.BUILD_ID}",
+                    "${params.imageName}"
                 )
             }
         }
@@ -56,10 +56,10 @@ pipeline {
             }
             steps {
                 deployToStaging (
-                    ${env.BUILD_ID},
-                    ${params.imageName},
-                    ${params.role},
-                    ${params.updateScript}
+                    "${env.BUILD_ID}",
+                    "${params.imageName}",
+                    "${params.role}",
+                    "${params.updateScript}"
                 )
             }
         }
