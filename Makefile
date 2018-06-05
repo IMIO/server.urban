@@ -1,11 +1,6 @@
 #!/usr/bin/make
 #
 
-options =
-plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg
-extras = parts/omelette/Products/urban/scripts/config/extras.py.tmpl
-mountpoints = parts/omelette/Products/urban/scripts/config/mount_points.conf
-
 all: run
 
 buildout.cfg:
