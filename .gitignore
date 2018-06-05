@@ -17,3 +17,4 @@ buildout.cfg
 pip-selfcheck.json
 bin
 .mr.developer.cfg
+var/
