@@ -10,7 +10,7 @@ services:
     image: urbanzeo:latest
     user: imio
     ports:
-      - 8081-8088:8081
+      - 8081:8081
     links:
       - zeo:db
     command: bin/instance fg

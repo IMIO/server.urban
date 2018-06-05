@@ -13,9 +13,7 @@ ENV PATH="/home/imio/.local/bin:${PATH}"
 ENV ZEO_HOST db
 ENV ZEO_PORT 8100
 RUN pip install --user -I -r requirements.txt \
- && buildout -c prod.cfg \
- && ln -s /data/filestorage/ /home/imio/urban/var/filestorage \
- && ln -s /data/blobstorage /home/imio/urban/var/blobstorage
+  && buildout -c prod.cfg
 USER root
 VOLUME /data
 RUN apt-get purge -y --auto-remove $buildDeps \
