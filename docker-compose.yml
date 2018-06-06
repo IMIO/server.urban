@@ -4,16 +4,14 @@ services:
     build:
       context: .
     image: urbanzeo
-    user: imio
-    command: bin/zeoserver fg
+    command: zeoserver
   instance:
     image: urbanzeo:latest
-    user: imio
     ports:
       - 8081:8081
     links:
       - zeo:db
-    command: bin/instance fg
+    command: instance
 
 volumes:
   data:
