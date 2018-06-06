@@ -5,8 +5,8 @@ RUN buildDeps="libpq-dev wget git python-virtualenv gcc libc6-dev libpcre3-dev l
   && runDeps="gosu poppler-utils wv rsync lynx netcat libxml2 libxslt1.1 libjpeg62 libtiff5 libopenjp2-7" \
   && apt-get update \
   && apt-get install -y --no-install-recommends $buildDeps \
-  && mkdir -p $URBAN_DIR /data/filestorage /data/blobstorage \
-  && chown imio:imio -R $URBAN_DIR /data
+  && mkdir -p $URBAN_DIR \
+  && chown imio:imio -R $URBAN_DIR
 COPY *.cfg *.py *.txt entrypoint.sh $URBAN_DIR
 WORKDIR $URBAN_DIR
 USER imio
