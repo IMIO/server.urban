@@ -15,7 +15,6 @@ ENV ZEO_PORT 8100
 RUN pip install --user -I -r requirements.txt \
   && buildout -c prod.cfg
 USER root
-VOLUME /data
 RUN apt-get install -y libreoffice
 RUN apt-get purge -y --auto-remove $buildDeps \
   && apt-get install -y --no-install-recommends $runDeps \
