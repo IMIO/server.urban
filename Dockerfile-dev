@@ -10,9 +10,10 @@ RUN buildDeps="libpq-dev wget git python-virtualenv gcc libc6-dev libpcre3-dev l
   && mkdir -p /home/imio/urban \
   && chown imio:imio -R /home/imio/urban/
 # COPY *.cfg *.py *.txt /home/imio/urban/
+COPY *.cfg $URBAN_DIR
 USER imio
 RUN pip install --user -I -r requirements.txt \
-  && buildout -c dev.cfg buildout:auto-checkout=""
+  && buildout -c dev.cfg
 USER root
 RUN apt-get purge -y --auto-remove $buildDeps \
   && rm -rf /var/lib/apt/lists/* \
