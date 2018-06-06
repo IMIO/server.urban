@@ -3,15 +3,25 @@ services:
   zeo:
     build:
       context: .
-    image: urbanzeo
-    command: zeoserver
+      dockerfile: Dockerfile-dev
+    image: iaurban-dev
+    volumes:
+      - ./var/blobstorage:/home/imio/urban/var/blobstorage
+      - ./var/filestorage:/home/imio/urban/var/filestorage
+      - ./dev.cfg:/home/imio/urban/dev.cfg
+      - ./base.cfg:/home/imio/urban/base.cfg
+      - ./entrypoint.sh:/home/imio/urban/entrypoint.sh
+      - ./Makefile:/home/imio/urban/Makefile
+      - ./src:/home/imio/urban/src
+    command: zeoserver fg
   instance:
-    image: urbanzeo:latest
+    image: iaurban-dev:latest
     ports:
       - 8081:8081
     links:
       - zeo:db
-    command: instance
-
-volumes:
-  data:
+    environment:
+      - OO_PORT=2003
+    volumes:
+      - ./src:/home/imio/urban/src
+    command: instance fg

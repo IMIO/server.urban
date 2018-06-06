@@ -12,13 +12,19 @@ bin/pip:
 bin/buildout: bin/pip
 	./bin/pip install -r requirements.txt
 
+src:
+	mkdir src
+
 .PHONY: buildout
-buildout: bin/buildout buildout.cfg
+buildout: src buildout.cfg
+	docker-compose run zeo "buildout -c dev.cfg"
+
+bin/instance: buildout.cfg bin/buildout
 	bin/buildout -t 60
 
 .PHONY: run
-run: bin/buildout
-	bin/instance1 fg
+run: bin/instance
+	bin/instance fg
 
 docker-image:
 	docker build --pull -t docker-staging.imio.be/iaurban/mutual:latest .
@@ -30,6 +36,7 @@ cleanall:
 
 build:
 	docker-compose build --pull
+	make buildout
 
 up:
 	docker-compose up
