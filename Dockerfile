@@ -15,8 +15,7 @@ ENV ZEO_HOST db
 ENV ZEO_PORT 8100
 RUN pip install --user -I -r requirements.txt \
   && buildout -c prod.cfg \
-  && mkdir $URBAN_DIR/var/urban/ \
-  && mv $URBAN_DIR/services.cfg $URBAN_DIR/var/urban/
+  && mkdir $URBAN_DIR/var/urban
 USER root
 RUN apt-get install -y --no-install-recommends gosu
 RUN apt-get install -y libreoffice
