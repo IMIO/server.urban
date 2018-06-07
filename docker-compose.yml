@@ -8,7 +8,6 @@ services:
     volumes:
       - ./var/blobstorage:/home/imio/urban/var/blobstorage
       - ./var/filestorage:/home/imio/urban/var/filestorage
-      - ./var/urban/services.cfg:/home/imio/urban/var/urban/services.cfg
       - ./dev.cfg:/home/imio/urban/dev.cfg
       - ./base.cfg:/home/imio/urban/base.cfg
       - ./src:/home/imio/urban/src
@@ -20,7 +19,8 @@ services:
     links:
       - zeo:db
     environment:
-      - OO_PORT=2003
+      - OO_PORT=2002
     volumes:
+      - ./var/urban:/home/imio/urban/var/urban
       - ./src:/home/imio/urban/src
     command: instance fg
