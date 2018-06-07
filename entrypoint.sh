@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-CMD="echo unknown command"
+CMD=$1
 cd $URBAN_DIR
 
-if [[ "$1" = "zeo"* ]]; then
+if [[ "$1" = *"zeo"* ]]; then
   CMD="bin/$1 fg"
-fi 
+fi
 if [[ "$1" = "instance"* ]]; then
   soffice --invisible --headless "--accept=socket,host=localhost,port=2002;urp;" &
   CMD="bin/$1 fg"
