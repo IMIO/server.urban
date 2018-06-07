@@ -2,7 +2,7 @@ FROM docker-staging.imio.be/iaurban/mutual:latest
 ARG user_id=1000
 ARG group_id=1000
 ENV ENVIRONMENT dev
-RUN rm -rf /home/imio/.cache && usermod -u $user_id imio && groupmod -g $group_id -o imio && chown -R $user_id:$group_id /home/imio
+RUN rm -rf /home/imio/.local &&  rm -rf /home/imio/.cache && usermod -u $user_id imio && groupmod -g $group_id -o imio && chown -R $user_id:$group_id /home/imio
 # Removed libtiff5-dev
 # RUN buildDeps="libpq-dev wget git python-virtualenv gcc libc6-dev libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libffi-dev libjpeg62-dev libopenjp2-7-dev zlib1g-dev python-dev" \
 #   && apt-get update \
@@ -13,7 +13,8 @@ RUN rm -rf /home/imio/.cache && usermod -u $user_id imio && groupmod -g $group_i
 COPY *.cfg $URBAN_DIR
 USER imio
 RUN pip install --user -I -r requirements.txt \
-  && buildout -c dev.cfg
+  && buildout -c dev.cfg \
+  && rm -rf var/filestorage var/blobstorage
 USER root
 RUN apt-get purge -y --auto-remove $buildDeps \
   && rm -rf /var/lib/apt/lists/* \
