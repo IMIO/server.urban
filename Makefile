@@ -40,3 +40,6 @@ build:
 
 up:
 	docker-compose up
+
+bash:
+	docker-compose run -p 8081:8081 instance
