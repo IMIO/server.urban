@@ -35,6 +35,9 @@ cleanall:
 	docker-compose down
 
 build:
+	mkdir -p var/blobstorage
+	mkdir -p var/filestorage
+	mkdir -p var/urban
 	docker-compose build --pull
 	make buildout
 
