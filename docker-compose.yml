@@ -16,6 +16,8 @@ services:
     image: iaurban-dev:latest
     ports:
       - 8081:8081
+    depends_on:
+      - libreoffice
     links:
       - zeo:db
     environment:
@@ -24,3 +26,6 @@ services:
       - ./var/urban:/home/imio/urban/var/urban
       - ./src:/home/imio/urban/src
     command: instance fg
+  libreoffice:
+    image: iaurban-dev:latest
+    command: soffice --invisible --headless --accept="socket,port=2002;urp;"
