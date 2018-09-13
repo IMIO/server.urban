@@ -1,7 +1,7 @@
 FROM docker-staging.imio.be/iaurban/cache:latest
 # Removed libtiff5-dev
 ENV URBAN_DIR /home/imio/urban
-RUN buildDeps="libpq-dev wget git python-virtualenv gcc libc6-dev libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libffi-dev libjpeg62-dev libopenjp2-7-dev zlib1g-dev python-dev" \
+RUN buildDeps="libpq-dev wget git subversion python-virtualenv gcc libc6-dev libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libffi-dev libjpeg62-dev libopenjp2-7-dev zlib1g-dev python-dev" \
   && runDeps="gosu poppler-utils wv rsync lynx netcat libxml2 libxslt1.1 libjpeg62 libtiff5 libopenjp2-7" \
   && apt-get update \
   && apt-get install -y --no-install-recommends $buildDeps \
