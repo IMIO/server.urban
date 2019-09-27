@@ -13,3 +13,5 @@ parts
 python-eggs
 src
 versions-picked.cfg
+var/filestorage
+var/blobstorage*
