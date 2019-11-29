@@ -2,6 +2,7 @@
 # taken into account by: svn propset svn:ignore -F svn.ignore .
 #
 .installed.cfg
+.mr.developer.cfg
 develop-eggs
 downloads
 eggs
@@ -15,3 +16,7 @@ src
 versions-picked.cfg
 var/filestorage
 var/blobstorage*
+var/log*
+var/worker-uuid.txt
+var/zeoserver.pid
+bin/*
