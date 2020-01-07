@@ -13,3 +13,11 @@ parts
 python-eggs
 src
 versions-picked.cfg
+buildout.log
+uuid.txt
+bin/*
+.mr.developer.cfg
+var/blobstorage/*
+var/filestorage/*
+var/log/*
+
