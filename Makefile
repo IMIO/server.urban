@@ -17,7 +17,7 @@ bootstrap:
 .PHONY: buildout
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 60
+	bin/buildout -t 60
 	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
 
 .PHONY: standard-config
