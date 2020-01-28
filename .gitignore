@@ -15,3 +15,6 @@ src
 versions-picked.cfg
 var/filestorage
 var/blobstorage*
+var/log
+var/worker-uuid.txt
+bin/*
