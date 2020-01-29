@@ -16,8 +16,8 @@ src:
 	mkdir src
 
 .PHONY: buildout
-buildout: src buildout.cfg
-	docker-compose run zeo "buildout -c dev.cfg"
+buildout:
+	bin/buildout -c dev.cfg
 
 bin/instance: buildout.cfg bin/buildout
 	bin/buildout -t 60
@@ -28,6 +28,17 @@ run: bin/instance
 
 docker-image:
 	docker build --pull -t docker-staging.imio.be/iaurban/mutual:latest .
+
+.PHONY: cache
+cache:
+	docker build --pull -t docker-staging.imio.be/iaurban/mutual:cache -f Dockerfile-cache .
+
+.PHONY: eggs
+eggs:  ## Copy eggs from docker image to speed up docker build
+	rm -Rf eggs
+	mkdir -p eggs
+	# docker pull $(IMAGE_NAME)
+	docker run --entrypoint='' urban_buildout_cache_24  tar -c -C /home/imio/server.urban eggs | tar x
 
 .PHONY: cleanall
 cleanall:
