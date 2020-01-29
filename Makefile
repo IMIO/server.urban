@@ -18,12 +18,12 @@ bootstrap:
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
 	bin/buildout -t 60
-	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
+	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout ;fi
 
 .PHONY: standard-config
 standard-config:
 	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 60 -c standard-config.cfg
+	bin/buildout -t 60 -c standard-config.cfg
 
 .PHONY: run
 run:
@@ -39,11 +39,11 @@ libraries:
 	./bin/subproducts.sh
 
 bin/templates:
-	./bin/buildout -vt 60 install templates
+	./bin/buildout -t 60 install templates
 	touch $@
 
 bin/templates_per_site: 
-	./bin/buildout -vt 60 install templates
+	./bin/buildout -t 60 install templates
 	touch $@
 
 mount_points.conf: bin/templates $(mountpoints)
@@ -56,4 +56,4 @@ plonesites.cfg: bin/templates $(plonesites) pre_extras
 	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
 
 portals: portals.cfg
-	./bin/buildout -vt 60 -c portals.cfg
+	./bin/buildout -t 60 -c portals.cfg
