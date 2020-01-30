@@ -8,7 +8,7 @@ services:
     volumes:
       - server.urban-blobstorage:/home/imio/server.urban/var/blobstorage
       - server.urban-filestorage:/home/imio/server.urban/var/filestorage
-    command: zeoserver fg
+    command: zeoserver
     ports:
       - 8100:8100
   instance:

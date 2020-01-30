@@ -52,5 +52,4 @@ ENV ZEO_HOST=db \
 
 EXPOSE 8081
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["start"]
 
