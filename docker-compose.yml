@@ -1,0 +1,38 @@
+version: '3.5'
+services:
+  zeo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-staging.imio.be/iaurban/mutual:latest
+    volumes:
+      - server.urban-blobstorage:/home/imio/server.urban/var/blobstorage
+      - server.urban-filestorage:/home/imio/server.urban/var/filestorage
+    command: zeoserver
+    ports:
+      - 8100:8100
+  instance:
+    image: docker-staging.imio.be/iaurban/mutual:latest
+    ports:
+      - 8081:8081
+    depends_on:
+      - libreoffice
+    links:
+      - zeo:db
+    environment:
+      OO_PORT: 8997
+      ZEO_ADDRESS: zeo:8100
+      ZEO_SHARED_BLOB_DIR: "on"
+    volumes:
+      - ./var/urban:/home/imio/server.urban/var/urban
+      - server.urban-blobstorage:/home/imio/server.urban/var/blobstorage
+      - server.urban-log:/home/imio/server.urban/var/log
+  libreoffice:
+    image: docker-staging.imio.be/libreoffice/server:latest
+    command: soffice --invisible --headless --accept="socket,host=libreoffice,port=8997;urp;"
+    expose:
+      - 8997/tcp
+volumes:
+    server.urban-blobstorage:
+    server.urban-filestorage:
+    server.urban-log:

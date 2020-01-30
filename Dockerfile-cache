@@ -1,0 +1,54 @@
+FROM docker-staging.imio.be/base:18.04
+
+ARG repo=server.urban
+ARG branch=urban24
+RUN mkdir -p /home/imio/.buildout/downloads \
+  && mkdir -p /home/imio/.buildout/eggs
+
+ENV HOME=/home/imio
+RUN chown -R imio:imio /home/imio
+RUN apt-get update \
+  && apt full-upgrade -y \
+  && apt-get install -y --no-install-recommends \
+   build-essential \
+   libpq-dev \
+   libreadline-dev \
+   wget \
+   git \
+   subversion \
+   libpcre3-dev \
+   libssl-dev \
+   libxml2-dev \
+   libxslt1-dev \
+   libbz2-dev \
+   libffi-dev \
+   libjpeg62-dev \
+   libopenjp2-7-dev \
+   libpq-dev \
+   zlib1g-dev \
+   poppler-utils \
+   python-dev \
+   python-pip \
+   virtualenv \
+   python \
+   libpython3.6 \
+   python3-uno \
+   libreoffice-script-provider-python \
+   libc6-dev \
+   libpcre3-dev \
+   libssl-dev
+
+RUN apt-get upgrade -y -q
+RUN ln -sf /usr/bin/virtualenv /usr/local/bin/virtualenv-2.7
+
+USER imio
+WORKDIR /home/imio/
+RUN git clone https://github.com/IMIO/${repo}.git ${repo} -b ${branch}
+COPY --chown=imio eggs /home/imio/${repo}/eggs/
+
+WORKDIR /home/imio/${repo}
+RUN mkdir -p var/filestorage/ \
+  && touch var/filestorage/Data.fs \
+  && make buildout
+
+WORKDIR /home/imio/

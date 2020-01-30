@@ -1,59 +1,59 @@
 #!/usr/bin/make
 #
 
-options =
-plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg 
-extras = parts/omelette/Products/urban/scripts/config/extras.py.tmpl
-mountpoints = parts/omelette/Products/urban/scripts/config/mount_points.conf
-
 all: run
 
-.PHONY: bootstrap
-bootstrap:
+buildout.cfg:
+	ln -fs dev.cfg buildout.cfg
+
+bin/pip:
 	virtualenv-2.7 .
-	./bin/python bootstrap.py
-	./bin/subproducts.sh
+
+bin/buildout: bin/pip
+	./bin/pip install -r requirements.txt
+
+src:
+	mkdir src
 
 .PHONY: buildout
 buildout:
-	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 60
-	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
+	bin/buildout -c dev.cfg
 
-.PHONY: standard-config
-standard-config:
-	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 60 -c standard-config.cfg
+bin/instance: buildout.cfg bin/buildout
+	bin/buildout -t 60
 
 .PHONY: run
-run:
-	if ! test -f bin/instance1;then make buildout;fi
-	bin/instance1 fg
+run: bin/instance
+	bin/instance fg
+
+docker-image:
+	docker build --pull -t docker-staging.imio.be/iaurban/mutual:latest .
+
+.PHONY: cache
+cache:
+	docker build --pull -t docker-staging.imio.be/iaurban/mutual:cache -f Dockerfile-cache .
+
+.PHONY: eggs
+eggs:  ## Copy eggs from docker image to speed up docker build
+	rm -Rf eggs
+	mkdir -p eggs
+	# docker pull $(IMAGE_NAME)
+	docker run --entrypoint='' urban_buildout_cache_24  tar -c -C /home/imio/server.urban eggs | tar x
 
 .PHONY: cleanall
 cleanall:
-	rm -fr bin/instance1 develop-eggs downloads eggs parts .installed.cfg
+	rm -fr bin include lib develop-eggs downloads eggs parts .installed.cfg
+	docker-compose down
 
-.PHONY: libraries
-libraries: 
-	./bin/subproducts.sh
+build:
+	mkdir -p var/blobstorage
+	mkdir -p var/filestorage
+	mkdir -p var/urban
+	docker-compose build --pull
+	make buildout
 
-bin/templates:
-	./bin/buildout -vt 60 install templates
-	touch $@
+up:
+	docker-compose up
 
-bin/templates_per_site: 
-	./bin/buildout -vt 60 install templates
-	touch $@
-
-mount_points.conf: bin/templates $(mountpoints)
-	bin/templates -i $(mountpoints) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > $@
-
-pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon_instances.txt
-	bin/templates_per_site -i $(extras) -d pre_extras -e py -s /srv/urbanmap/urbanMap/config/pylon_instances.txt
-
-plonesites.cfg: bin/templates $(plonesites) pre_extras
-	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
-
-portals: portals.cfg
-	./bin/buildout -vt 60 -c portals.cfg
+bash:
+	docker-compose run -p 8081:8081 instance
