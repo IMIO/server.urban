@@ -1,0 +1,14 @@
+FROM docker-staging.imio.be/iaurban/mutual:latest
+ARG user_id=1000
+ARG group_id=1000
+ENV ENVIRONMENT dev
+COPY *.cfg $URBAN_DIR/
+RUN rm -rf /home/imio/.local &&  rm -rf /home/imio/.cache && usermod -u $user_id imio && groupmod -g $group_id -o imio && chown -R $user_id:$group_id /home/imio
+USER imio
+RUN pip install --user -I -r requirements.txt \
+  && buildout -c dev.cfg \
+  && rm -rf var/filestorage var/blobstorage
+USER root
+RUN apt-get purge -y --auto-remove $buildDeps \
+  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf /home/imio/.buildout/downloads/*

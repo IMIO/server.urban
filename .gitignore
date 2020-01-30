@@ -2,6 +2,7 @@
 # taken into account by: svn propset svn:ignore -F svn.ignore .
 #
 .installed.cfg
+.mr.developer.cfg
 develop-eggs
 downloads
 eggs
@@ -16,5 +17,5 @@ versions-picked.cfg
 buildout.cfg
 pip-selfcheck.json
 bin
-.mr.developer.cfg
-var/
+var/filestorage
+var/blobstorage*
