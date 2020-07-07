@@ -13,10 +13,17 @@ bootstrap:
 	virtualenv-2.7 .
 	./bin/python bootstrap.py
 	./bin/subproducts.sh
+	./bin/pip install -r requirements.txt
+
+.PHONY: setup
+setup:
+	virtualenv-2.7 .
+	./bin/pip install --upgrade pip
+	./bin/pip install -r requirements.txt
 
 .PHONY: buildout
 buildout:
-	if ! test -f bin/buildout;then make bootstrap;fi
+	if ! test -f bin/buildout;then make setup;fi
 	bin/buildout -vt 60
 	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
 
