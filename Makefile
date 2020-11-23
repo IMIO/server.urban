@@ -12,6 +12,7 @@ all: run
 bootstrap:
 	virtualenv-2.7 .
 	./bin/python bootstrap.py
+	./bin/pip install -r requirements.txt
 	./bin/subproducts.sh
 
 .PHONY: buildout
