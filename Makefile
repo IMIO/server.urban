@@ -61,6 +61,3 @@ pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon
 
 plonesites.cfg: bin/templates $(plonesites) pre_extras
 	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
-
-portals: portals.cfg
-	./bin/buildout -vt 60 -c portals.cfg
