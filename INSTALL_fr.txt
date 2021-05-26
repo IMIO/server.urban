@@ -10,11 +10,14 @@ On passe d'abord en root
 
 On installe des librairies nécessaires
 > apt-get install build-essential
-> apt-get install libreadline5-dev
+> apt-get install libreadline-gplv2-dev
 > apt-get install zlib1g-dev (support zlib)
 > apt-get install libjpeg62-dev
 > apt-get install subversion
 > apt-get install libpq-dev
+> apt-get install libssl-dev
+> apt-get install libxml2-dev libxslt1-dev
+> apt-get install libbz2-dev
 
 On va travailler dans le dossier /srv
 > cd /srv
@@ -39,13 +42,14 @@ On va installer un python 2.7 qui sera utilisé dans notre buildout
 > make install
 
 On installe pip
+> cd /srv/python2716
 > cp /srv/instances/urban_serv/get-pip.py .
 > bin/python2.7 get-pip.py
 
 On installe virtualenv
 > bin/pip install virtualenv
 On crée un lien symbolique vers bin/virtualenv
-> ln -s /srv/python2716/bin/virtualenv /usr/local/bin/virtualenv-2.7
+> sudo ln -s /srv/python2716/bin/virtualenv /usr/local/bin/virtualenv-2.7
 
 On définit un cache pour buildout (si ce n'est déjà fait)
 Voir http://www.communesplone.org/support/documentation/tutoriels/utilisation-dun-buildout/definition-dun-cache-pour-buildout/
