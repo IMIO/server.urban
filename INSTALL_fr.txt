@@ -106,3 +106,30 @@ Sélectionner le nom du mount point désiré ("xxx" et cliquer sur "Create selec
 
 Tout ce qui va être ajouté dans le dossier "xxx" sera maintenant localisé dans le fichier db "xxx.fs"
  plutôt que dans "Data.fs". 
+
+Installer Postgresql
+> sudo apt -y install postgresql-12 postgresql-client-12
+
+Installer Postbird sur pc dans les applications ubuntu pour gérer db
+
+Modifier le mot de passe du super utilisateur postgres
+> sudo -u postgres psql
+dans le prompt posqtgres:
+> ALTER USER postgres WITH PASSWORD 'postgres';
+> exit
+
+Créer database pour cadastre:
+> sudo -u postgres createdb cadastre_xxx
+
+Installer PostGIS
+> sudo apt install postgis postgresql-12-postgis-3
+
+Sur Postbird faire ds db :
+> CREATE EXTENSION postgis;
+
+Télécharger dump de la db
+Ajouter le dump à la db créée
+> psql -h localhost -U postgres -W cadastre_xxx < cadastre_xxx.sql
+
+Refresh db
+
