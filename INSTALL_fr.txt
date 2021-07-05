@@ -114,3 +114,4 @@ Sélectionner le nom du mount point désiré ("xxx" et cliquer sur "Create selec
 
 Tout ce qui va être ajouté dans le dossier "xxx" sera maintenant localisé dans le fichier db "xxx.fs"
  plutôt que dans "Data.fs". 
+
