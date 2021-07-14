@@ -1,4 +1,4 @@
-On suppose l'installation dans un répertoire /srv/zinstances/urban414
+On suppose l'installation dans un répertoire /srv/instances/server_urban24
  (qui peut être changé) et sur une distribution ubuntu.
 Le nom de votre utilisateur est remplacé dans nos commandes par "votreuser".
  Veuillez utiliser le votre à la place. 
@@ -30,7 +30,7 @@ On quitte l'utilisateur root.
 
 On crée maintenant une arborescence de dossiers
 > mkdir install
-> mkdir zinstances
+> mkdir instances
 > cd install
 
 On va installer un python 2.7 qui sera utilisé dans notre buildout
@@ -43,7 +43,11 @@ On va installer un python 2.7 qui sera utilisé dans notre buildout
 
 On installe pip
 > cd /srv/python2716
-> cp /srv/instances/urban_serv/get-pip.py .
+> cp /srv/instances/(nom_dossier_instance)/get-pip.py .
+Si erreur : aucun fichier ou dossier de ce type:
+aller sur https://bootstrap.pypa.io/pip/2.7/get-pip.py et enregistrer le fichier dans /srv/instances/(nom_dossier_instance)/
+puis faire :
+> cp /srv/instances/(nom_dossier)/get-pip.py .
 > bin/python2.7 get-pip.py
 
 On installe virtualenv
@@ -61,6 +65,10 @@ On initialise le buildout
 
 On peut modifier dans le fichier buildout.cfg le port et le user effectif
  (effective-user) avec lequel l'application sera exécutée. 
+
+Pour choisir entre l'instance de dev ou de prod aller dans buildout.cfg
+Commenter prod et décommenter dev pour utiliser dev et inversément pour prod
+puis réexécuter buildout
 
 On exécute le buildout après chaque modification du fichier buildout.cfg
 > make buildout
@@ -86,6 +94,10 @@ Tout ce qui va être ajouté dans le dossier "xxx" sera maintenant localisé dan
 On peut modifier dans le fichier buildout.cfg le port et le user effectif
  (effective-user) avec lequel l'application sera exécutée. 
 On peut modifier dans le fichier zeo.cfg le port (zeo-address) du serveur zeo.
+
+Pour choisir entre l'instance de dev ou de prod aller dans buildout.cfg
+Commenter prod et décommenter dev pour utiliser dev et inversément pour prod
+puis réexécuter buildout
 
 On exécute le buildout après chaque modification du fichier buildout.cfg
 > bin/buildout -v -c zeo.cfg
@@ -127,7 +139,7 @@ Installer PostGIS
 Sur Postbird faire ds db :
 > CREATE EXTENSION postgis;
 
-Télécharger dump de la db
+Télécharger dump de la db à partir d'une instance déjà existante
 Ajouter le dump à la db créée
 > psql -h localhost -U postgres -W cadastre_xxx < cadastre_xxx.sql
 
