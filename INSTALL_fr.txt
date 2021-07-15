@@ -1,4 +1,4 @@
-On suppose l'installation dans un répertoire /srv/zinstances/urban414
+On suppose l'installation dans un répertoire /srv/instances/server_urban25
  (qui peut être changé) et sur une distribution ubuntu.
 Le nom de votre utilisateur est remplacé dans nos commandes par "votreuser".
  Veuillez utiliser le votre à la place. 
@@ -10,11 +10,14 @@ On passe d'abord en root
 
 On installe des librairies nécessaires
 > apt-get install build-essential
-> apt-get install libreadline5-dev
+> apt-get install libreadline-gplv2-dev
 > apt-get install zlib1g-dev (support zlib)
 > apt-get install libjpeg62-dev
 > apt-get install subversion
 > apt-get install libpq-dev
+> apt-get install libssl-dev
+> apt-get install libxml2-dev libxslt1-dev
+> apt-get install libbz2-dev
 
 On va travailler dans le dossier /srv
 > cd /srv
@@ -27,48 +30,45 @@ On quitte l'utilisateur root.
 
 On crée maintenant une arborescence de dossiers
 > mkdir install
-> mkdir zinstances
+> mkdir instances
 > cd install
 
-On va installer un python 2.6 qui sera utilisé dans notre buildout
-> wget http://www.python.org/ftp/python/2.6.8/Python-2.6.8.tgz
-> tar xvzf Python-2.6.8.tgz
-> cd Python-2.6.8
-> ./configure --prefix=/srv/python268
+On va installer un python 2.7 qui sera utilisé dans notre buildout
+> wget http://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz
+> tar xvzf Python-2.7.16.tgz
+> cd Python-2.7.16
+> ./configure --prefix=/srv/python2716
 > make
 > make install
 
-On installe l'utilitaire python easy_install
-> cd /srv/install
-> wget http://peak.telecommunity.com/dist/ez_setup.py
-> /srv/python268/bin/python ez_setup.py
+On installe pip
+> cd /srv/python2716
+> cp /srv/instances/(nom_dossier_instance)/get-pip.py .
+Si erreur : aucun fichier ou dossier de ce type:
+aller sur https://bootstrap.pypa.io/pip/2.7/get-pip.py et enregistrer le fichier dans /srv/instances/(nom_dossier_instance)/
+puis faire :
+> cp /srv/instances/(nom_dossier)/get-pip.py .
+> bin/python2.7 get-pip.py
 
-On installe l'utilitaire python virtualenv
-> /srv/python268/bin/easy_install virtualenv
+On installe virtualenv
+> bin/pip install virtualenv
+On crée un lien symbolique vers bin/virtualenv
+> sudo ln -s /srv/python2716/bin/virtualenv /usr/local/bin/virtualenv-2.7
 
 On définit un cache pour buildout (si ce n'est déjà fait)
 Voir http://www.communesplone.org/support/documentation/tutoriels/utilisation-dun-buildout/definition-dun-cache-pour-buildout/
 
-On télécharge le buildout dans un dossier
-> cd /srv/zinstances
-> svn co http://svn.communesplone.org/svn/communesplone/buildout/server.urban/tags/urban414/ urban414
-> cd urban414
-
-On modifie le fichier Makefile pour indiquer le chemin réel de virtualenv. 
-Pour cela, on peut ouvrir le fichier avec un éditeur de texte. 
-Il faut remplacer la ligne "virtualenv268 --no-site-packages ." par
-    "/srv/python266/bin/virtualenv --no-site-packages ."
-OU
-On peut créer un lien symbolique vers notre virtualenv sans modifier alors le fichier Makefile
-    "sudo ln -s /srv/python268/bin/virtualenv /usr/local/bin/virtualenv-2.6"
-
 On initialise le buildout
-> make bootstrap
+> make
 
 1) Installation sans ZEO (une instance Zope)
 
 On peut modifier dans le fichier buildout.cfg le port et le user effectif
  (effective-user) avec lequel l'application sera exécutée. 
+
+Pour choisir entre l'instance de dev ou de prod aller dans buildout.cfg
+Commenter prod et décommenter dev pour utiliser dev et inversément pour prod
+puis réexécuter buildout
 
 On exécute le buildout après chaque modification du fichier buildout.cfg
 > make buildout
@@ -95,6 +95,10 @@ On peut modifier dans le fichier buildout.cfg le port et le user effectif
  (effective-user) avec lequel l'application sera exécutée. 
 On peut modifier dans le fichier zeo.cfg le port (zeo-address) du serveur zeo.
 
+Pour choisir entre l'instance de dev ou de prod aller dans buildout.cfg
+Commenter prod et décommenter dev pour utiliser dev et inversément pour prod
+puis réexécuter buildout
+
 On exécute le buildout après chaque modification du fichier buildout.cfg
 > bin/buildout -v -c zeo.cfg
 
@@ -114,4 +118,30 @@ Sélectionner le nom du mount point désiré ("xxx" et cliquer sur "Create selec
 
 Tout ce qui va être ajouté dans le dossier "xxx" sera maintenant localisé dans le fichier db "xxx.fs"
  plutôt que dans "Data.fs". 
+
+Installer Postgresql
+> sudo apt -y install postgresql-12 postgresql-client-12
+
+Installer Postbird sur pc dans les applications ubuntu pour gérer db
+
+Modifier le mot de passe du super utilisateur postgres
+> sudo -u postgres psql
+dans le prompt posqtgres:
+> ALTER USER postgres WITH PASSWORD 'postgres';
+> exit
+
+Créer database pour cadastre:
+> sudo -u postgres createdb cadastre_xxx
+
+Installer PostGIS
+> sudo apt install postgis postgresql-12-postgis-3
+
+Sur Postbird faire ds db :
+> CREATE EXTENSION postgis;
+
+Télécharger dump de la db à partir d'une instance déjà existante
+Ajouter le dump à la db créée
+> psql -h localhost -U postgres -W cadastre_xxx < cadastre_xxx.sql
+
+Refresh db
 
