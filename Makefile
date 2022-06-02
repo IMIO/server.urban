@@ -10,9 +10,16 @@ all: run
 
 .PHONY: bootstrap
 bootstrap:
-	virtualenv-2.7 .
+	virtualenv -p python2 .
 	./bin/python bootstrap.py
 	./bin/subproducts.sh
+	./bin/pip install -r requirements.txt
+
+.PHONY: setup
+setup:
+	virtualenv -p python2 .
+	./bin/pip install --upgrade pip
+	./bin/pip install -r requirements.txt
 
 .PHONY: buildout
 buildout:
@@ -45,15 +52,3 @@ bin/templates:
 bin/templates_per_site: 
 	./bin/buildout -t 60 install templates
 	touch $@
-
-mount_points.conf: bin/templates $(mountpoints)
-	bin/templates -i $(mountpoints) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > $@
-
-pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon_instances.txt
-	bin/templates_per_site -i $(extras) -d pre_extras -e py -s /srv/urbanmap/urbanMap/config/pylon_instances.txt
-
-plonesites.cfg: bin/templates $(plonesites) pre_extras
-	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
-
-portals: portals.cfg
-	./bin/buildout -t 60 -c portals.cfg

@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    hostname: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d/
+  #adminer:
+  #  image: adminer
+  #  restart: always
+  #  ports:
+  #    - 8080:8080
