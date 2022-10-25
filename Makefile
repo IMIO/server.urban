@@ -25,7 +25,7 @@ setup:
 buildout:
 	if ! test -f bin/buildout;then make setup;fi
 	bin/buildout -t 60
-	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout -v;fi
+	if ! test -f var/filestorage/Data.fs;then make standard-config; else bin/buildout ;fi
 
 .PHONY: standard-config
 standard-config:
