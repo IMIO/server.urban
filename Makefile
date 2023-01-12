@@ -10,14 +10,14 @@ all: run
 
 .PHONY: bootstrap
 bootstrap:
-	virtualenv -p python2 .
+	virtualenv -p python2.7 .
 	./bin/python bootstrap.py
 	./bin/subproducts.sh
 	./bin/pip install -r requirements.txt
 
 .PHONY: setup
 setup:
-	virtualenv -p python2 .
+	virtualenv -p python2.7 .
 	./bin/pip install --upgrade pip
 	./bin/pip install -r requirements.txt
 
