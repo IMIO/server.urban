@@ -8,8 +8,8 @@ html_meta:
 
 # Implémentation Notice
 
+- [Workflow](workflow)
 - [Types de contenu](contenttypes)
 - [Configuration](controlpanel)  
 - [Webservice](webservice)
-- [Workflow](workflow)
 - [Glossaire](glossary)
