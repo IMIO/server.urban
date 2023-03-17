@@ -49,11 +49,12 @@ latex_elements = {
     'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
-    'preamble': r'''
-        \usepackage{charter}
-        \usepackage[defaultsans]{lato}
-        \usepackage{inconsolata}
-    ''',
+    'preamble': r'''\usepackage{charter}
+\usepackage[defaultsans]{lato}
+\usepackage{inconsolata}
+\hyphenpenalty 10000
+\exhyphenpenalty 10000
+''',
 }
 
 # -- Options for myST markdown conversion to html -----------------------------
