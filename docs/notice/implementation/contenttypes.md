@@ -43,7 +43,7 @@ Tâche de réception et de transfert du dossier à une autre instance (ex: {term
 | Identifiant | Type | Description |
 | ----------- | ---- | ----------- |
 | comment_dpa | Text | Commentaire pour {term}`DPA` |
-| reference | String | Référence communale |
+| reference | String | Référence communale (référence dossier) |
 
 
 (notice-incomplete-task)=
@@ -55,7 +55,7 @@ Tâche indiquant que le dossier est incomplet
 
 ### Actions
 
-- Création et clôture de l'événement *1er dossier incomplet*
+- Création et clôture de l'événement *Dossier incomplet*
 - Changer l'état du workflow vers *Incomplet*
 
 
@@ -68,5 +68,32 @@ Tâche indiquant que le dossier est irrecevable
 
 ### Actions
 
-- Création et clôture de l'événement *2ème dossier incomplet (irrecevable)*
+- Création et clôture de l'événement *Dossier irrecevable*
 - Changer l'état du workflow vers *Irrecevable*
+
+
+(notice-publicinvestigation-task)=
+## NoticePublicInvestigationTask
+
+Tâche pour la réalisation d'une enquête publique
+
+**Notification(s) sortantes**: `PE_DEM_COM_DATES_AVIS_AFFICHAGE`, `PE_DEM_COM_PV_EP`
+
+### Actions
+
+- Création de l'événement *Enquête publique*
+- Création et clôture de l'événement *Communication dates enquête publique*
+- Clôture de l'événement *Enquête publique*
+- Création et clôture de l'événement *Communication PV enquête publique ???*
+
+
+(notice-prorogation-task)=
+## NoticeProrogationTask
+
+Tâche pour adapter le délai suite à une prorogation
+
+**Notification(s) sortantes**: aucune
+
+### Actions
+
+- Adaptation du délai (+30j)
