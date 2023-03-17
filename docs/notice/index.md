@@ -8,19 +8,21 @@ html_meta:
 
 # Notice
 
+- [Notes de modification](changelog)
+- [Workflow](implementation/workflow)
 - [Types de contenu](implementation/contenttypes)
 - [Configuration](implementation/controlpanel)
 - [Webservice](implementation/webservice)
-- [Workflow](implementation/workflow)
 - [Glossaire](implementation/glossary)
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
 
+changelog
+implementation/workflow
 implementation/contenttypes
 implementation/controlpanel
 implementation/webservice
-implementation/workflow
 implementation/glossary
 ```
