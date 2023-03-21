@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Updated Products.urban : Added 'retired' transition to 'deposit' and 'incomplete' states for codt_buildlicence_workflow
+  [fngaha]
 - Updated imio.urban.core : Improved the parcel rendering
   [fngaha]
 - Updated Products.urban : Manage the display of licences linked to several applicants
