@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Updated imio.urban.core : Improved the parcel rendering
+  [fngaha]
 - Updated Products.urban : Manage the display of licences linked to several applicants
   [fngaha]
 - Updated Products.urban : Add an import step to activate 'announcementArticlesText' optional field
