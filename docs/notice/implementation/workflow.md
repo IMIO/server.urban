@@ -22,7 +22,8 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
-- La commune créé et clôture un événément *Dépôt de la demande* ???
+- La commune créé le dossier sur base des informations transmises par {term}`Notice`
+- La commune créé et clôture un événément *Dépôt de la demande*
 - La commune transfère le dossier au {term}`DPA`
 - La commune transfère le dossier à la {term}`DGO4` (si {term}`PU`)
 
@@ -38,8 +39,8 @@ html_meta:
 ## Demande irrecevable (notification à la commune - premier tour)
 
 - **Etat(s) du dossier**: Réception du dossier
-- **Evénement lié**: Dossier incomplet
-- **Tâche liée**: {ref}`NoticeIncompleteTask <notice-incomplete-task>`
+- **Evénement lié**: Dossier irrecevable
+- **Tâche liée**: {ref}`NoticeInadmissibleTask <notice-inadmissible-task>`
 - **Identifiant notification entrante**: `NOTIF_COMPLETUDE1_IRRECEVABLE_COMMUNE`
 - **Identifiant(s) notification(s) sortante(s)**: aucun
 
@@ -49,8 +50,8 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
-- La commune créé et clôture un événement *Dossier incomplet*
-- Changement de l'état du workflow vers *Incomplet*
+- La commune créé et clôture un événement *Dossier irrecevable*
+- Changement de l'état du workflow vers *Irrecevable*
 
 ### Informations reçues
 
@@ -175,11 +176,12 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
+- La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
 - La commune créé un événement *Enquête publique*
 - La commune créé et clôture un événément *Communication dates enquête publique*
 - La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique ???*
+- La commune créé et clôture un événement *Communication PV enquête publique*
 
 ### Informations reçues
 
@@ -209,11 +211,12 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
+- La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
 - La commune créé un événement *Enquête publique*
 - La commune créé et clôture un événément *Communication dates enquête publique*
 - La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique ???*
+- La commune créé et clôture un événement *Communication PV enquête publique*
 
 ### Informations reçues
 
@@ -243,11 +246,12 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
+- La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
 - La commune créé un événement *Enquête publique*
 - La commune créé et clôture un événément *Communication dates enquête publique*
 - La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique ???*
+- La commune créé et clôture un événement *Communication PV enquête publique*
 
 ### Informations reçues
 
@@ -265,7 +269,7 @@ html_meta:
 
 ## Prolongation du délai d'instruction (notification à la commune)
 
-- **Etat(s) du dossier**: Complet ???
+- **Etat(s) du dossier**: Complet
 - **Evénement lié**: aucun
 - **Tâche liée**: {ref}`NoticeProrogationTask <notice-prorogation-task>`
 - **Identifiant notification entrante**: `NOTIFICATION_PROROGATION_COMMUNE`
@@ -277,7 +281,7 @@ html_meta:
 
 ### Action(s) nécessaire(s)
 
-- La commune adapte de délai (+30j)
+- Cocher la case prorogation dans l'onglet "Analyse Urbanisme" ce qui adaptera automatiquement le délai (+ 30 jours). A défaut, si la case prorogation n'est pas activée dans la configuration, La commune adapte le délai manuellement.
 
 ### Informations reçues
 
