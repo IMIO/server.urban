@@ -7,7 +7,7 @@ import sys
 project = 'Notice'
 copyright = '2023, iMio'
 
-version = release = "1.3.0"
+version = release = "1.4.0"
 
 
 # The suffix of source filenames.

@@ -26,7 +26,7 @@ DGO4
     Direction Générale opérationnelle de l'Aménagement du territoire, du Logement, du Patrimoine et de l'Energie.
 
 EIE
-    Étude d'Incidence sur l'Environnement.
+    Étude d'Incidence sur l'Environnement: Étude technique et scientifique approfondie des impacts d’un projet sur l’air, le sol, les eaux de surface et souterraines, la faune et la flore, la production de déchets, les émissions sonores… Elle doit être réalisée par un bureau d’étude agréé par la Région wallonne. [source](https://permis-environnement.spw.wallonie.be/home/glossaire.html)
 
 DRC
     Demande de Renseignements Complémentaires.
@@ -48,5 +48,11 @@ Cron
 
 PV
     Procès Verbal
+
+FT
+    Fonctionnaire Technique: Les fonctionnaire techniques sont territorialement compétents pour agir au nom de la Région wallonne dans le cadre de la législation relative au permis d’environnement. C’est par exemple eux qui sont chargés d’instruire les demandes de permis d’environnement. Ils sont désignés par le Gouvernement et font partie du SPW Agriculture, Ressources naturelles et Environnement. [source](https://permis-environnement.spw.wallonie.be/home/glossaire.html)
+
+FD
+    Fonctionnaire Délégué : Les fonctionnaires délégués sont territorialement compétents pour agir au nom de la Région wallonne dans le cadre de la législation fixée dans le Code du Développement Territorial. C’est par exemple eux qui sont, conjointement avec les fonctionnaires techniques, chargés d’instruire les demandes de permis unique. Ils sont désignés par le Gouvernement et font partie du SPW Territoire, Logement, Patrimoine, Énergie. [source](https://permis-environnement.spw.wallonie.be/home/glossaire.html)
 
 ```
