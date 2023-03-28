@@ -97,3 +97,19 @@ Tâche pour adapter le délai suite à une prorogation
 ### Actions
 
 - Adaptation du délai (+30j)
+
+
+(notice-syntesis-report-task)=
+## NoticeSynthesisReportTask
+
+Tâche lié au rapport de synthèse, à la décision de la commune et à son affichage.
+
+**Notification(s) sortantes**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Actions
+
+- Création et clôture de l'événement *Rapport de synthèse* sur base des informations reçues.
+- Création et clôture de l'événement *Avis préalable du collège*
+- Création et clôture de l'événement *Communication décision Collège*
+- Création et clôture de l'événement *Affichage de la décision*
+- Création et clôture de l'événement *Communication affichage décision*
