@@ -14,3 +14,4 @@ html_meta:
 | 1.1.0   | 17/03/23 | Martin Peeters | Adaptation des événements et ajout d'éléments dans le workflow |
 | 1.2.0   | 27/03/23 | Martin Peeters | Adaptations et corrections sur base des commentaires de Simon |
 | 1.3.0   | 28/03/23 | Martin Peeters | Ajouts des éléments dans le workflow pour le rapport de synthèse |
+| 1.4.0   | 28/03/23 | Martin Peeters | Amélioration Glossaire et correction du markdown |
