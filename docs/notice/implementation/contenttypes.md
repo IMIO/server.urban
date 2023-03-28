@@ -72,7 +72,7 @@ Tâche indiquant que le dossier est irrecevable
 - Changer l'état du workflow vers *Irrecevable*
 
 
-(notice-publicinvestigation-task)=
+(notice-public-investigation-task)=
 ## NoticePublicInvestigationTask
 
 Tâche pour la réalisation d'une enquête publique
