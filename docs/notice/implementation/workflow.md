@@ -320,7 +320,7 @@ html_meta:
 - Décision du collège
 - Dates d'affichage de la décision
 
-# Transmission hors délai du rapport de synthèse
+## Transmission hors délai du rapport de synthèse
 
 - **Etat(s) du dossier**: Complet
 - **Evénement lié**: Rapport de synthèse
@@ -349,7 +349,7 @@ html_meta:
 - Décision du collège
 - Dates d'affichage de la décision
 
-# Transmission hors délai du rapport de synthèse sans le volet urbanisme
+## Transmission hors délai du rapport de synthèse sans le volet urbanisme
 
 - **Etat(s) du dossier**: Complet
 - **Evénement lié**: Rapport de synthèse
@@ -378,7 +378,7 @@ html_meta:
 - Décision du collège
 - Dates d'affichage de la décision
 
-# Impossibilité de transmettre un rapport de synthèse dans les délais impartis
+## Impossibilité de transmettre un rapport de synthèse dans les délais impartis
 
 - **Etat(s) du dossier**: Complet
 - **Evénement lié**: Rapport de synthèse
@@ -407,7 +407,7 @@ html_meta:
 - Décision du collège
 - Dates d'affichage de la décision
 
-# Impossibilité de transmettre un rapport de synthèse dans les délais impartis (2)
+## Impossibilité de transmettre un rapport de synthèse dans les délais impartis (2)
 
 - **Etat(s) du dossier**: Complet
 - **Evénement lié**: Rapport de synthèse
