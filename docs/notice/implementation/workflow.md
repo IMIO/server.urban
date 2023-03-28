@@ -290,3 +290,148 @@ html_meta:
 ### Informations nécessaires
 
 - aucune
+
+## Transmission du rapport de synthèse
+
+- **Etat(s) du dossier**: Complet
+- **Evénement lié**: Rapport de synthèse
+- **Tâche liée**: {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+- **Identifiant notification entrante**: `NOTIFICATION_RS_COMMUNE`
+- **Identifiant(s) notification(s) sortante(s)**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Point(s) d'entrée(s)
+
+- La commune reçoit une notification de transmission du rapport de synthèse.
+
+### Action(s) nécessaire(s)
+
+- La commune créé et clôture un événement *Rapport de synthèse*
+- La commune créé et clôture un événement *Avis préalable du collège*
+- La commune créé et clôture un événement *Communication décision Collège*
+- La commune créé et clôture un événement *Affichage de la décision*
+- La commune créé et clôture un événement *Communication affichage décision*
+
+### Informations reçues
+
+- xxx
+
+### Informations nécessaires
+
+- Décision du collège
+- Dates d'affichage de la décision
+
+# Transmission hors délai du rapport de synthèse
+
+- **Etat(s) du dossier**: Complet
+- **Evénement lié**: Rapport de synthèse
+- **Tâche liée**: {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+- **Identifiant notification entrante**: `NOTIFICATION_RS_COMMUNE_RETARD`
+- **Identifiant(s) notification(s) sortante(s)**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Point(s) d'entrée(s)
+
+- La commune reçoit une notification de transmission du rapport de synthèse hors délai.
+
+### Action(s) nécessaire(s)
+
+- La commune créé et clôture un événement *Rapport de synthèse*
+- La commune créé et clôture un événement *Avis préalable du collège*
+- La commune créé et clôture un événement *Communication décision Collège*
+- La commune créé et clôture un événement *Affichage de la décision*
+- La commune créé et clôture un événement *Communication affichage décision*
+
+### Informations reçues
+
+- xxx
+
+### Informations nécessaires
+
+- Décision du collège
+- Dates d'affichage de la décision
+
+# Transmission hors délai du rapport de synthèse sans le volet urbanisme
+
+- **Etat(s) du dossier**: Complet
+- **Evénement lié**: Rapport de synthèse
+- **Tâche liée**: {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+- **Identifiant notification entrante**: `NOTIFICATION_RS_COMMUNE_RETARD_SFD`
+- **Identifiant(s) notification(s) sortante(s)**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Point(s) d'entrée(s)
+
+- La commune reçoit une notification de transmission du rapport de synthèse hors délai et sans le volet urbanisme.
+
+### Action(s) nécessaire(s)
+
+- La commune créé et clôture un événement *Rapport de synthèse*
+- La commune créé et clôture un événement *Avis préalable du collège*
+- La commune créé et clôture un événement *Communication décision Collège*
+- La commune créé et clôture un événement *Affichage de la décision*
+- La commune créé et clôture un événement *Communication affichage décision*
+
+### Informations reçues
+
+- xxx
+
+### Informations nécessaires
+
+- Décision du collège
+- Dates d'affichage de la décision
+
+# Impossibilité de transmettre un rapport de synthèse dans les délais impartis
+
+- **Etat(s) du dossier**: Complet
+- **Evénement lié**: Rapport de synthèse
+- **Tâche liée**: {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+- **Identifiant notification entrante**: `NOTIFICATION_PAS_ENVOI_RS`
+- **Identifiant(s) notification(s) sortante(s)**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Point(s) d'entrée(s)
+
+- La commune reçoit une notification de l'impossibilité de  transmission du rapport de synthèse dans les délais.
+
+### Action(s) nécessaire(s)
+
+- La commune créé et clôture un événement *Rapport de synthèse*
+- La commune créé et clôture un événement *Avis préalable du collège*
+- La commune créé et clôture un événement *Communication décision Collège*
+- La commune créé et clôture un événement *Affichage de la décision*
+- La commune créé et clôture un événement *Communication affichage décision*
+
+### Informations reçues
+
+- xxx
+
+### Informations nécessaires
+
+- Décision du collège
+- Dates d'affichage de la décision
+
+# Impossibilité de transmettre un rapport de synthèse dans les délais impartis (2)
+
+- **Etat(s) du dossier**: Complet
+- **Evénement lié**: Rapport de synthèse
+- **Tâche liée**: {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+- **Identifiant notification entrante**: `NOTIFICATION_PAS_ENVOI_RS_SFD`
+- **Identifiant(s) notification(s) sortante(s)**: `PE_DEM_COM_DECISION`, `PE_DEM_COM_DATES_DEC_AFFICHAGE`
+
+### Point(s) d'entrée(s)
+
+- La commune reçoit une notification de l'impossibilité de  transmission du rapport de synthèse dans les délais.
+
+### Action(s) nécessaire(s)
+
+- La commune créé et clôture un événement *Rapport de synthèse*
+- La commune créé et clôture un événement *Avis préalable du collège*
+- La commune créé et clôture un événement *Communication décision Collège*
+- La commune créé et clôture un événement *Affichage de la décision*
+- La commune créé et clôture un événement *Communication affichage décision*
+
+### Informations reçues
+
+- xxx
+
+### Informations nécessaires
+
+- Décision du collège
+- Dates d'affichage de la décision
