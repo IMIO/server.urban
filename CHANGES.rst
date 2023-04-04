@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used urban.vocabulary release URB-2700
+  [fngaha]
 - Updated Products.urban : Added 'retired' transition to 'deposit' and 'incomplete' states for codt_buildlicence_workflow
   [fngaha]
 - Updated imio.urban.core : Improved the parcel rendering
