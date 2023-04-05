@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used urban.restapi release URB-2702
+  [fngaha]
 - Used urban.vocabulary release URB-2700
   [fngaha]
 - Updated Products.urban : Added 'retired' transition to 'deposit' and 'incomplete' states for codt_buildlicence_workflow
