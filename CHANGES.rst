@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used plonetheme.imioapps release URB-2703
+  [fngaha]
 - Used urban.restapi release URB-2702
   [fngaha]
 - Used urban.vocabulary release URB-2700
