@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used Products.urban 2.5.1 URB-2715
+  [fngaha]
 - Used appy 1.0.13 URB-2714
   [fngaha]
 - Used collective.archetypes.select2 1.0a1 URB-2713
