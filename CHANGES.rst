@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used imio.history 1.24 URB-2708
+  [fngaha]
 - Used imio.pm.locales 4.2b11 URB-2707
   [fngaha]
 - Used imio.schedule 1.8 URB-2706
