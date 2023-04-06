@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used collective.archetypes.select2 1.0a1 URB-2713
+  [fngaha]
 - Used collective.faceted.task 0.5 URB-2712
   [fngaha]
 - Used collective.wfadaptations 1.1 URB-2711
