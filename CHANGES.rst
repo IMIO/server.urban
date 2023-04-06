@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used imio.urban.core 0.1 URB-2705
+  [fngaha]
 - Used plone.app.contenttypes 1.1.9 URB-2704
   [fngaha]
 - Used plonetheme.imioapps 2.38 URB-2703
