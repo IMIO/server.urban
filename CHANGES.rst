@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used collective.faceted.task 0.5 URB-2712
+  [fngaha]
 - Used collective.wfadaptations 1.1 URB-2711
   [fngaha]
 - Used collective.z3cform.select2 1.4.1 URB-2710
