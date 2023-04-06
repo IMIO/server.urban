@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used collective.wfadaptations 1.1 URB-2711
+  [fngaha]
 - Used collective.z3cform.select2 1.4.1 URB-2710
   [fngaha]
 - Used imio.dashboard 0.29 URB-2709
