@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used collective.z3cform.select2 1.4.1 URB-2710
+  [fngaha]
 - Used imio.dashboard 0.29 URB-2709
   [fngaha]
 - Used imio.history 1.24 URB-2708
