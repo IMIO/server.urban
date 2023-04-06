@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used imio.dashboard 0.29 URB-2709
+  [fngaha]
 - Used imio.history 1.24 URB-2708
   [fngaha]
 - Used imio.pm.locales 4.2b11 URB-2707
