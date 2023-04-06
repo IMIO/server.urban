@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used appy 1.0.13 URB-2714
+  [fngaha]
 - Used collective.archetypes.select2 1.0a1 URB-2713
   [fngaha]
 - Used collective.faceted.task 0.5 URB-2712
