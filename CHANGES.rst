@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Used imio.schedule 1.8 URB-2706
+  [fngaha]
 - Used imio.urban.core 0.1 URB-2705
   [fngaha]
 - Used plone.app.contenttypes 1.1.9 URB-2704
