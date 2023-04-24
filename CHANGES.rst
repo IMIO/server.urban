@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Use the Appy master while waiting for a new version to fix a mailing problem URB-2692
+  [fngaha]
 - Used Products.urban 2.5.1 URB-2715
   [fngaha]
 - Used appy 1.0.13 URB-2714
