@@ -5,6 +5,8 @@ Changes
 2.5 (unreleased)
 ----------------
 
+- Upgraded appy 1.0.15
+  [fngaha]
 - Use the Appy master while waiting for a new version to fix a mailing problem URB-2692
   [fngaha]
 - Used appy 1.0.13 URB-2714
