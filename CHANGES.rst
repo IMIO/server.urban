@@ -6,7 +6,8 @@ Changes
 2.6.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix pyrsistent version for collective.exportimport
+  [mpeeters]
 
 
 2.6.0 (2023-07-03)
