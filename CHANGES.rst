@@ -2,9 +2,12 @@
 
 Changes
 =======
-2.5 (unreleased)
-----------------
 
+2.5.0 (unreleased)
+------------------
+
+- URB-2733 add c.exportimport
+  [jchandelle]
 - Upgraded appy 1.0.15
   [fngaha]
 - Use the Appy master while waiting for a new version to fix a mailing problem URB-2692
