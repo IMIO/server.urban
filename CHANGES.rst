@@ -6,6 +6,38 @@ Changes
 2.5.0 (unreleased)
 ------------------
 
+- Products.urban 2.5.2 (2023-06-15)
+
+    - Fix tests and update package metadata
+      [sdelcourt, mpeeters]
+
+    - Add CSV import of recipients to an inquiry [URB-2573]
+      [ndemonte]
+
+    - Fix bound licence allowed type [SUP-27062]
+      [jchandelle]
+
+    - Add vat field to notary [SUP-29450]
+      [jchandelle]
+
+    - Change MultiSelectionWidget to MultiSelect2Widget [URB-2575]
+      [jchandelle]
+
+    - Add fields to legal aspect of generic licence [SUP-22944]
+      [jchandelle]
+
+    - Add national register number to corporation form [SUP-27165]
+      [jchandelle]
+
+    - Add an external method to update task delay [SUP-28870]
+      [jchandelle]
+
+    - Add external method to fix broken environmental declarations [SUP-29587]
+      [ndemonte]
+
+    - Fix export data with c.exportimport [URB-2733]
+      [jchandelle]
+
 - plonetheme.imioapps 2.40 (2023-06-15)
 
     - Add a red color to the denied status of divisions
