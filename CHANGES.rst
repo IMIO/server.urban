@@ -6,6 +6,16 @@ Changes
 2.5.0 (unreleased)
 ------------------
 
+- plonetheme.imioapps 2.40 (2023-06-15)
+
+    - Add a red color to the denied status of divisions
+      [fngaha]
+
+- plonetheme.imioapps 2.39 (2023-03-29)
+
+    - Fixed css to align multi select2 widget to the left.
+      [sgeulette]
+
 - URB-2733 add c.exportimport
   [jchandelle]
 - Upgraded appy 1.0.15
