@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.2-liege (unreleased)
+2.4.2-liege (2023-06-22)
 ------------------------
 
 - Fix virtualenv in makefile for python2
