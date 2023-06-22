@@ -6,7 +6,8 @@ Changes
 2.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove duplicated version for Products.urban
+  [mpeeters]
 
 
 2.5.1 (2023-06-15)
