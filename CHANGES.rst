@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.5.2 (unreleased)
+2.5.2 (2023-06-22)
 ------------------
 
 - Remove duplicated version for Products.urban
