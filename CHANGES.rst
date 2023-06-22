@@ -6,7 +6,8 @@ Changes
 2.4.2-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Fix virtualenv in makefile for python2
+  [mpeeters]
 
 
 2.4.1-liege (2023-06-22)
