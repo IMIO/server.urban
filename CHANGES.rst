@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.1-liege (unreleased)
+2.4.1-liege (2023-06-22)
 ------------------------
 
 - added bistats.py script
