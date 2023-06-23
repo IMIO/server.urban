@@ -6,7 +6,10 @@ Changes
 2.5.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.3 (2023-06-23)
+
+    - Add parcel and applicants contents to export content [URB-2733]
+      [jchandelle]
 
 
 2.5.2 (2023-06-22)
