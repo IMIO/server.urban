@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.3-liege (unreleased)
+2.4.3-liege (2023-06-26)
 ------------------------
 
 - Upgrade to Plone 4.3.20
