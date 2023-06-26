@@ -6,7 +6,8 @@ Changes
 2.4.4-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Downgrade Twisted to `15.5.0` to match Urban 2.5 version
+  [mpeeters]
 
 
 2.4.3-liege (2023-06-26)
