@@ -6,7 +6,22 @@ Changes
 2.4.3-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Upgrade to Plone 4.3.20
+  [mpeeters]
+
+- Cleanup checkout packages
+  [mpeeters]
+
+- imio.dashboard 0.29 (2023-04-06)
+
+    - Swallow all exceptions when trying to renderding the portlet title.
+      [sdelcourt]
+    - Adapts generation link override to last versions of documentgenerator.
+      [sdelcourt]
+    - Use icons.
+      [sdelcourt]
+    - Docgen icons are now svg.
+      [sdelcourt]
 
 
 2.4.2-liege (2023-06-22)
