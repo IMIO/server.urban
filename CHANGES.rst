@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.4-liege (unreleased)
+2.4.4-liege (2023-06-27)
 ------------------------
 
 - Downgrade Twisted to `15.5.0` to match Urban 2.5 version
