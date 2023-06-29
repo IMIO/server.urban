@@ -6,7 +6,16 @@ Changes
 2.5.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- urban.restapi 1.0.0b1 (2023-06-29)
+
+    - Fix POST endpoint for event creation [URB-2730]
+      [jchandelle]
+
+    - Add utils for getting config object from a path
+      [jchandelle]
+
+    - Fix address query with parenthesis [URB-2696]
+      [jchandelle]
 
 
 2.5.3 (2023-06-26)
