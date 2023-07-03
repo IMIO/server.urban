@@ -6,6 +6,904 @@ Changes
 2.5.6 (unreleased)
 ------------------
 
+- imio.schedule 2.0.0 (2023-07-03)
+
+    - Migrate to use `collective.eeafaceted.collectionwidget` [URB-2627]
+      [mpeeters]
+
+- collective.eeafaceted.batchactions 1.11 (2022-05-06)
+
+    - Avoided exception when referer url contains non ascii char.
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.10 (2022-02-10)
+
+    - Corrected UnicodeDecodeError on transition title.
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.9 (2021-12-06)
+
+    - Checked permission on context (in ContactBaseBatchActionForm).
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.8 (2021-07-16)
+
+    - Highlight message about number of elements that will be updated
+      by the action on the popup.
+      [gbastien]
+
+- collective.eeafaceted.batchactions 1.7 (2021-07-16)
+
+    - Adapted code to be able to display several tables on same page
+      (and so several batchactions viewlets):
+      - Added possibility to define the name of the `CheckBoxColumn`
+        (still `select_item` by default);
+      - Introduce idea of section for the viewlet and the batch actions so it is
+        possible to display different actions on different viewlets or different
+        views of same context.
+      [gbastien]
+    - Added method `BaseBatchActionForm._final_update` called when every other
+      `update` methods have been called.
+      [gbastien]
+    - Added `BaseBatchActionForm.apply_button_title` attribute to formalize
+      management of `apply` button title, that will be `Apply` by default but that
+      may be changed to fit the current batch action.
+      [gbastien]
+    - Added `DeleteBatchActionForm` a delete elements batch action.
+      [gbastien]
+    - Require `plone.formwidget.masterselect<2.0.0` as it is only for `Plone5.2+/Py3`.
+      [gbastien]
+
+- collective.eeafaceted.batchactions 1.6 (2020-12-21)
+
+    - After action applied, do not reload the entire page,
+      just reload the current faceted results.
+      [gbastien]
+    - Use `CheckBoxFieldWidget` instead `SelectFieldWidget` to manage labels to
+      (un)select in `LabelsBatchActionForm` to avoid manipulation with
+      `CTRL+click` for selection. Adapted and rationalized translations.
+      [gbastien]
+    - Add a `collective.fingerpointing` entry when applying action to know
+      which action was applied on how much elements.
+      [gbastien]
+
+- collective.eeafaceted.batchactions 1.5 (2020-04-23)
+
+    - Make sure elements are treated in received `uids` order. Need to rely on
+      `imio.helpers` to use `content.uuidsToCatalogBrains(ordered=True)`.
+      [gbastien]
+
+- collective.eeafaceted.batchactions 1.4 (2019-11-25)
+
+    - Added view to change labels. (button is not added)
+      [sgeulette]
+    - Added base view to change a collective.contact.widget field.
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.3 (2019-05-16)
+
+    - Moved method `browser.views.brains_from_uids` to `utils`, added helper method
+      `utils.listify_uids` that turns the data uids that is a string with each UID
+      separated by a comma into a real python list.
+      [gbastien]
+    - Display number of elements affected by action in the batch action form description.
+      [gbastien]
+
+- collective.eeafaceted.batchactions 1.2 (2019-03-08)
+
+    - Added weight attribute on batch action forms to order them.
+      [sgeulette]
+    - Improved brains_from_uids
+      [sgeulette]
+    - Added utils method
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.1 (2018-08-31)
+
+    - Don't apply changes if form errors
+      [sgeulette]
+
+- collective.eeafaceted.batchactions 1.0 (2018-06-20)
+
+    - Moved js variables to `collective.eeafaceted.z3ctable`.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.19 (2023-02-27)
+
+    - Extended JS function `toggleCheckboxes` to pass the select/unselect checkbox
+      as first parameter and trigger the click event when checkboxes checked or unchecked.
+      This changes nothing here but makes this function more useable in other contexts.
+      [gbastien]
+    - JS function `preventDefaultClickTransition` was renamed to
+      `preventDefaultClick` in `imio.actionspanel>=1.62`.
+      [gbastien]
+    - Do not break in `I18nColumn` when translating a string with special chars.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.18 (2022-06-14)
+
+    - Added `BaseColumn.escape = True` so content is escaped.
+      Manage escape manually for the `TitleColumn`,  `VocabularyColumn` and the
+      `AbbrColumn`, set it to `False` for `CheckBoxColumn`, `ElementNumberColumn`
+      and `ActionsColumn` that are entirely generated, set it to `False` for
+      `PrettyLinkColumnNothing` as `imio.prettylink` manages it itself.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.17 (2022-05-13)
+
+    - Doing an unrestricted object get to increase performance.
+      [sgeulette]
+
+- collective.eeafaceted.z3ctable 2.16 (2022-01-03)
+
+    - Added debug mode when displaying results, this will display the time to
+      render each cell, each column (total of every cells) and a global table total.
+      Just add `debug=true` to the URL
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.15 (2021-11-08)
+
+    - Renamed parameter passed to `PrettyLinkWithAdditionalInfosColumn.getPrettyLink`
+      from `item` to `obj` as it is actually the `obj` that is received and not the `item`.
+      [gbastien]
+    - Added attribute `PrettyLinkWithAdditionalInfosColumn.ai_included_fields`,
+      by default it displayed every non empty fields, with this parameter it is
+      possible to select which fields to display.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.14 (2021-07-16)
+
+    - Fixed the `CheckBoxColumn`, add a name to the select all/nothing checkbox so
+      it is possible to have several checkbox columns (on same table or when
+      displaying several tables on same page).
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.13 (2021-01-06)
+
+    - Added possibility to define a `header_help` message that will be displayed
+      when hovering header title.
+      [gbastien]
+    - Added `<label>` tag around input for the `CheckBoxColumn` so it can be syled
+      to ease checkbox selection on click.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.12 (2020-10-02)
+
+    - In `PrettyLinkWithAdditionalInfosColumn`, use IDataManager to get widget value.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.11 (2020-08-18)
+
+    - Render `DataGridField` in `PrettyLinkWithAdditionalInfosColumn` vertically.
+      [gbastien]
+    - Bugfix in `PrettyLinkWithAdditionalInfosColumn`, sometimes the widget's
+      context was the previous row object.
+      [gbastien]
+    - Added parameter `PrettyLinkWithAdditionalInfosColumn.simplified_datagridfield`
+      and set it to `False` by default.
+      [gbastien]
+    - Moved `MemberIdColumn.get_user_fullname` out of `MemberIdColumn` so it can be
+      easily used from outside.
+      [gbastien]
+    - Added `PrettyLinkWithAdditionalInfosColumn.ai_extra_fields`, that
+      let's include extra data not present in schema, by default this will include
+      `id`, `UID` and `description`.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.10 (2020-05-08)
+
+    - In `PrettyLinkWithAdditionalInfosColumn`, removed to setup around current URL
+      that was necessary for displaying image and files correctly but instead,
+      require `plone.formwidget.namedfile>=2.0.2` that solves the problem.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.9 (2020-02-25)
+
+    - Ignored EMPTY_STRING in VocabularyColumn
+      [sgeulette]
+
+- collective.eeafaceted.z3ctable 2.8 (2020-02-06)
+
+    - Managed correctly a field not yet set.
+      [sgeulette]
+    - In the `PrettyLinkWithAdditionalInfosColumn`, manage `description` manually
+      as it is not present in the `@@view` widgets.
+      Display it as any other fields if not empty.
+      [gbastien]
+    - Added IconsColumn
+      [sgeulette]
+
+- collective.eeafaceted.z3ctable 2.7 (2019-09-13)
+
+    - In `columns.AbbrColumn`, make sure there is no `'` in tag title or it is not
+      rendered correctly in the browser.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.6 (2019-09-12)
+
+    - Fixed translation of `Please select at least one element.` msgid, it was
+      still using the old domain `collective.eeafaceted.batchactions` from which
+      the `select_row` column was reintegrated.
+      [gbastien]
+    - Optimized the `PrettyLinkWithAdditionalInfosColumn` speed :
+      - the `view.update` is called one time and we store the view in the column
+        so next rows may use it;
+      - use `collective.excelexport` datagridfield exportable to render a
+        `datagridfield` because widget rendering is way too slow...
+      - added `collective.excelexport` as a dependency.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.5 (2019-08-02)
+
+    - In `VocabularyColumn` and `AbbrColumn`, store the vocabularies instances
+      under `_cached_vocab_instance` to avoid doing a lookup for each row.
+      This does speed rendering a lot.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.4 (2019-03-28)
+
+    - Fix Date column with SolR result
+      [mpeeters]
+    - Added `ExtendedCSSTable.table_id` and `ExtendedCSSTable.row_id_prefix` making
+      it possible to have a CSS id on the table and for each rows.
+      By default, we defined it for `FacetedTableView`, `table_id = 'faceted_table'`
+      and `row_id_prefix = 'row_'`.
+      [gbastien]
+    - For `ColorColumn`, do not redefine the `renderHeadCell` method but use the
+      `header` attribute as we return static content.
+      [gbastien]
+    - Added `BaseColumn.use_caching` attribute set to `True` by default that will
+      avoid recomputing a value if it was already computed for a previous row.
+      This needs to be managed by column and base `_get_cached_result` and
+      `_store_cached_result` are defined on `BaseColumn`.
+      Implementations are done for `DateColumn`, `VocabularyColumn` and `AbbrColumn`.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.3 (2018-12-18)
+
+    - In `faceted-table-items.pt`, group `<span>` displaying number of results or
+      no results under same `<div>` so it is easy to style.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.2 (2018-11-20)
+
+    - Added `PrettyLinkWithAdditionalInfosColumn.ai_generate_css_class_fields`
+      attribute to make it possible to specify fields we want to generate a
+      CSS class for, depending on field name and value.  This is useful for
+      applying custom CSS to a particular additional info field having a
+      specific value.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.1 (2018-09-04)
+
+    - Added `BooleanColumn` based on the `I18nColumn` that displays `Yes` or `No`
+      depending on fact that value is `True` or `False`.
+      [gbastien]
+    - Added `PrettyLinkColumn` and `PrettyLinkWithAdditionalInfosColumn` columns
+      based on soft dependency to `imio.prettylink`.
+      [gbastien]
+    - Added `ActionsColumn` column based on soft dependency to `imio.actionspanel`.
+      [gbastien]
+    - Added `RelationPrettyLinkColumn` column displaying a relation as a
+      pretty link.
+      [gbastien]
+    - Moved overrides of `SequenceTable.renderRow` and `SequenceTable.renderCell`
+      relative to being able to define CSS classes by `<td>` tag and depending on
+      item value to a separated `ExtendedCSSTable class` so it can be reused by
+      other packages.
+      [gbastien]
+
+- collective.eeafaceted.z3ctable 2.0 (2018-06-20)
+
+    - Make widget compatible with `eea.facetednavigation >= 10.0`.
+      This makes it no more compatible with older version.
+      [gbastien]
+    - Make package installable on both Plone4 and Plone5.
+      [gbastien]
+    - Reintegrated the `select_row` column from `collective.eeafaceted.batchactions`
+      as it is useable by other Faceted packages.
+      [gbastien]
+    - Reintegrated js variables view that manages `no selected elements` message.
+      [gbastien]
+
+- collective.compoundcriterion 0.6 (2023-02-13)
+
+    - Added `negative-previous-index` and `negative-personal-labels` default adapters.
+      Rely on `imio.helpers`. Removed dependency on `unittest2`.
+      [gbastien]
+
+- collective.compoundcriterion 0.5 (2021-04-20)
+
+    - Add Transifex.net service integration to manage the translation process.
+      [macagua]
+    - Add Spanish translation
+      [macagua]
+
+- collective.compoundcriterion 0.4 (2018-08-31)
+
+    - When getting the adapter, if context is not the Collection, try to get real context
+      following various cases.  This is the case when using Collection
+      from plone.app.contenttypes.
+      [gbastien]
+    - Do not use a SelectionWidget to render the querystring widget as it does not
+      exist anymore for plone.app.contenttypes Collection.
+      Use the MultipleSelectionWidget.  This way finally we may select several
+      filters to build the query.
+      [gbastien]
+    - When using 'not' in queries for ZCatalog 3, 'query' level must be replaced by 'not' in query dictionary.
+      [sgeulette]
+
+- collective.compoundcriterion 0.3 (2016-12-08)
+
+    - Return clear message when a query format is not plone.app.querystring compliant.
+      [gbastien]
+
+- imio.prettylink 1.20 (2022-06-14)
+
+    - Escape link content to avoid malicious behaviour.
+      [gbastien]
+
+- imio.prettylink 1.19 (2022-01-12)
+
+    - Used now `imio.helpers.cache.obj_modified` in `getLink_cachekey` to include
+      annotation change in modification date.
+      [sgeulette]
+    - Updated git fetch url
+      [sgeulette]
+
+- imio.prettylink 1.18 (2021-03-08)
+
+    - Improve check for file when adding `@@download` in url.
+      [laz, boulch]
+
+- collective.behavior.talcondition 0.14 (2021-06-29)
+
+    - Fix pypi broken package
+      [boulch]
+
+- collective.behavior.talcondition 0.13 (2021-06-29)
+
+    - Add uninstall profile
+      [boulch]
+    - Add Plone6 compatibily
+      [boulch]
+
+- collective.behavior.talcondition 0.12 (2021-04-20)
+
+    - Add Transifex.net service integration to manage the translation process.
+      [macagua]
+    - Add Spanish translation
+      [macagua]
+    - Do not consider the `archetypes.schemaextender` on Plone5.
+      [gbastien]
+    - Adapted code (except, implementer) to be Python3 compatible.
+      [gbastien]
+    - Added parameter `trusted=False` to `utils._evaluateExpression`, this will use
+      a trusted expression handler instead the restricted python default.
+      [gbastien]
+
+- collective.behavior.talcondition 0.11 (2019-05-16)
+
+    - Added parameter `raise_on_error` to `utils.evaluateExpressionFor` to raise an
+      error when an exception occurs instead returning False.
+      [gbastien]
+    - Added method `TALCondition.complete_extra_expr_ctx` to the behavior to
+      formalize the way to get `extra_expr_ctx` to avoid the `evaluate` method
+      to be overrided.
+      [gbastien]
+
+- collective.behavior.talcondition 0.10 (2018-11-20)
+
+    - Do not break if parameter `expression` passed to
+      `utils._evaluateExpression` is None.
+      [gbastien]
+
+- collective.behavior.talcondition 0.9 (2018-10-12)
+
+    - Added new parameter `error_pattern=WRONG_TAL_CONDITION` to
+      `utils.evaluateExpressionFor` and underlying `utils._evaluateExpression` to
+      be able to log a custom message in case an error occurs during
+      expression evaluation.
+      [gbastien]
+
+- collective.behavior.talcondition 0.8 (2018-06-12)
+
+    - Mark elements using behavior with `ITALConditionable` interface so it behaves
+      like element using the AT extender.
+      [gbastien]
+
+- collective.behavior.talcondition 0.7 (2017-03-22)
+
+    - Use CheckBoxWidget for `ITALCondition.roles_bypassing_talcondition` to ease
+      selection when displaying several elements.
+      [gbastien]
+
+- collective.behavior.talcondition 0.6 (2016-01-12)
+
+    - Added parameter `empty_expr_is_true` to utils._evaluateExpression than may be True
+      or False depending that we want an empty expression to be considered True or False.
+      Previous behavior is kept in utils.evaluateExpressionFor where an empty expression
+      is considered True.  This avoid managing an empty expression in the caller method
+      [gbastien]
+
+- collective.behavior.talcondition 0.5 (2015-12-17)
+
+    - Added method utils._evaluateExpression that receives an expression
+      to evaluate, it is called by utils.evaluateExpressionFor.  This way, this
+      method may evaluate a TAL expression without getting it from the `tal_condition`
+      attribute on the context, in case we want to evaluate arbitrary expression
+      [gbastien]
+
+- imio.actionspanel 1.62 (2023-02-27)
+
+    - Fixed rendering of error message when an exception occurs during a transition.
+      [gbastien]
+    - Added new action `renderOwnDeleteWithComments=False` when deleting an element
+      a comment may be entered, the deletion including comment will appear in the
+      history of the parent of the element that was deleted.
+      [gbastien]
+    - In JS function `deleteElement`, call event `ap_delete_givenuid` also when
+      parameter `redirect=0`.
+      [gbastien]
+
+- imio.actionspanel 1.61 (2022-10-14)
+
+    - Force by default redirect after transition just when use icons
+      [fngaha]
+
+- imio.actionspanel 1.60 (2022-02-04)
+
+    - Added possibility to force refresh the page after a WF transition even if on a faceted.
+      [gbastien]
+
+- imio.actionspanel 1.59 (2022-01-24)
+
+    - In `actions_panel_actions` displaying `object_buttons`, use the link_target
+      defined on the action, only set it to `target="_parent"` if nothing defined
+      on the action.
+      [gbastien]
+
+- imio.actionspanel 1.58 (2022-01-14)
+
+    - Avoid init `member` in `__init__`, that can lead to member being `Anonymous`.
+      [gbastien]
+    - Fixed detection if transition triggered from faceted, use `has_faceted`
+      from `imio.helpers`.
+      [gbastien]
+    - Define a with/height in CSS for icons so it can be reused by
+      `collective.js.tooltipster` when it computes the size of the tooltipster.
+      [gbastien]
+    - Added CSS id with context `UID` to the `actions_panel` table.
+      [gbastien]
+
+- imio.actionspanel 1.57 (2021-11-08)
+
+    - Whenever an error occurs in `ActionsPanelView.triggerTransition`, make sure
+      we get the error in the returned portal message and log the full traceback
+      in the Zope log.
+      [gbastien]
+
+- imio.actionspanel 1.56 (2021-09-09)
+
+    - Fixed arrow used in message explaining when a transition is not triggerable.
+      [gbastien]
+    - Prevent double clicks when triggering a WF transition by disabling
+      the link for 2 seconds.
+      [gbastien]
+
+- imio.actionspanel 1.55 (2021-06-04)
+
+    - Implement method `show` when using async like it is already the case when not
+      using async to know if viewlet must be shown.
+      [gbastien]
+    - Added `saveHasActions` call in actions_panel_add_content.pt.
+      [sgeulette]
+    - Fixed `actions_panel_arrows.pt` to display the arrows in a table so we avoid
+      icons being one under others when there is not enough place to display it,
+      actions have to be always on the same line.
+      [gbastien]
+
+- imio.actionspanel 1.54 (2021-04-26)
+
+    - Fixed broken JS event on comment popup `Confirm` button to prevent default behavior,
+      this probably leads to action not triggered from time to time on `Firefox`.
+      [gbastien]
+
+- imio.actionspanel 1.53 (2021-04-21)
+
+    - Fixed `ActionsPanelView.getTransitions` check on transitions to confirm
+      informations, do not consider that prefix of given transition to confirm is a
+      `meta_type` but consider it as a `class name` as with `dexterity`, the
+      `meta_type` is always the same an no more useable to discriminate content.
+      [gbastien]
+    - Added parameter `forceRedirectOnOwnDelete=False` to `ActionsPanelView.__call__`,
+      when deleting an element, by default if current context is a faceted,
+      the user is not redirected but the page is reloaded, if we are removing the
+      page that holds the faceted then we need to redirect.
+      [gbastien]
+    - In JS function `deleteElement`, set `async:true` for the XHR request.
+      [gbastien]
+    - Fixed bug in Firefox not executing the JS `triggerTransition` XHR request when
+      `async:true`, this was due to `preventDefaultClickTransition` not applied when
+      using the `@@async_actions_panel` in the viewlet displaying actions,
+      it was producing a `NS_BINDING_ERROR` because 2 click events were triggered.
+      [gbastien]
+    - When not using the `useIcons` mode (so when using viewlet displaying buttons),
+      if no action at all, do not return an empty HTML table, just return nothing.
+      This let's hide the entire viewlet when using the `@@async_actions_panel`.
+      [gbastien]
+
+- imio.actionspanel 1.52 (2021-01-26)
+
+    - Fixed behavior of just reloading the faceted when deleting an element,
+      this was broken because behavior between JS and python code changed and the
+      user was redirected to the default dashboard.
+      [gbastien]
+
+- imio.actionspanel 1.51 (2020-12-07)
+
+    - Added parameter `view_name="@@delete_givenuid"` to JS functions
+      `confirmDeleteObject` and `deleteElement` so it is possible to call another
+      view when deleting an element.
+      It is also possible to avoid refresh and manage it manually.
+      [gbastien]
+    - Make sure table containing actions does not have any border especially on `<tr>`.
+      [gbastien]
+
+- imio.actionspanel 1.50 (2020-08-18)
+
+    - Make CSS rule for `input[type="button"].notTriggerableTransitionButton` more
+      specific so it is taken into account.
+      [gbastien]
+    - Fix message (tag title) displayed on a not triggerable WF transition when
+      displayed as a button, the transition title was not included in the message.
+      [gbastien]
+
+- imio.actionspanel 1.49 (2020-06-24)
+
+    - Fixed broken functionnality, when an action url was a `javascript` action,
+      it was not always taken into account because tag <a> `href` was not disabled
+      using `event.preventDefault()`.
+      [gbastien]
+
+- imio.actionspanel 1.48.1 (2020-05-26)
+
+    - Requires `imio.helpers`.
+      [gbastien]
+
+- imio.actionspanel 1.48 (2020-05-26)
+
+    - In `DeleteGivenUidView.__call__`, use `imio.helpers.content.uuidsToObjects`
+      with parameter `check_contained_uids=True` to get the object to delete,
+      so if not found querying with `UID` index, it will use the `contained_uids`
+      index if it exists in the `portal_catalog`.
+      [gbastien]
+
+- imio.actionspanel 1.47 (2020-04-29)
+
+    - Add Transifex.net service integration to manage the translation process.
+      [macagua]
+    - Add Spanish translation
+      [macagua]
+    - In `actions_panel_actions.pt`, added `<form>` around `<input>`
+      to be able to use `overlays`.
+      [gbastien]
+
+- imio.actionspanel 1.46 (2020-02-18)
+
+    - Added renderFolderContents section, rendered following flag and/or interface.
+      [sgeulette]
+    - In `views.AsyncActionsPanelView.__call__`, remove random value `'_' (ajax_load)`
+      from `**kwargs` before calling the `@@actions_panel` or `ram_cached`
+      `@@actions_panel.__call__` never work as kwargs are always different.
+      [gbastien]
+
+- imio.actionspanel 1.45 (2019-11-25)
+
+    - Changed sections order.
+      [sgeulette]
+
+- imio.actionspanel 1.44 (2019-09-13)
+
+    - By default, do not display the `Edit` action when calling
+      `@@async_actions_panel`.
+      [gbastien]
+
+- imio.actionspanel 1.43 (2019-09-12)
+
+    - Disabled first option of add content button list.
+      [sgeulette]
+    - Added apButtonSelect class on select button
+      [sgeulette]
+    - Do not link anymore showEdit to showIcons.
+      Disabled by default showEdit in viewlet.
+      Render edit as button too.
+      [sgeulette]
+
+- imio.actionspanel 1.42 (2019-06-28)
+
+    - Store result of `ActionsPanelView.getTransitions` in `self._transitions` as
+      it is called several times to make sure transitions are computed only one time.
+      [gbastien]
+    - In `ConfirmTransitionView`, store the actionspanel view instead instanciating
+      it several times as call to `actionspanel.getTransitions` is cached on the
+      actionspanel view.
+      [gbastien]
+
+- imio.actionspanel 1.41 (2019-06-07)
+
+    - In `load_actions_panel JS function`, do not reload in case of error or the
+      page is reloaded ad vitam.  Display an error message instead.
+      [gbastien]
+    - When using `string:` expressions, do not insert a blank space like
+      `string: `` or it is kept once rendered.
+      [gbastien]
+    - Manage `IGNORABLE_ACTIONS` the same way `ACCEPTABLE_ACTIONS` so we filter out
+      first every non relevant actions then we evaluate it.
+      Removed management of `IGNORABLE_CATEGORIES` and `IGNORABLE_PROVIDERS`, we
+      only keep `object_buttons` and providers `portal_actions/portal_types`.
+      [gbastien]
+
+- imio.actionspanel 1.40 (2019-05-16)
+
+    - Fixed message `KeyError: 'confirm'` in Zope log when a transition is
+      triggered on an element for which it is not available anymore
+      (already triggered in another browser tab for example).  In this case,
+      we just refresh the page.
+      [gbastien]
+    - Fix `saveHasActions` is not called when only untriggerable transitions.
+      [gbastien]
+
+- imio.actionspanel 1.39 (2019-03-27)
+
+    - When showing actions and ACCEPTABLE_ACTIONS is defined, directly worked
+      with those restricted set. Faster method.
+      [sgeulette]
+    - Added parameter ActionsPanelViewlet.async (set to False by default) to be
+      able to render the actions panel viewlet asynchronously using a JS Ajax
+      request.  Set every JS ajax request with async:false to be sure that screen
+      is refreshed when state changed.
+      [gbastien]
+    - Disabled showOwnDelete when 'delete' is in acceptable actions
+      [sgeulette]
+
+- imio.actionspanel 1.38 (2019-01-31)
+
+    - Install `collective.fingerpointing` as we rely on it.
+      [gbastien]
+    - By default, do not render the viewlet in overlays.
+      [gbastien]
+
+- imio.actionspanel 1.37 (2018-11-06)
+
+    - Use safely unicoded transition title.
+      [sgeulette]
+
+- imio.actionspanel 1.36 (2018-08-22)
+
+    - Moved `views._redirectToViewableUrl` logic to `utils.findViewableURL` so it
+      can be used by external code.
+      [gbastien]
+    - Don't nullify margin of actionspanel-no-style-table.
+      [sgeulette]
+
+- imio.actionspanel 1.35 (2018-05-22)
+
+    - In `triggerTransition`, do not only catch `WorkflowException` as raised error
+      could be of another type.
+      [gbastien]
+    - When an error occurs during a workflow transition, make sure we
+      `transaction.abort()` or `review_state` is changed nevertheless.
+      [gbastien]
+
+- imio.actionspanel 1.34 (2018-04-20)
+
+    - Use a real arrow character `🡒` instead `->` when building the transition not
+      triggerable icon help message.
+      [gbastien]
+    - Fixed call to unexisting method `actionspanel_view._gotoReferer()` when
+      cancelling transition confirmation popup (only happens if popup is not
+      correctly opened as an overlay).
+      [gbastien]
+
+- imio.actionspanel 1.33 (2018-03-19)
+
+    - Rely on imio.history IHContentHistoryView.show_history to know if the history
+      icon must be shown.  We need imio.history >= 1.17.
+      [gbastien]
+
+- imio.dashboard 2.10 (2022-10-25)
+
+    - Adapts generationlink viewlet to last `collective.documentgenerator` last changes.
+      [sdelcourt]
+
+- imio.dashboard 2.9 (2022-01-07)
+
+    - Fixed setup functions changing state of created elements, use
+      `imio.helpers.content.get_transitions` instead `portal_workflow.getTransitionsFor`.
+      [gbastien]
+
+- imio.dashboard 2.8 (2020-08-18)
+
+    - Enable `PloneGroupUsersGroupsColumn` in dashboards displaying organizations.
+      [gbastien]
+
+- imio.dashboard 2.7 (2020-05-08)
+
+    - Use `OrgaPrettyLinkWithAdditionalInfosColumn` instead `PrettyLinkColumn`
+      in dashboards displaying persons and held_positions.
+      [gbastien]
+
+- imio.dashboard 2.6 (2019-05-16)
+
+    - Use `OrgaPrettyLinkWithAdditionalInfosColumn` and `SelectedInPlonegroupColumn`
+      in dashboards displaying organizations.
+      [gbastien]
+
+- imio.dashboard 2.5 (2019-03-28)
+
+    - Fix an issue with SolR and combined indexes
+      [mpeeters]
+    - For `imio.dashboard.ContactsReviewStatesVocabulary`, take into account
+      workflow of each contact portal_types (organization, person, held_position)
+      as it can be different for each.
+      [gbastien]
+    - Add CSS class to `ContactPrettyLinkColumn` if content is an organization,
+      so we have a different class for every elements and we can style specific
+      content.  This needed to add soft dependency to `collective.contact.core`.
+      [gbastien]
+    - Corrected typo
+      [sgeulette]
+
+- imio.dashboard 2.4 (2019-01-25)
+
+    - Keep order of migrated portlet
+      [sgeulette]
+    - Added projectspace type in migration.
+      [sgeulette]
+    - Pinned products
+      [sgeulette]
+    - Fixed test for fingerpointing
+      [sgeulette]
+
+- imio.dashboard 2.3 (2018-12-04)
+
+    - Added translations for `Add contacts` icons.
+      [gbastien]
+
+- imio.dashboard 2.2 (2018-11-29)
+
+    - Fixed failing migration because unexisting attribute `exclude_from_nav`
+      was migrated with the parent's value that is an instancemethod and it crashed
+      the transaction during commit because it can not be serialized.
+      [gbastien]
+    - Completelly removed ActionsColumn as it was moved to
+      `collective.eeafaceted.z3ctable` previously.
+      [gbastien]
+    - Moved CachedCollectionVocabulary to collective.eeafaceted.collectionwidget, now named
+      `collective.eeafaceted.collectionwidget.cachedcollectionvocabulary`.
+      Moved also dashboard collection related events.
+      [sgeulette]
+    - Migration: secure attribute get in DashboardPODTemplateMigrator.
+      Include portal portlet migration.
+      [sgeulette]
+    - Added `setuphandlers.add_orgs_searches` that adds dashboards for
+      `collective.contact.core` on the `/contacts directory`.
+      [gbastien]
+
+- imio.dashboard 2.1 (2018-09-04)
+
+    - Added back imio.dashboard.js file to remove faceted spinner
+      and speed up faceted fade speed.
+      [gbastien]
+    - Added migrator `DashboardPODTemplateMigratorWithDashboardPODTemplateMetaType`
+      as due to missing migration to 0.28 where `DashboardPODTemplate meta_type`
+      was changed from `DashboardPODTemplate` to `Dexterity Item`, we may have
+      `DashboardPODTemplate` created with different meta_types that is still
+      cataloged.  This way we manage both cases.
+      [gbastien]
+    - The `actions` column was moved to `collective.eeafaceted.z3ctable`.
+      [gbastien]
+
+- imio.dashboard 2.0 (2018-06-21)
+
+    - Change JS `Faceted` options in the `ready` function so we are sure that
+      Faceted exists.
+      [gbastien]
+    - Rely on `collective.eeafaceted.dashboard` to move to Plone5.  Dashboard
+      functionnalities working on Plone5 are now moved to this package we are
+      relying on.  Needs `eea.facetednavigation` >= 10.0.
+      [gbastien]
+
+- imio.dashboard 1.7 (2018-05-25)
+
+    - Moved some methods to collective.eeafaceted.collectionwidget:
+      _get_criterion, getCollectionLinkCriterion, getCurrentCollection
+      [sgeulette]
+    - Consider other view than "facetednavigation_view" as outside faceted.
+      [sgeulette]
+
+- imio.dashboard 1.6 (2018-05-03)
+
+    - Do not rely on the `context.REQUEST` to get the `REQUEST` because context is a
+      `ram.cached DashboardCollection` and `REQUEST` is not reliable.
+      Use `getRequest` from `zope.globalrequest` to get the `REQUEST`.
+      The `REQUEST` is set in `term.request` so it is directly available.
+      [gbastien]
+
+- imio.dashboard 1.5 (2018-04-23)
+
+    - Invalidate `imio.dashboard.conditionawarecollectionvocabulary` vocabulary
+      cache when a WF transition is triggered on a `DashboardCollection`.
+      [gbastien]
+
+- imio.dashboard 1.4 (2018-04-20)
+
+    - Use `ram.cache` for the `imio.dashboard.conditionawarecollectionvocabulary`
+      vocabulary.  This is user and closest faceted context relative and is
+      invalidated when a `DashboardCollection` is modified.
+      [gbastien]
+
+- imio.dashboard 1.3 (2018-01-06)
+
+    - Do not use CSS to manage contenttype icon,
+      we have an icon_epxr on the portal_types.
+      [gbastien]
+
+- imio.dashboard 1.2 (2017-12-01)
+
+    - Removed 'imiodashboard_js_variables.js' as it just translated the
+      'no_selected_items' message and it is now in
+      'collective.eeafaceted.batchactions' this package is relying on.
+      [gbastien]
+
+- imio.dashboard 1.1 (2017-11-24)
+
+    - Added upgrade step that installs 'collective.eeafaceted.batchactions'.
+      [gbastien]
+
+- imio.dashboard 1.0 (2017-11-23)
+
+    - Corrected icon path and added contenttype-dashboardpodtemplate style.
+      [sgeulette]
+    - Rely on 'collective.eeafaceted.batchactions', removed 'select_row' column
+      that is already defined in 'collective.eeafaceted.batchactions'.
+      [gbastien]
+
+- imio.history 1.28 (2023-02-27)
+
+    - Added possibility to display an event preview under the comment
+      in the `@@contenthistory` view.
+      [gbastien]
+    - Make the `highlight_last_comment` functionnality generic, it was only used
+      with WF history but now any history may be set `highlight_last_comment=True`.
+      [gbastien]
+
+- imio.history 1.27 (2022-06-14)
+
+    - Added `safe_utils.py` that will only include safe utils.
+      [gbastien]
+
+- imio.history 1.26 (2022-03-08)
+
+    - Fixed display of actor fullname in `@@historyview`.
+      [gbastien]
+
+- imio.history 1.25 (2022-03-07)
+
+    - Optimized `@@contenthistory` view.
+      [gbastien]
+
+- collective.documentgenerator 3.38 (2022-12-12)
+
+    - Added missing upgrade step after registry modification (`force_default_page_style_for_mailing`) in 3.36.
+      [sgeulette]
+
+- collective.faceted.datewidget 1.0.0 (2023-07-03)
+
+    - upgrade to be compatible with eea.facetednavigation 10 and above
+      [mpeeters]
+
 - collective.eeafaceted.collectionwidget 1.15 (2023-07-03)
 
     - Ensure that parent can be displayed if `hide_category` is True and without category
