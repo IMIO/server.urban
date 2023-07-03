@@ -6,7 +6,18 @@ Changes
 2.5.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.4 (2023-07-03)
+
+    - Change collection column name [URB-1537]
+      [jchandelle]
+
+    - Fix class name in external method fix_labruyere_envclassthrees [SUP-29587]
+      [ndemonte]
+
+- imio.schedule 1.9.0 (2023-07-03)
+
+    - URB-1537 - Change collection column name
+      [jchandelle]
 
 
 2.5.4 (2023-06-29)
