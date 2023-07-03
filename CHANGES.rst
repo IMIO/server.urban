@@ -6,6 +6,20 @@ Changes
 2.5.6 (unreleased)
 ------------------
 
+- Products.urban 2.6.0 (2023-07-03)
+
+    - Fix `hidealloption` and `hide_category` parameters for dashboard collections
+      [mpeeters]
+
+    - Fix render of columns with escape parameter
+      [mpeeters, sdelcourt]
+
+    - Avoid a traceback if an UID was not found for inquiry cron [URB-2721]
+      [mpeeters]
+
+    - Migrate to the latest version of `imio.dashboard`
+      [mpeeters]
+
 - imio.schedule 2.0.0 (2023-07-03)
 
     - Migrate to use `collective.eeafaceted.collectionwidget` [URB-2627]
