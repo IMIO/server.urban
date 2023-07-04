@@ -6,6 +6,9 @@ Changes
 2.6.3 (unreleased)
 ------------------
 
+- Pin appnope to `0.1.3`
+  [mpeeters]
+
 - Remove `plone.restapi` from buildout eggs
   [mpeeters]
 
