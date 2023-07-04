@@ -6,6 +6,9 @@ Changes
 2.5.6 (unreleased)
 ------------------
 
+- Remove `plone.restapi` from buildout eggs
+  [mpeeters]
+
 - Add an explicit zcml dependency to `Products.urban` [URB-2790]
   [mpeeters]
 
