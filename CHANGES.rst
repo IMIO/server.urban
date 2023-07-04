@@ -6,7 +6,10 @@ Changes
 2.6.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.1 (2023-07-04)
+
+    - Fix zcml for migrations
+      [mpeeters]
 
 
 2.6.1 (2023-07-04)
