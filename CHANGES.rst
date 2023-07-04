@@ -12,7 +12,7 @@ Changes
 2.6.1 (2023-07-04)
 ------------------
 
-- Fix pyrsistent version for collective.exportimport
+- Fix pyrsistent version for collective.exportimport [URB-2627]
   [mpeeters]
 
 
