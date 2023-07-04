@@ -6,7 +6,8 @@ Changes
 2.6.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add an explicit zcml dependency to `Products.urban` [URB-2790]
+  [mpeeters]
 
 
 2.6.2 (2023-07-04)
