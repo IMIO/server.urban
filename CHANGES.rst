@@ -6,6 +6,11 @@ Changes
 2.6.3 (unreleased)
 ------------------
 
+- Products.urban 2.6.2 (2023-07-04)
+
+    - Explicitly include `urban.restapi` zcml dependency [URB-2790]
+      [mpeeters]
+
 - Pin appnope to `0.1.3`
   [mpeeters]
 
