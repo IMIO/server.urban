@@ -6,7 +6,10 @@ Changes
 2.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- collective.faceted.task 1.0.0 (2023-07-05)
+
+    - Do not escape z3c.table column title
+      [sdelcourt, mpeeters]
 
 
 2.6.3 (2023-07-04)
