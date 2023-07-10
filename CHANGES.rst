@@ -6,7 +6,8 @@ Changes
 2.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add experimental.gracefulblobmissing for development
+  [mpeeters]
 
 
 2.6.4 (2023-07-05)
