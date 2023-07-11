@@ -6,9 +6,6 @@ Changes
 2.5.8 (unreleased)
 ------------------
 
-- Fix big.bang init with mountpoint [URB-2803]
-  [mpeeters]
-
 - Include collective.big.bang [URB-2803]
   [mpeeters]
 
