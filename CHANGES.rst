@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.5.8 (unreleased)
+2.5.8 (2023-07-11)
 ------------------
 
 - Include collective.big.bang [URB-2803]
