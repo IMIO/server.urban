@@ -6,7 +6,11 @@ Changes
 2.5.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Include collective.big.bang [URB-2803]
+  [mpeeters]
+
+- Cleanup in buildout configuration files
+  [mpeeters]
 
 
 2.5.7 (2023-07-10)
