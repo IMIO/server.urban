@@ -6,7 +6,8 @@ Changes
 2.6.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix big.bang init with mountpoint [URB-2803]
+  [mpeeters]
 
 
 2.6.5 (2023-07-11)
