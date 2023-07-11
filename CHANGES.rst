@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.6.6 (unreleased)
+2.6.6 (2023-07-11)
 ------------------
 
 - Fix big.bang init with mountpoint [URB-2803]
