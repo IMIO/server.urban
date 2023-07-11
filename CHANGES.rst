@@ -6,7 +6,13 @@ Changes
 2.6.5 (unreleased)
 ------------------
 
+- Include collective.big.bang [URB-2803]
+  [mpeeters]
+
 - Add experimental.gracefulblobmissing for development
+  [mpeeters]
+
+- Cleanup in buildout configuration files
   [mpeeters]
 
 
