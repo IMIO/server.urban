@@ -6,7 +6,34 @@ Changes
 2.5.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.7 (2023-07-18)
+
+    - Add missing translations [URB-2823]
+      [mpeeters, anagant]
+
+    - Fix different type of vocabulary [URB-2575]
+      [jchandelle]
+
+    - Change NN field position [SUP-27165]
+      [jchandelle]
+
+    - Add Couple to Preliminary Notice [URB-2824]
+      [ndemonte]
+
+    - Fix Select2 view display [URB-2575]
+      [jchandelle]
+
+    - Provide getLastAcknowledgment method for all urbancertificates [SUP-30852]
+      [fngaha]
+
+    - Fix encoding error [URB-2805]
+      [fngaha]
+
+    - Add a explicit dependency to collective.exportimport
+      [mpeeters]
+
+    - Cadastral historic memory error [SUP-30310]
+      [sdelcourt]
 
 
 2.5.8 (2023-07-11)
