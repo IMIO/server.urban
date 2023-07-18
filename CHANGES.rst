@@ -6,7 +6,37 @@ Changes
 2.6.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.3
+
+    - Add missing translations [URB-2823]
+      [mpeeters, anagant]
+
+    - Fix different type of vocabulary [URB-2575]
+      [jchandelle]
+
+    - Change NN field position [SUP-27165]
+      [jchandelle]
+
+    - Add Couple to Preliminary Notice [URB-2824]
+      [ndemonte]
+
+    - Fix Select2 view display [URB-2575]
+      [jchandelle]
+
+    - Provide getLastAcknowledgment method for all urbancertificates [SUP-30852]
+      [fngaha]
+
+    - Fix encoding error [URB-2805]
+      [fngaha]
+
+    - Add a explicit dependency to collective.exportimport
+      [mpeeters]
+
+    - Cadastral historic memory error [SUP-30310]
+      [sdelcourt]
+
+    - Add option to POST endpoint when creating a licence to disable check ref format [SUP-31043]
+      [jchandelle]
 
 
 2.6.6 (2023-07-11)
