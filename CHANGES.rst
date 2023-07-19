@@ -6,7 +6,8 @@ Changes
 2.5.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix an issue with standard config [INFRA-5187]
+  [mpeeters]
 
 
 2.5.9 (2023-07-18)
