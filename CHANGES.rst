@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.6.8 (unreleased)
+2.6.8 (2023-07-19)
 ------------------
 
 - Fix an issue with standard config [INFRA-5187]
