@@ -6,6 +6,15 @@ Changes
 2.5.10 (unreleased)
 -------------------
 
+- Products.urban 2.5.8 (2023-07-24)
+
+    Bug fixes:
+
+    - Fix an issue with some urban instances with lists that contains empty strings or `None`
+      [mpeeters] (URB-2575)
+    - Add an external method to set profile version for Products.urban
+      [mpeeters] (URB-2835)
+
 - Fix an issue with standard config [INFRA-5187]
   [mpeeters]
 
