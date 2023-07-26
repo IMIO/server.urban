@@ -6,7 +6,14 @@ Changes
 2.5.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.9 (2023-07-26)
+
+    Bug fixes:
+
+    - Avoid errors on inexpected values on licences and log them
+      [mpeeters] (SUP-31554)
+    - Fix translation for road adaptation vocabulary values
+      [mpeeters] (URB-2575)
 
 
 2.5.10 (2023-07-24)
