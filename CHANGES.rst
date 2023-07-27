@@ -6,7 +6,23 @@ Changes
 2.6.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.5 (2023-07-27)
+
+    Bug fixes:
+
+    - Avoid errors on inexpected values on licences and log them
+      [mpeeters] (SUP-31554)
+    - Fix translation for road adaptation vocabulary values
+      [mpeeters] (URB-2575)
+    - Avoid an error if a vocabulary does not exist, this can happen when multiple upgrade steps interract with vocabularies
+      [mpeeters] (URB-2835)
+
+- collective.eeafaceted.collectionwidget 1.16 (2023-07-27)
+
+    - Use default value if available and if there is no parameter in request
+      [mpeeters]
+    - Fix for Python 3 compatibilty
+      [mpeeters]
 
 
 2.6.9 (2023-07-24)
