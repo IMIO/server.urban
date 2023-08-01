@@ -6,6 +6,11 @@ Changes
 2.6.11 (unreleased)
 -------------------
 
+- imio.schedule 2.0.1 (2023-08-01)
+
+    - Fix order of upgrade steps [URB-2627]
+      [mpeeters]
+
 - collective.documentgenerator 3.40 (2023-08-01)
 
     - Add `DOCUMENTGENERATOR_LOG_PARAMETERS` environment variable that can be used to log request form parameters with
