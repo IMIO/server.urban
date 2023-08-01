@@ -6,7 +6,16 @@ Changes
 2.6.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- collective.documentgenerator 3.40 (2023-08-01)
+
+    - Add `DOCUMENTGENERATOR_LOG_PARAMETERS` environment variable that can be used to log request form parameters with
+      collective.fingerpointing.
+      [mpeeters]
+
+- collective.documentgenerator 3.39 (2023-06-26)
+
+    - Removed `utils.safe_encode`, imported it from `imio.helpers.content`.
+      [gbastien]
 
 
 2.6.10 (2023-07-27)
