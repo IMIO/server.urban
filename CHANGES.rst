@@ -6,7 +6,12 @@ Changes
 2.6.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.6 (2023-08-10)
+
+    Bug fixes:
+
+    - Fix an issue with autocomplete view results format that was generating javascript errors
+      [mpeeters] (SUP-31682)
 
 
 2.6.11 (2023-08-10)
