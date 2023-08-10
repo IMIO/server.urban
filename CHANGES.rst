@@ -6,6 +6,11 @@ Changes
 2.6.11 (unreleased)
 -------------------
 
+- eea.jquery 11.3 - (2021-11-01)
+
+    * Change: Explicitly load zcml of dependencies, instead of using includeDependencies
+      [avoinea]
+
 - eea.facetednavigation 14.8.1 (2023-08-10)
 
     * Fix displayed value for autocomplete widget
