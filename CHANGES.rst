@@ -6,6 +6,30 @@ Changes
 2.6.11 (unreleased)
 -------------------
 
+- eea.facetednavigation 14.8.1 (2023-08-10)
+
+    * Fix displayed value for autocomplete widget
+      [mpeeters]
+
+- eea.facetednavigation 14.8 - (2022-09-15)
+
+    * Change: Add support for AJAX filtering with multiselect widget
+      [avoinea]
+    * Cleanup: Remove hard-coded message on ajax error
+      [avoinea]
+    * Bug fix: SEO improvments
+      [avoinea]
+
+- eea.facetednavigation 14.7 - (2021-10-29)
+
+    * Change: Release community contrib
+      [avoinea]
+
+- eea.facetednavigation 14.6 - (2021-07-19)
+
+    * Change: Make Alphabetic Widget countable again
+      [avoinea]
+
 - collective.fingerpointing 1.8.2 (2020-03-16)
 
     - Fix typo in French translation.
