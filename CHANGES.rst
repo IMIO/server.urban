@@ -6,6 +6,83 @@ Changes
 2.6.11 (unreleased)
 -------------------
 
+- collective.fingerpointing 1.8.2 (2020-03-16)
+
+    - Fix typo in French translation.
+      [laulaz]
+
+    - In ``workflow_logger`` display full path of object instead just object id.
+      [gbastien]
+
+
+- collective.fingerpointing 1.8.1 (2019-11-22)
+
+    - Do not fail running ``plone-compile-resources`` together with fingerpointing installed in Plone 5.2.
+      [jensens]
+
+    - Completed french translations.
+      [gbastien]
+
+- collective.fingerpointing 1.8 (2018-10-11)
+
+    - Avoid ``TypeError`` when View Audit Log (fixes `#91 <https://github.com/collective/collective.fingerpointing/issues/91>`_).
+      [jianaijun]
+
+    - Update Chinese Simplified translation.
+      [jianaijun]
+
+- collective.fingerpointing 1.7 (2018-04-23)
+
+    - Drop support for Plone 5.0.
+      [hvelarde]
+
+    - Avoid ``ComponentLookupError`` when adding a Plone site (fixes `#85 <https://github.com/collective/collective.fingerpointing/issues/85>`_).
+      [hvelarde]
+
+    - Do not fail while logging uninstall profile information.
+      [hvelarde]
+
+    - Fix uninstall of control panel configlet under Plone 5.1.
+      [hvelarde]
+
+- collective.fingerpointing 1.6 (2018-03-28)
+
+    - Avoid ``TypeError`` on PAS events (fixes `#78 <https://github.com/collective/collective.fingerpointing/issues/78>`_).
+      [hvelarde]
+
+- collective.fingerpointing 1.6rc2 (2018-03-22)
+
+    - Fix profile version number.
+      [hvelarde]
+
+- collective.fingerpointing 1.6rc1 (2018-03-22)
+
+    - Update i18n, Brazilian Portuguese and Spanish translations.
+      [hvelarde]
+
+    - Code clean up and refactor, avoid ``UnicodeEncodeError`` on registry subscriber (refs. `#74 <https://github.com/collective/collective.fingerpointing/issues/74>`_).
+      [hvelarde]
+
+    - Log Generic Setup profile imports; this is useful to audit add-on installs/uninstalls (implements `#32 <https://github.com/collective/collective.fingerpointing/issues/32>`_).
+      [hvelarde]
+
+    - Do label `Size` translatable, completed french translations.
+      [gbastien]
+
+- collective.fingerpointing 1.5rc1 (2017-11-24)
+
+    - Update i18n, Brazilian Portuguese, German and Spanish translations.
+      [hvelarde, jensens]
+
+    - Lock-file is now container save and it's close more robust.
+      [jensens]
+
+    - Refactor logger module in order to improve testability.
+      [jensens]
+
+    - Add search on audit logs and pagination (implements `#17 <https://github.com/collective/collective.fingerpointing/issues/17>`_).
+      [jensens]
+
 - imio.schedule 2.0.1 (2023-08-01)
 
     - Fix order of upgrade steps [URB-2627]
