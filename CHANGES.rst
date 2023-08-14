@@ -6,7 +6,17 @@ Changes
 2.6.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.7 (2023-08-14)
+
+    Bug fixes:
+
+    - Hide old document generation links viewlet
+      [mpeeters] (URB-2864)
+
+- imio.pm.wsclient 1.18 (2023-08-14)
+
+    - Fix an issue when there is a form instead of `onclick` attribute on input buttons
+      [mpeeters]
 
 
 2.6.12 (2023-08-10)
