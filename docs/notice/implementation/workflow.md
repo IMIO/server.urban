@@ -29,12 +29,63 @@ html_meta:
 
 ### Informations reçues
 
-- xxx
+- `codeTypeNoticeBO`: Code du type de notification
+- `sender.noticeInstanceId`: Identifiant de l'instance
+- `sender.contactName`: Nom du contact
+- `sender.contactMail.email._value_1`: Email du contact
+- `subjectNotice`: Sujet de la demande
+- `sendDate`: Date d'envoi
+- `deadline`: Date limite de réponse ?
+- `comment`: Commentaire
+- `status.status[0].code.code`: Statut de la notification
+- `noticeIdentifier.noticeId`: Identifiant de la notification
+- `addresses.address`: Liste des adresses
+- `addresses.address[x].country`: Pays
+- `addresses.address[x].street`: Rue
+- `addresses.address[x].houseNumber`: Numéro
+- `addresses.address[x].boxNumber`: Boîte
+- `addresses.address[x].postCode`: Code postal
+- `addresses.address[x].municipality`: Commune
+- `addresses.address[x].locality`: Localité
+- `parcels.parcel`: Liste des parcelles
+- `parcels.parcel[x].division`: Nom division
+- `parcels.parcel[x].codeDivision`: Code division
+- `parcels.parcel[x].section`: Section
+- `parcels.parcel[x].radical`: Radical
+- `parcels.parcel[x].exponent`: Exposant
+- `parcels.parcel[x].power`: Puissance
+- `parcels.parcel[x].part`: Partie
+- `parcels.parcel[x].capakey`: Capakey
+- `parties.part`: Liste des demandeurs
+- `parties.part[x].enterpriseNumber`: Numéro d'entreprise
+- `parties.part[x].enterprseType`: Type d'entreprise
+- `parties.part[x].legalForm`: Forme juridique
+- `parties.part[x].personNumber`: Numéro de registre national ?
+- `parties.part[x].title`: Titre
+- `parties.part[x].lastname`: Nom
+- `parties.part[x].firstname`: Prénom
+- `parties.part[x].language.code`: Langue (FR, ...)
+- `parties.part[x].denomination`: Nom de l'entité (personne juridique)
+- `parties.part[x].mailingAddresses.mailingAddress`: Liste des adresses postales
+- `parties.part[x].mailingAddresses.mailingAddress[x].country`: Pays
+- `parties.part[x].mailingAddresses.mailingAddress[x].street`: Rue
+- `parties.part[x].mailingAddresses.mailingAddress[x].houseNumber`: Numéro
+- `parties.part[x].mailingAddresses.mailingAddress[x].boxNumber`: Boîte
+- `parties.part[x].mailingAddresses.mailingAddress[x].postCode`: Code postal
+- `parties.part[x].mailingAddresses.mailingAddress[x].municipality`: Commune
+- `parties.part[x].mailingAddresses.mailingAddress[x].locality`: Localité
+- `parties.part[x].phoneNumber.phoneNumber`: Liste des numéros de téléphone
+- `parties.part[x].phoneNumber.phoneNumber[x]._value_1`: Numéro de téléphone
+- `parties.part[x].phoneNumber.phoneNumber[x].type`: Type
+- `parties.part[x].email.email`: Liste des emails
+- `parties.part[x].email.email[x]._value_1`: Adresse email
+- `parties.part[x].email.email[x].type`: Type
 
 ### Informations nécessaires
 
-- Commentaire pour {term}`DPA`
-- Référence communale (référence dossier)
+- `municipalityReference`: Référence communale (référence dossier)
+
+**Type de réponse**: `FINAL`
 
 ## Demande irrecevable (notification à la commune - premier tour)
 
