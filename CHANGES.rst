@@ -6,7 +6,145 @@ Changes
 2.6.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.prettylink 1.21 (2023-08-24)
+
+    - Adapted call to `imio.helpers.cache.obj_modified` as parameter `asstring=False`
+      was removed, we just use the default result type that is `float`.
+      [gbastien]
+
+- imio.actionspanel 1.63 (2023-08-24)
+
+    - Use `uid_catalog` if available for delete by uid view [SUP-31827]
+      [mpeeters]
+
+- imio.dashboard 2.12 (2023-07-07)
+
+    - `get_transitions` was moved from `imio.helpers.content` to `imio.helpers.workflow`.
+      [gbastien]
+
+- imio.dashboard 2.11 (2023-03-22)
+
+    - Changes for WCA compatibility.
+      [odelaere]
+
+- imio.helpers 0.74 (2023-08-24)
+
+    - Fixed `cache.obj_modified` when checking annotations, take care that `_p_mtime`
+      is not changed on `__annotations__` when a value changes in a stored annotation
+      that is a `PersistentMapping`.
+      Also removed parameter `asstring=False`, when `asdatetime=False`, returned
+      value is float which is convenient to be used in a cachekey.
+      [gbastien]
+    - Add `catalog` parameter on `content.uuidsToObjects`, `content.uuidsToObject`,
+      `content.uuidsToCatalogBrains` and `uuidsToCatalogBrain` to allow query on
+      other catalogs (e.g. uid_catalog)
+      [mpeeters]
+
+- imio.helpers 0.73 (2023-07-20)
+
+    - Be more defensive in `content.get_user_fullname`, in some case, a userid
+      is found in `mutable_properties` but there is no properties associated with it.
+      [gbastien]
+    - Improved `transmogrifier.clean_value` giving a replacement value
+      [sgeulette]
+
+- imio.helpers 0.72 (2023-07-12)
+
+    - In `submitFormHelperOnsuccessDefault` JS function, only manage `blob` if
+      `content-type` is `application/xxx`.
+      [gbastien]
+    - Added `content.sort_on_vocab_order` that will sort a list of `values`
+      respecting a given `vocabulary` terms order. This relies on `sort_by_indexes`
+      from `imio.pyutils` that is now a dependency.
+      [gbastien]
+
+- imio.helpers 0.71 (2023-07-07)
+
+    - Modified `transmogrifier.relative_path` to add option to keep leading slash
+      (True by default).
+      [sgeulette]
+    - In `content.get_user_fullname`, if `fullname` not found at the end,
+      finally fallback to `portal_membership.getMemberInfo`, this is sometimes
+      necessary when using LDAP.
+      [gbastien]
+    - Removed backward compatible imports for `get_state_infos`, `get_transitions`
+      and `do_transitions` moved from `content` to `workflow`.
+      [gbastien]
+
+- imio.helpers 0.70 (2023-06-21)
+
+    - Added `security.check_zope_admin` (moved from `Products.CPUtils`).
+      [gbastien]
+    - Improved `transmogrifier.filter_keys`
+      [sgeulette]
+    - Added `workflow.update_role_mappings_for` helper to update WF role mappings
+      for a given object.
+      [gbastien]
+
+- imio.helpers 0.69 (2023-05-31)
+
+    - Monkeypatch `CatalogTool._listAllowedRolesAndUsers` to add `ram.cache` decorator.
+      [gbastien]
+
+- imio.helpers 0.68 (2023-05-12)
+
+    - Added `split_text` in transmogrifier module.
+      [sgeulette]
+    - Added `workflow.get_leading_transitions` that will return every WF transitions
+      leading to a given `state_id`.
+      [gbastien]
+
+- imio.helpers 0.67 (2023-03-29)
+
+    - Added `clean_value`, `correct_path`, `filter_keys`, `get_obj_from_path` in transmogrifier module.
+      [sgeulette]
+    - Added `key_val`, `pool_tuples`, `str_to_date` in transmogrifier module.
+      [sgeulette]
+    - Renamed `text_int_to_bool` to `str_to_bool`
+      [sgeulette]
+
+- imio.pyutils 0.30 (2023-07-24)
+
+    - Added `system.read_recursive_dir` to get files recursively (with relative or full name).
+      [sgeulette]
+
+- imio.pyutils 0.29 (2023-05-12)
+
+    - Improved `utils.all_of_dict_values` to include optionally a label.
+      [sgeulette]
+    - Added `setup_logger` to modify a given logger independently
+      [sgeulette]
+    - Added `full_path` to prefix filename with path if necessary
+      [sgeulette]
+
+- imio.pyutils 0.28 (2023-03-29)
+
+    - Added `utils.one_of_dict_values` that gives the first non empty value of a list of keys.
+      [sgeulette]
+    - Added `utils.all_of_dict_values` that returns a not empty values list from a dict following a keys list
+      [sgeulette]
+
+- imio.pyutils 0.27 (2023-02-27)
+
+    - Added `utils.sort_by_indexes` that will sort a list of values
+      depending on a list of indexes.
+      [gbastien]
+
+- imio.pyutils 0.26 (2022-12-12)
+
+    - Added `stop` to print error and exit.
+      [sgeulette]
+
+- imio.pyutils 0.25 (2022-09-16)
+
+    - Added `get_git_tag`.
+      [sgeulette]
+
+- imio.pyutils 0.24 (2022-08-19)
+
+    - Added `utils.time_start` and `utils.time_elapsed` to print elapsed time from start.
+      Intended to be easily used when debugging...
+      [sgeulette]
 
 
 2.6.13 (2023-08-14)
