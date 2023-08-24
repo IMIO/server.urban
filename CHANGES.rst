@@ -6,6 +6,27 @@ Changes
 2.6.14 (unreleased)
 -------------------
 
+- plonetheme.imioapps 2.43 (2023-08-24)
+
+    - Fix document generation actions on dashboard for urban [URB-2863]
+      [mpeeters]
+    - Fix faceted autocomplete widget width in urban [URB-2866]
+      [jchandelle]
+    - Removed styling rule for `.tooltipster-base img` as image `height/width`
+      is now forced to `16px` in `collective.iconifiedcategory`.
+      [gbastien]
+
+- plonetheme.imioapps 2.42 (2023-07-07)
+
+    - `get_state_infos` was moved from `imio.helpers.content` to
+      `imio.helpers.workflow`, adapted import accordingly.
+      [gbastien]
+
+- plonetheme.imioapps 2.41 (2023-06-27)
+
+    - Style table header the same way for HTML tables and DX/AT datagrid fields.
+      [gbastien]
+
 - imio.prettylink 1.21 (2023-08-24)
 
     - Adapted call to `imio.helpers.cache.obj_modified` as parameter `asstring=False`
