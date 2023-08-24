@@ -6,6 +6,15 @@ Changes
 2.6.14 (unreleased)
 -------------------
 
+- Products.urban 2.6.8 (2023-08-24)
+
+    Bug fixes:
+
+    - fix select2 widget on folder manager
+      [jchandelle] (SUP-31898)
+    - Fix opinion schedules assigned user column
+      [mpeeters] (URB-2819)
+
 - plonetheme.imioapps 2.43 (2023-08-24)
 
     - Fix document generation actions on dashboard for urban [URB-2863]
