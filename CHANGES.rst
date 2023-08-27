@@ -6,7 +6,8 @@ Changes
 2.6.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add `plone.app.ldap` as a default dependency for instances that requires ldap [URB-2872]
+  [mpeeters]
 
 
 2.6.14 (2023-08-24)
