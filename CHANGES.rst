@@ -6,6 +6,13 @@ Changes
 2.6.15 (unreleased)
 -------------------
 
+- Products.urban 2.6.9 (2023-08-27)
+
+    Bug fixes:
+
+    - Fix UnicodeDecodeError on getFolderManagersSignaletic(withGrade=True)
+      [fngaha] (URB-2871)
+
 - Add `plone.app.ldap` as a default dependency for instances that requires ldap [URB-2872]
   [mpeeters]
 
