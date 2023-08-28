@@ -6,7 +6,15 @@ Changes
 2.6.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.10 (2023-08-28)
+
+    Bug fixes:
+
+    - Avoid an error if a task was not correctly removed from catalog
+      [mpeeters] (URB-2873)
+
+- Increase cron tick to 30 minutes (1800 seconds) [URB-2873]
+  [mpeeters]
 
 
 2.6.15 (2023-08-27)
