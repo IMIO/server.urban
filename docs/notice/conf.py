@@ -7,7 +7,7 @@ import sys
 project = 'Notice'
 copyright = '2023, iMio'
 
-version = release = "1.5.0"
+version = release = "1.6.0"
 
 
 # The suffix of source filenames.
@@ -35,7 +35,7 @@ language = 'fr'
 # This enables PDF generation.
 latex_documents = [(
     'index',
-    'notice.tex',
+    'notice-{}.tex'.format(version),
     'Notice Documentation',
     '',
     'manual',

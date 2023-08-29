@@ -20,12 +20,12 @@ html_meta:
 (noticeevent)=
 ## NoticeEvent
 
-Type de contenu virtuel basé sur une marker interface permettant de définir les mécaniques et actions possibles pour les interactions avec Notice.
+Type de contenu virtuel basé sur une marker interface permettant de définir les mécaniques et actions possibles pour les interactions avec {term}`Notice`.
 
 Le mécanisme d'envoi sera similaire à ce qui est déjà en place pour l'envoi vers iA.Délib :
-  - Une annotation sera stockée sur l'événement contenant ce qui a déjà été envoyé vers Notice.
+  - Une annotation sera stockée sur l'événement contenant ce qui a déjà été envoyé vers {term}`Notice`.
   - Un viewlet sera affiché sur les événements contenant les informations stockées dans l'annotation.
-  - Des boutons seront disponibles pour pouvoir envoyer les informations vers
+  - Des boutons seront disponibles pour pouvoir envoyer les informations vers {term}`Notice`
 
 (noticetask)=
 ## NoticeTask
