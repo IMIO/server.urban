@@ -6,7 +6,12 @@ Changes
 2.6.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.11 (2023-08-29)
+
+    Bug fixes:
+
+    - Fix icon tag in table
+      [jchandelle] (SUP-31983)
 
 
 2.6.16 (2023-08-28)
