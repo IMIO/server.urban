@@ -8,13 +8,29 @@ html_meta:
 
 # Types de contenu
 
+- {ref}`NoticeEvent <noticeevent>`
 - {ref}`NoticeTask <noticetask>`
   - {ref}`NoticeTransferFolderTask <notice-transfer-folder-task>`
+  - {ref}`NoticeIncompleteTask <notice-incomplete-task>`
+  - {ref}`NoticeInadmissibleTask <notice-inadmissible-task>`
+  - {ref}`NoticePublicInvestigationTask <notice-public-investigation-task>`
+  - {ref}`NoticeProrogationTask <notice-prorogation-task>`
+  - {ref}`NoticeSynthesisReportTask <notice-syntesis-report-task>`
+
+(noticeevent)=
+## NoticeEvent
+
+Type de contenu virtuel basé sur une marker interface permettant de définir les mécaniques et actions possibles pour les interactions avec Notice.
+
+Le mécanisme d'envoi sera similaire à ce qui est déjà en place pour l'envoi vers iA.Délib :
+  - Une annotation sera stockée sur l'événement contenant ce qui a déjà été envoyé vers Notice.
+  - Un viewlet sera affiché sur les événements contenant les informations stockées dans l'annotation.
+  - Des boutons seront disponibles pour pouvoir envoyer les informations vers
 
 (noticetask)=
 ## NoticeTask
 
-Héritant de `imio.schedule.content.task.AutomatedTask` et implémentant des champs complémentaires.
+Type de contenu virtuel basé sur `imio.schedule.content.task.AutomatedTask` et dont la configuration se situera dans la configuration de la procédure.
 
 Le type de contenu `NoticeTask` sera implémenté dans `Products.Urban`, ce nouveau type de contenu sera automatiquement créé via un processus vérifiant les nouvelles demandes en interrogeant le webservice passerelle.
 
@@ -82,9 +98,9 @@ Tâche pour la réalisation d'une enquête publique
 ### Actions
 
 - Création de l'événement *Enquête publique*
-- Création et clôture de l'événement *Communication dates enquête publique*
+- Envoyer les dates de l'enquête publique via l'action *Envoyer les dates*
+- Envoyer le PV de l'enquête publique via l'action *Envoyer le PV*
 - Clôture de l'événement *Enquête publique*
-- Création et clôture de l'événement *Communication PV enquête publique ???*
 
 
 (notice-prorogation-task)=
