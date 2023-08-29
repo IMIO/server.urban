@@ -229,10 +229,11 @@ html_meta:
 
 - La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
-- La commune créé un événement *Enquête publique*
-- La commune créé et clôture un événément *Communication dates enquête publique*
-- La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique*
+- Création de l'événement *Enquête publique*
+- Envoyer les dates de l'enquête publique via l'action *Envoyer les dates*
+- Envoyer le PV de l'enquête publique via l'action *Envoyer le PV*
+- Clôture de l'événement *Enquête publique*
+
 
 ### Informations reçues
 
@@ -264,10 +265,10 @@ html_meta:
 
 - La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
-- La commune créé un événement *Enquête publique*
-- La commune créé et clôture un événément *Communication dates enquête publique*
-- La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique*
+- Création de l'événement *Enquête publique*
+- Envoyer les dates de l'enquête publique via l'action *Envoyer les dates*
+- Envoyer le PV de l'enquête publique via l'action *Envoyer le PV*
+- Clôture de l'événement *Enquête publique*
 
 ### Informations reçues
 
@@ -299,10 +300,10 @@ html_meta:
 
 - La commune créé et clôture un événément *Dossier complet*
 - Changement de l'état du workflow vers *Complet*
-- La commune créé un événement *Enquête publique*
-- La commune créé et clôture un événément *Communication dates enquête publique*
-- La comune clôture l'événement *Enquête publique*
-- La commune créé et clôture un événement *Communication PV enquête publique*
+- Création de l'événement *Enquête publique*
+- Envoyer les dates de l'enquête publique via l'action *Envoyer les dates*
+- Envoyer le PV de l'enquête publique via l'action *Envoyer le PV*
+- Clôture de l'événement *Enquête publique*
 
 ### Informations reçues
 
