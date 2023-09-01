@@ -6,7 +6,24 @@ Changes
 2.6.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.12 (2023-09-01)
+
+Bug fixes:
+
+    - Fix new urban instance install
+      [jchandelle] (URB-2868)
+    - Fix facet xml configuration
+      [jchandelle] (URB-2870)
+
+- imio.schedule 2.0.2 (2023-09-01)
+
+    - Add specificity to upgradestep check [URB-2868]
+      [jchandelle]
+
+- collective.faceted.task 1.0.1 (2023-09-01)
+
+    - Fix new urban instance install [URB-2868, URB-2870]
+      [jchandelle]
 
 
 2.6.17 (2023-08-29)
