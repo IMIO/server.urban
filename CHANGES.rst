@@ -6,7 +6,24 @@ Changes
 2.6.19 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.13 (2023-09-05)
+
+    Bug fixes:
+
+    - Move catalog import in urban type profile
+      [jchandelle] (URB-2868)
+    - Fix facet config xml
+      [jchandelle] (URB-2870)
+
+- collective.faceted.task 1.0.2 (2023-09-05)
+
+    - Fix facet config xml on new urban install [URB-2870]
+      [jchandelle]
+
+- collective.faceted.datewidget 1.0.1 (2023-09-05)
+
+    - Fix widget vocabulary to be compatible with new requirements from eea.facetednavigation [URB-2868, URB-2870]
+      [jchandelle]
 
 
 2.6.18 (2023-09-01)
