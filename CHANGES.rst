@@ -57,7 +57,7 @@ Changes
 
 - Products.urban 2.6.12 (2023-09-01)
 
-Bug fixes:
+    Bug fixes:
 
     - Fix new urban instance install
       [jchandelle] (URB-2868)
