@@ -6,7 +6,21 @@ Changes
 2.6.20 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.14 (2023-09-13)
+
+    Bug fixes:
+
+    - Avoid an error if a vocabulary value was removed, instead log the removed value and display the key to the user
+      [mpeeters] (SUP-32338)
+
+    Internal:
+
+    - Reduce logging for sql queries
+      [mpeeters] (URB-2788)
+    - Fix tests
+      [mpeeters] (URB-2855)
+
+- Upgrade requests and dependencies to fix issue with new certificates [URB-2855]
 
 
 2.6.19 (2023-09-05)
