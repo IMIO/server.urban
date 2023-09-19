@@ -6,7 +6,18 @@ Changes
 2.6.21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- collective.archetypes.select2 1.0a2 (2023-09-19)
+
+    - Fix an issue when some data are encoded in utf8 [SUP-32523]
+      [mpeeters]
+
+- urban.restapi 1.0.0b3 (2023-09-19)
+
+    - Add imio.restapi dependency
+      [jchandelle]
+
+    - Adapt street retrieval key [SUP-31682]
+      [jchandelle]
 
 
 2.6.20 (2023-09-13)
