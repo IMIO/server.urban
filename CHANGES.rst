@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.6.21 (unreleased)
+2.6.21 (2023-09-19)
 -------------------
 
 - collective.archetypes.select2 1.0a2 (2023-09-19)
