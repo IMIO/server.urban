@@ -61,3 +61,6 @@ pre_extras: bin/templates_per_site $(extras) /srv/urbanmap/urbanMap/config/pylon
 
 plonesites.cfg: bin/templates $(plonesites) pre_extras
 	bin/templates -i $(plonesites) -s /srv/urbanmap/urbanMap/config/pylon_instances.txt > plonesites.cfg
+
+.PHONY: deploy-local-db
+	docker stack deploy urban-pg -c docker-compose.yml

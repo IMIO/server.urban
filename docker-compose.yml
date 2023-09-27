@@ -1,15 +1,14 @@
-version: '3.1'
+version: "3.9"
 
 services:
-  db:
-    image: postgres
-    hostname: postgres
-    environment:
-      POSTGRES_PASSWORD: password
+
+  imio_urban_postgres:
+    image: postgis/postgis:11-3.3
+    ports:
+      - "5433:5432"
     volumes:
-      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d/
-  #adminer:
-  #  image: adminer
-  #  restart: always
-  #  ports:
-  #    - 8080:8080
+      - imio_urban_postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: cadastre_xxx
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
