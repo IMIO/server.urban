@@ -1,14 +1,16 @@
 version: "3.9"
 
 services:
-
   imio_urban_postgres:
     image: postgis/postgis:11-3.3
     ports:
       - "5433:5432"
     volumes:
-      - imio_urban_postgres_data:/var/lib/postgresql/data
+      - imio-urban-postgres-data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: cadastre_xxx
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+
+volumes:
+  imio-urban-postgres-data:
