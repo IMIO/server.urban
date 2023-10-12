@@ -6,7 +6,14 @@ Changes
 2.6.22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.15 (2023-10-12)
+
+    Internal:
+
+    - Fix tests
+      [mpeeters] (URB-2855)
+    - Improve performances for add views
+      [mpeeters] (URB-2903)
 
 
 2.6.21 (2023-09-19)
