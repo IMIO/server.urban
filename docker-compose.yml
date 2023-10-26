@@ -1,10 +1,63 @@
 version: "3.9"
 
 services:
-  imio_urban_postgres:
+
+  zeo:
+    image: imio-urban:${BUILD_ID}
+    volumes:
+      - blobstorage:/data/blobstorage
+      - filestorage:/data/filestorage
+      - log:/data/log
+      - type: tmpfs
+        target: /var/tmp
+    command: zeo
+    deploy:
+      replicas: 1
+
+  instance:
+    image: imio-urban:${BUILD_ID}
+    volumes:
+      - blobstorage:/data/blobstorage
+      - log:/data/log
+      - urban:/plone/var/urban
+      - tmp:/tmp
+      - vartmp:/var/tmp
+    command: fg
+    ports:
+      - 8081:8081
+    deploy:
+      replicas: 4
+
+  instance-async:
+    image: imio-urban:${BUILD_ID}
+    volumes:
+      - blobstorage:/data/blobstorage
+      - log:/data/log
+      - urban:/plone/var/urban
+      - tmp:/tmp
+      - vartmp:/var/tmp
+    command: instance-async
+    deploy:
+      replicas: 1
+
+  instance-cron:
+    image: imio-urban:${BUILD_ID}
+    volumes:
+      - blobstorage:/data/blobstorage
+      - log:/data/log
+      - urban:/plone/var/urban
+      - tmp:/tmp
+      - vartmp:/var/tmp
+    command: instance-cron
+    deploy:
+      replicas: 1
+
+  postgres:
     image: postgis/postgis:11-3.3
     ports:
       - "5433:5432"
+    deploy:
+      replicas: 1
     volumes:
       - imio-urban-postgres-data:/var/lib/postgresql/data
     environment:
@@ -13,4 +66,10 @@ services:
       POSTGRES_PASSWORD: postgres
 
 volumes:
+  urban:
+  blobstorage:
+  filestorage:
+  log:
   imio-urban-postgres-data:
+  tmp:
+  vartmp:
