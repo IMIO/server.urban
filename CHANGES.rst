@@ -6,7 +6,19 @@ Changes
 2.6.23 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.16 (2023-11-06)
+
+    Bug fixes:
+
+    - Fix serializer to include disable street in uid resolver
+      [jchandelle] (MURBMSGA-37)
+    - Fix street search to include disable street
+      [jchandelle] (URB-2696)
+
+- urban.restapi 1.0.0b4 (2023-11-06)
+
+    - Fix street search to include disable street
+      [jchandelle]
 
 
 2.6.22 (2023-10-12)
