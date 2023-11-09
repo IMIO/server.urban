@@ -6,11 +6,13 @@ Changes
 2.4.5-liege (unreleased)
 ------------------------
 
+- Pin liege.urban to `1.0.0` and Prodcuts.urban to `2.5.0.dev0` [URB-2926]
+  [mpeeters]
+
 - imio.pm.wsclient 1.19 (2023-11-09)
 
     - Fix encoding of values [URB-2785]
       [mpeeters]
-
 
 - imio.pm.wsclient 1.18 (2023-08-14)
 
