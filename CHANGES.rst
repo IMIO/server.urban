@@ -6,6 +6,17 @@ Changes
 2.4.5-liege (unreleased)
 ------------------------
 
+- imio.pm.wsclient 1.19 (2023-11-09)
+
+    - Fix encoding of values [URB-2785]
+      [mpeeters]
+
+
+- imio.pm.wsclient 1.18 (2023-08-14)
+
+    - Fix an issue when there is a form instead of `onclick` attribute on input buttons
+      [mpeeters]
+
 - imio.pm.locales 4.2b9 (2021-07-16)
 
     - Added translations for `Not completed votes` and `Completed votes`.
