@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.5-liege (unreleased)
+2.4.5-liege (2023-11-09)
 ------------------------
 
 - Pin liege.urban to `1.0.0` and Prodcuts.urban to `2.5.0.dev0` [URB-2926]
