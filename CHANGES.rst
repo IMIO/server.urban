@@ -6,7 +6,78 @@ Changes
 2.4.6-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- imio.helpers 0.57 (2022-06-10)
+
+    - Added `NoEscapeLinkColumn` as base for link column rendering html.
+      Escape must be done in inherited column.
+      [sgeulette]
+    - `content.uuidToObject` will now return `None` instead an empty list if uuid not found.
+      [gbastien]
+    - Remove zope.app.publication dependency in `security.set_site_from_package_config` as it is now
+      removed since Plone >= 5.2.6
+      [aduchene]
+
+- imio.helpers 0.56 (2022-05-13)
+
+    - Added `setup_ram_cache` method.
+      [sgeulette]
+    - Added `set_site_from_package_config` method
+      [sgeulette]
+
+- imio.helpers 0.55 (2022-05-06)
+
+    - Improved `get_relations` to get optionally referenced objects.
+      [sgeulette]
+
+- imio.helpers 0.54 (2022-03-25)
+
+    - Added `content.get_vocab_value` based on `content.get_vocab` but returns
+      the values (`attr_name='token'` by default, may also be `value` or `title`).
+      [gbastien]
+    - Added `EnhancedTerm` based on `SimpleTerm` providing `attrs` dict on term
+      [sgeulette]
+    - Added `cache.cleanForeverCache` that will clear cache of functions using the
+      `@forever.memoize` decorator.
+      [gbastien]
+
+- imio.helpers 0.53 (2022-03-17)
+
+    - Refactored `get_object`
+      [sgeulette]
+
+- imio.helpers 0.52 (2022-01-12)
+
+    - Added `cache.obj_modified` function that returns max value between
+      obj.modified(), obj._p_mtime and __anotations__._p_mtime
+      [sgeulette]
+    - Added `cache.extract_wrapped` function that returns original decorated function.
+      Useful to compare cached and non cached results in tests.
+      [sgeulette]
+    - Updated git fetch url
+      [sgeulette]
+
+- imio.helpers 0.51 (2022-01-03)
+
+    - Added monkey patch to handle SSL mailer on port 465.
+      [sgeulette]
+    - Added `content.base_getattr` method that will `getattr` without acquisition.
+      [gbastien]
+
+- collective.faceted.task 0.5 (2023-04-06)
+
+    - add translations
+      [MagDhyIm]
+
+- imio.history 0.29 (2023-04-06)
+
+    - Swallow all exceptions when trying to renderding the portlet title.
+      [sdelcourt]
+    - Adapts generation link override to last versions of documentgenerator.
+      [sdelcourt]
+    - Use icons.
+      [sdelcourt]
+    - Docgen icons are now svg.
+      [sdelcourt]
 
 
 2.4.5-liege (2023-11-09)
