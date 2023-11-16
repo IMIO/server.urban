@@ -6,7 +6,15 @@ Changes
 2.4.7-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 1.20 (2023-11-16)
+
+    - Fix encoding for displayed values [URB-2930]
+      [mpeeters]
+
+- liege.urban 1.0.1 (2023-11-16)
+
+    - Fix template for worklocation [URB-2930]
+      [mpeeters]
 
 
 2.4.6-liege (2023-11-10)
