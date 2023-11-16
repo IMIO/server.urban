@@ -6,6 +6,18 @@ Changes
 2.6.24 (unreleased)
 -------------------
 
+- Products.urban 2.6.17 (2023-11-16)
+
+    Bug fixes:
+
+    - Adapt opinion request worklflow to bypass guard check for managers
+      [mpeeters] (SUP-33308)
+
+    Internal:
+
+    - Provide getFirstAcknowledgment method
+      [fngaha] (SUP-32215)
+
 - Add a script to get/set css resource order [URB-2930]
   [mpeeters]
 
