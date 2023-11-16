@@ -6,7 +6,8 @@ Changes
 2.6.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add a script to get/set css resource order [URB-2930]
+  [mpeeters]
 
 
 2.6.23 (2023-11-06)
