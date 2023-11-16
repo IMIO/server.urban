@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.7-liege (unreleased)
+2.4.7-liege (2023-11-16)
 ------------------------
 
 - imio.pm.wsclient 1.20 (2023-11-16)
