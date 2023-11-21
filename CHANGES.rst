@@ -6,7 +6,26 @@ Changes
 2.4.8-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.2 (2023-11-21)
+
+    Bug fixes:
+
+    - Ensure that every licence types can add `UrbanEventMayor` and `UrbanEventAcknowledgment`
+      [mpeeters] (SUP-33677)
+
+- Products.urban 2.5.0.dev1 (2023-11-21)
+
+    Bug fixes:
+
+    - Restore commented out URBAN_TYPES elements in config (most likely an error)
+      [daggelpop] (SUP-28903)
+    - Fix url for exploitation conditions, `getRaw` is no longer accessible through urls
+      [mpeeters] (SUP-33698)
+
+    Internal:
+
+    - Reduce logging for sql queries
+      [mpeeters] (URB-2926)
 
 
 2.4.7-liege (2023-11-16)
