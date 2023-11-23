@@ -6,7 +6,12 @@ Changes
 2.6.25 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.18 (2023-11-23)
+
+    Bug fixes:
+
+    - Add `fix_schedule_config` external method ta fix class of condition objects
+      [mpeeters] (SUP-33739)
 
 
 2.6.24 (2023-11-16)
