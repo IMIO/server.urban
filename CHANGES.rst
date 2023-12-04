@@ -6,7 +6,12 @@ Changes
 2.6.26 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.19 (2023-12-04)
+
+    Bug fixes:
+
+    - Fix an issue with Products.ZCTextIndex that was interpreting `NOT` as token instead of a word for notary letter references
+      [mpeeters] (MURBARLA-25)
 
 
 2.6.25 (2023-11-23)
