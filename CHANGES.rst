@@ -6,7 +6,12 @@ Changes
 2.6.27 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.20 (2023-12-12)
+
+    Bug fixes:
+
+    - Fix street number with specia character in unicode
+      [jchandelle] (URB-2948)
 
 
 2.6.26 (2023-12-04)
