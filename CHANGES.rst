@@ -6,7 +6,10 @@ Changes
 2.6.28 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.schedule 2.1.0 (2023-12-26)
+
+    - Underline close due dates [URB-2515]
+      [ndemonte]
 
 
 2.6.27 (2023-12-12)
