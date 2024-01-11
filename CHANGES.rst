@@ -6,7 +6,14 @@ Changes
 2.4.9-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev2 (2024-01-11)
+
+    Bug fixes:
+
+    - Validate CSV before claimant import
+      [daggelpop] (SUP-33538)
+    - Fix a silent error with portlet on overlays
+      [mpeeters] (URB-2926)
 
 
 2.4.8-liege (2023-11-21)
