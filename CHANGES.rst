@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.6.29 (unreleased)
+2.6.29 (2024-01-18)
 -------------------
 
 - Add `collective.upgrade` as a dependency
