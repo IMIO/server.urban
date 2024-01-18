@@ -6,7 +6,8 @@ Changes
 2.6.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Pin `zodbupdate` to `0.5`
+  [mpeeters]
 
 
 2.6.29 (2024-01-18)
