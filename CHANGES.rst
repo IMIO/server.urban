@@ -6,7 +6,8 @@ Changes
 2.6.29 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add `collective.upgrade` as a dependency
+  [mpeeters]
 
 
 2.6.28 (2023-12-26)
