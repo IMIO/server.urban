@@ -6,7 +6,17 @@ Changes
 2.6.31 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.22 (2024-02-05)
+
+    New features:
+
+    - Add index for street code
+      [jchandelle] (MURBFMAA-20)
+
+- urban.restapi 1.0.0b5 (2024-02-05)
+
+    - Add possibility to search street with code in @address
+      [jchandelle]
 
 
 2.6.30 (2024-01-18)
