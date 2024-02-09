@@ -6,7 +6,12 @@ Changes
 2.6.32 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.23 (2024-02-09)
+
+    Bug fixes:
+
+    - Fix reference validator for similar ref
+      [jchandelle] (URB-3012)
 
 
 2.6.31 (2024-02-05)
