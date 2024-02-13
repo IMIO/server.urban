@@ -6,7 +6,12 @@ Changes
 2.6.33 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.24 (2024-02-13)
+
+    Bug fixes:
+
+    - Add upgrade step to reindex uid catalog
+      [jchandelle] (URB-3015)
 
 
 2.6.32 (2024-02-09)
