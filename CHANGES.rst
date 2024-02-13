@@ -6,6 +6,9 @@ Changes
 2.6.34 (unreleased)
 -------------------
 
+- Update installed profiles by collective.bigbang (URB-3016)
+  [mpeeters]
+
 - Products.urban 2.6.25 (2024-02-13)
 
     Bug fixes:
