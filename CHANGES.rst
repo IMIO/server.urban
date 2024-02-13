@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.6.34 (unreleased)
+2.6.34 (2024-02-13)
 -------------------
 
 - Update installed profiles by collective.bigbang (URB-3016)
