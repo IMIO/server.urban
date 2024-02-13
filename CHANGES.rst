@@ -6,7 +6,12 @@ Changes
 2.6.34 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.6.25 (2024-02-13)
+
+    Bug fixes:
+
+    - Fix an issue with installation through collective.bigbang
+      [mpeeters] (URB-3016)
 
 
 2.6.33 (2024-02-13)
