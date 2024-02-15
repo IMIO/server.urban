@@ -6,7 +6,10 @@ Changes
 2.6.35 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- urban.restapi 1.0.0b6 (2024-02-08)
+
+    - Fix endpoint address for fail street code search [MURBFMAA-20]
+      [jchandelle]
 
 
 2.6.34 (2024-02-13)
