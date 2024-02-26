@@ -6,7 +6,8 @@ Changes
 2.4.10-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Add collective.exportimport
+  [mpeeters]
 
 
 2.4.9-liege (2024-01-11)
