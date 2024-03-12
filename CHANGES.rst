@@ -6,7 +6,15 @@ Changes
 2.6.36 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- urban.schedule 1.0.0a1 (2024-03-12)
+
+    New features:
+
+    - Add conditions to determine if the current content is under the new reform or not
+      [mpeeters] (URB-3004)
+    - Add upgrade step to import schedule config
+      Adapt `urban.schedule.start_date.acknowledgment_limit_date` to handle the new rules of the CODT reform
+      [jchandelle, mpeeters] (URB-3005)
 
 
 2.6.35 (2024-02-15)
