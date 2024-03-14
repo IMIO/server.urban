@@ -6,6 +6,14 @@ Changes
 2.6.36 (unreleased)
 -------------------
 
+- imio.urban.core 0.2 (2024-03-13)
+
+    - Fix the default value for internal service [URB-3006]
+      [mpeeters]
+
+    - Add attachment to parceling type [SUP-19414]
+      [jchandelle]
+
 - urban.events 1.0.0a1 (2024-03-13)
 
     New features:
