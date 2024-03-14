@@ -6,6 +6,13 @@ Changes
 2.4.10-liege (unreleased)
 -------------------------
 
+- urban.events 1.0.0a2 (2024-03-14)
+
+    Bug fixes:
+
+    - Fix enum dependency
+      [jchandelle] (URB-3006)
+
 - urban.events 1.0.0a1 (2024-03-13)
 
     New features:
@@ -14,6 +21,14 @@ Changes
       new CODT reform events at profile import.
       Split configuration files between urban classic and liege.
       [jchandelle, daggelpop, mpeeters] (URB-3006)
+
+- urban.schedule 1.0.0a2 (2024-03-14)
+
+    Bug fixes:
+
+    - Fix import uid and @id and fix existing content handling
+      Fix enum dependency
+      [jchandelle] (URB-3005)
 
 - urban.schedule 1.0.0a1 (2024-03-12)
 
