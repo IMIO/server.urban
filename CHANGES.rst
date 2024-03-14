@@ -6,7 +6,12 @@ Changes
 2.7.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.1 (2024-03-14)
+
+    Bug fixes:
+
+    - Fix delay vocabularies value order
+      [mpeeters] (URB-3003)
 
 
 2.7.1 (2024-03-14)
