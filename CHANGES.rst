@@ -6,7 +6,20 @@ Changes
 2.7.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- urban.events 1.0.0a2 (2024-03-14)
+
+    Bug fixes:
+
+    - Fix enum dependency
+      [jchandelle] (URB-3006)
+
+- urban.schedule 1.0.0a2 (2024-03-14)
+
+    Bug fixes:
+
+    - Fix import uid and @id and fix existing content handling
+      Fix enum dependency
+      [jchandelle] (URB-3005)
 
 
 2.7.0 (2024-03-14)
