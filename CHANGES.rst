@@ -6,6 +6,15 @@ Changes
 2.4.10-liege (unreleased)
 -------------------------
 
+- urban.events 1.0.0a1 (2024-03-13)
+
+    New features:
+
+    - Add function to import event config and create
+      new CODT reform events at profile import.
+      Split configuration files between urban classic and liege.
+      [jchandelle, daggelpop, mpeeters] (URB-3006)
+
 - urban.schedule 1.0.0a1 (2024-03-12)
 
     New features:
