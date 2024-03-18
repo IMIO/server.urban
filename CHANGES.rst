@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.11-liege (unreleased)
+2.4.11-liege (2024-03-18)
 -------------------------
 
 - Remove Products.urban from auto-checkout
