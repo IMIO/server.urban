@@ -6,7 +6,8 @@ Changes
 2.4.11-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Remove Products.urban from auto-checkout
+  [mpeeters]
 
 
 2.4.10-liege (2024-03-18)
