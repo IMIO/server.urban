@@ -6,7 +6,12 @@ Changes
 2.7.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.2 (2024-03-18)
+
+    New features:
+
+    - Add `getCompletenessDelay`, `getCompletenessDelay` and `getFDAdviceDelay` methods that can be used in templates
+      [mpeeters] (URB-3008)
 
 
 2.7.2 (2024-03-14)
