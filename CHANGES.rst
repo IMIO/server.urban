@@ -6,7 +6,24 @@ Changes
 2.7.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.4 (2024-03-20)
+
+    Bug fixes:
+
+    - Invert Refer FD delay 30 <-> 40 days
+      [mpeeters] (URB-3008)
+
+- Products.urban 2.7.3 (2024-03-20)
+
+    New features:
+
+    - Add `is_not_CODT2024` method that can be used in templates
+      [mpeeters] (URB-3008)
+
+    Bug fixes:
+
+    - Fix update of vocabularies
+      [mpeeters] (URB-3002)
 
 
 2.7.4 (2024-03-18)
