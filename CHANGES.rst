@@ -6,7 +6,21 @@ Changes
 2.4.12-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev5 (2024-03-20)
+
+    New features:
+
+    - Make caduc and abandoned workflow state grey
+      [jchandelle] (URB-3007)
+    - Add `is_not_CODT2024` method that can be used in templates
+      [mpeeters] (URB-3008)
+
+    Bug fixes:
+
+    - Fix update of vocabularies
+      [mpeeters] (URB-3002)
+    - Invert Refer FD delay 30 <-> 40 days
+      [mpeeters] (URB-3008)
 
 
 2.4.11-liege (2024-03-18)
