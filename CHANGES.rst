@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.12-liege (unreleased)
+2.4.12-liege (2024-03-20)
 -------------------------
 
 - Products.urban 2.5.0.dev5 (2024-03-20)
