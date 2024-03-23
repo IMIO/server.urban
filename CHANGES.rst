@@ -6,7 +6,13 @@ Changes
 2.7.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- urban.events 1.0.0a4 (2024-03-23)
+
+    New features:
+
+    - Update or fix TAL Condition on CODT 2024 new events.
+      Fix `eventType` attribute on Urban classic.
+      [mpeeters] (URB-3006)
 
 
 2.7.5 (2024-03-20)
