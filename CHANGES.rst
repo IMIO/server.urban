@@ -6,7 +6,12 @@ Changes
 2.7.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.6 (2024-03-25)
+
+    Bug fixes:
+
+    - Fix an issue with upgrade step numbers
+      [mpeeters] (URB-3002)
 
 
 2.7.6 (2024-03-24)
