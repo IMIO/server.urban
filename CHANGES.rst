@@ -6,6 +6,9 @@ Changes
 2.4.13-liege (unreleased)
 -------------------------
 
+- Add `liege.urban` to test dependencies
+  [mpeeters]
+
 - Add `URBAN_SCHEDULE_CONFIGS` env variable (URB-3005)
   [mpeeters]
 
