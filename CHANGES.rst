@@ -6,7 +6,8 @@ Changes
 2.4.13-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Add `URBAN_SCHEDULE_CONFIGS` env variable (URB-3005)
+  [mpeeters]
 
 
 2.4.12-liege (2024-03-20)
