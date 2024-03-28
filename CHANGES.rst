@@ -6,6 +6,21 @@ Changes
 2.4.13-liege (unreleased)
 -------------------------
 
+- urban.events 1.0.0a4 (2024-03-23)
+
+    New features:
+
+    - Update or fix TAL Condition on CODT 2024 new events.
+      Fix `eventType` attribute on Urban classic.
+      [mpeeters] (URB-3006)
+
+- urban.events 1.0.0a3 (2024-03-18)
+
+    Bug fixes:
+
+    - Fix an error with event config on Urban Classic
+      [mpeeters] (URB-3006)
+
 - Add `liege.urban` to test dependencies
   [mpeeters]
 
