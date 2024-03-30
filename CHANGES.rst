@@ -6,7 +6,32 @@ Changes
 2.7.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- urban.schedule 1.0.0a3 (2024-03-30)
+
+    New features:
+
+    - Store checking completion task config for liege.
+      Store reception task config for CODT Buildlicence and CU on Urban classic.
+      [daggelpop, mpeeters] (URB-3005)
+
+    Internal:
+
+    - Add french translations for conditions.
+      Handle specific configuration for Liege and Urban classic.
+      Improve import of config by adding `match_filename` optional parameter to only import one config filename.
+      [mpeeters] (URB-3005)
+
+- imio.schedule 2.2.0 (2024-03-30)
+
+    - URB-3005: Add a deserializer for objects that also handle vocabulary specificities
+      [mpeeters]
+    - URB-3005: Add converters for schedule objects
+      [mpeeters]
+
+- imio.urban.core 0.3 (2024-03-30)
+
+    - URB-3005: Do not index description in `SearchableText` for event configs
+      [mpeeters]
 
 
 2.7.7 (2024-03-25)
