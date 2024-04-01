@@ -6,7 +6,19 @@ Changes
 2.4.14-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.3 (2024-04-01)
+
+    New features:
+
+    - Add caduc workflow state
+      [jchandelle,mpeeters] (URB-3007)
+    - Add frozen workflow state to article127, inspection and ticket
+      [jchandelle] (URB-3023)
+
+    Bug fixes:
+
+    - Fix an issue with zope users on urban homepage
+      [mpeeters] (URB-2956)
 
 
 2.4.13-liege (2024-04-01)
