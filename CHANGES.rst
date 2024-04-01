@@ -6,7 +6,22 @@ Changes
 2.7.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.7 (2024-04-01)
+
+    Bug fixes:
+
+    - Fix an error in calculation of prorogated delays
+      [mpeeters] (URB-3008)
+
+    Internal:
+
+    - Add tests for buildlicence and CU2 completion schedule
+      [mpeeters] (URB-3005)
+
+- collective.ugprade 1.3 (2018-04-18)
+
+    - Add zope global request to PortalUpgrader.
+      [bsuttor]
 
 
 2.7.8 (2024-03-30)
