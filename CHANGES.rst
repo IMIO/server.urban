@@ -6,7 +6,12 @@ Changes
 2.4-15-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev7 (2024-04-07)
+
+    Bug fixes:
+
+    - Avoid an error if an advice was not defined
+      [mpeeters] (SUP-36385)
 
 
 2.4.14-liege (2024-04-01)
