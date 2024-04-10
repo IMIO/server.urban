@@ -6,7 +6,17 @@ Changes
 2.7.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.10 (2024-04-10)
+
+    New features:
+
+    - Add view for import urban config
+      [jchandelle] (SUP-36419)
+
+- imio.schedule 2.2.1 (2024-04-10)
+
+    - Fix object deserializer
+      [jchandelle]
 
 
 2.7.11 (2024-04-07)
