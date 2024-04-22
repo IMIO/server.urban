@@ -6,7 +6,19 @@ Changes
 2.4.17-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- imio.schedule 1.8.2 (2024-04-22)
+
+    New features:
+
+    - Allow additional delay to be a TAL expression
+      [mpeeters] (URB-3005)
+
+    Internal:
+
+    - Black
+      [mpeeters] (SUP-27104)
+    - Fix tests
+      [mpeeters] (URB-3005)
 
 
 2.4.16-liege (2024-04-21)
