@@ -6,7 +6,12 @@ Changes
 2.7.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.12 (2024-04-25)
+
+    Bug fixes:
+
+    - Fix wrong files export
+      [jchandelle] (MURBMONA-48)
 
 
 2.7.13 (2024-04-25)
