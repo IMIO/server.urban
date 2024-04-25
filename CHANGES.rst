@@ -6,12 +6,6 @@ Changes
 2.7.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
-
-2.7.15 (unreleased)
--------------------
-
 - imio.schedule 2.2.2 (2024-04-25)
 
     New features:
