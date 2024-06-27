@@ -6,7 +6,50 @@ Changes
 2.4.18-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev9 (2024-06-27)
+
+    New features:
+
+    - Add recipient import to inquiries
+      [daggelpop] (SUP-36417)
+
+    Internal:
+
+    - Test checking opnion FD delay
+      [jchandelle]
+      Test completion due dates after amending plans
+      [daggelpop] (URB-3005)
+
+- imio.schedule 1.8.3 (2024-06-27)
+
+    New features:
+
+    - Add deserializer for condition objects
+      [jchandelle] (URB-3005)
+
+- urban.events 1.0.0a5 (2024-06-27)
+
+    New features:
+
+    - URB-3005: Add `recepisse-de-plans-modificatifs` to standard config
+      [daggelpop]
+      URB-3005: Move `recepisse-de-plans-modificatifs` config to appropriate package
+      [daggelpop] (URB-3005)
+
+- urban.schedule 1.0.0a4 (2024-06-27)
+
+    New features:
+
+    - Add start_date and conditional adapter for amended plans
+      [daggelpop]
+      Add task config for amended plans
+      [daggelpop]
+      Add config for `recepisse-de-plans-modificatifs` event
+      [daggelpop]
+      Adapt `AcknowledgmentLimitDate` for `IntentionToSubmitAmendedPlans`
+      [daggelpop]
+      Change opinion FD delay for codt 2024 change
+      [jchandelle] (URB-3005)
 
 
 2.4.17-liege (2024-04-22)
