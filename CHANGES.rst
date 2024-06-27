@@ -6,7 +6,83 @@ Changes
 2.7.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.14 (2024-06-27)
+
+    New features:
+
+    - Adapt vocabulary default config values for 2024 CODT reform
+      [daggelpop] (URB-3003)
+    - Add frozen state
+      [jchandelle] (URB-3007)
+    - Allow linking to patrimony certificates
+      [daggelpop] (URB-3063)
+    - Add validity date filter and index
+      [jchandelle] (URB-3090)
+    - Add new terms to foldercategories vocabulary
+      [daggelpop] (URB-3096)
+    - Rename Patrimony certificate
+      [daggelpop] (URB-3116)
+    - Add `get_bound_licences` and `get_bound_patrimonies` to CODT_BaseBuildLicence
+      [daggelpop] (URB-3125)
+
+    Bug fixes:
+
+    - Mark PatrimonyCertificate as allowed type for bound_licences field in CODT build licences
+      [daggelpop] (URB-3046)
+
+- urban.events 1.0.0a5 (2024-06-27)
+
+    New features:
+
+    - URB-3005: Add `recepisse-de-plans-modificatifs` to standard config
+      [daggelpop]
+      URB-3005: Move `recepisse-de-plans-modificatifs` config to appropriate package
+      [daggelpop] (URB-3005)
+
+- urban.schedule 1.0.0a4 (2024-06-27)
+
+    New features:
+
+    - Add start_date and conditional adapter for amended plans
+      [daggelpop]
+      Add task config for amended plans
+      [daggelpop]
+      Add config for `recepisse-de-plans-modificatifs` event
+      [daggelpop]
+      Adapt `AcknowledgmentLimitDate` for `IntentionToSubmitAmendedPlans`
+      [daggelpop]
+      Change opinion FD delay for codt 2024 change
+      [jchandelle] (URB-3005)
+
+- plonetheme.imioapps 2.47 (2024-04-10)
+
+    - URB-3007. Make caduc and abandoned workflow state grey in urban
+      [jchandelle]
+    - Add justice contact icon
+      [ndemonte]
+    - Added style for `concatenate-annexes` batch action button icon.
+      [gbastien]
+    - Avoid `'NoneType' object has no attribute 'get'` in `ImioSearch.filter_query`
+      if `query` is `None`.
+      [gbastien]
+
+- plonetheme.imioapps 2.46 (2024-03-01)
+
+    - Added .apButtonAction_download background image.
+      [sgeulette]
+
+- plonetheme.imioapps 2.45 (2024-01-02)
+
+    - Fixed change introduced in release `2.44` with tag `h1` in overlays that
+      was impacting other overlays.
+      Moreover removed border bottom of `History` title in history overlay.
+      [gbastien]
+
+- plonetheme.imioapps 2.44 (2023-11-27)
+
+    - Now that element's title (pretty link) is displayed in `@@historyview`,
+      display `h1` in overlay the same size it is display out of an overlay.
+      [gbastien]
 
 
 2.7.16 (2024-05-28)
