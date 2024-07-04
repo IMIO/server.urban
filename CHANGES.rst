@@ -6,7 +6,12 @@ Changes
 2.4.19-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- imio.schedule 1.8.4 (2024-07-04)
+
+    Bug fixes:
+
+    - Fix duplicate serializer
+      [jchandelle] (URB-3005)
 
 
 2.4.18-liege (2024-06-27)
