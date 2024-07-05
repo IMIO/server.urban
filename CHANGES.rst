@@ -6,8 +6,28 @@ Changes
 2.7.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.15 (2024-07-05)
 
+    New features:
+
+    - Add rule action for sending mail with attachments
+      Add rule condition for corresponding event type and opinion to ask
+      Add action for sending mail from event context with document in attachement
+      [jchandelle] (URB-3020)
+    - Change limit year of date widget to current year + 25
+      [jchandelle] (URB-3153)
+
+    Bug fixes:
+
+    - Fix getValidityDate indexation
+      [jchandelle]
+      Fix validity filter title
+      [jchandelle] (URB-3090)
+    - Give dynamic group reader roles for obsolete licences
+      [daggelpop] (URB-3131)
+
+- Add bigbang variables on instance-debug
+  [daggelpop]
 
 2.7.17 (2024-06-27)
 -------------------
