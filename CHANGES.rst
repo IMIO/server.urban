@@ -6,8 +6,12 @@ Changes
 2.7.19 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.16 (2024-07-25)
+    
+    Bug fixes:
 
+    - Fix faceted widget id collision
+      [daggelpop] (URB-3090)
 
 2.7.18 (2024-07-05)
 -------------------
