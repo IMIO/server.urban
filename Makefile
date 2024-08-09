@@ -2,7 +2,7 @@
 #
 
 options =
-plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg 
+plonesites = parts/omelette/Products/urban/scripts/config/plonesites.cfg
 extras = parts/omelette/Products/urban/scripts/config/extras.py.tmpl
 mountpoints = parts/omelette/Products/urban/scripts/config/mount_points.conf
 
@@ -42,14 +42,14 @@ cleanall:
 	rm -fr bin/instance1 develop-eggs downloads eggs parts .installed.cfg
 
 .PHONY: libraries
-libraries: 
+libraries:
 	./bin/subproducts.sh
 
 bin/templates:
 	./bin/buildout -t 60 install templates
 	touch $@
 
-bin/templates_per_site: 
+bin/templates_per_site:
 	./bin/buildout -t 60 install templates
 	touch $@
 
