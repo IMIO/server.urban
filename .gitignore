@@ -2,6 +2,10 @@
 # taken into account by: svn propset svn:ignore -F svn.ignore .
 #
 .installed.cfg
+.mr.developer.cfg
+.python-version
+bin/*
+buildout.log
 develop-eggs
 downloads
 eggs
@@ -12,12 +16,8 @@ logrotate.conf
 parts
 python-eggs
 src
-versions-picked.cfg
-buildout.log
 uuid.txt
-bin/*
-.mr.developer.cfg
 var/blobstorage/*
 var/filestorage/*
 var/log/*
-
+versions-picked.cfg
