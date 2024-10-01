@@ -6,7 +6,65 @@ Changes
 2.7.20 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.17 (2024-10-01):
+
+    New features:
+
+
+    - Translate all untranslated & empty msgtr
+    - Replace None occurences by "Aucun(e)"
+    - Improve / translate "See more..." link text
+    - Improve truncated "Voir..." link text
+      [dmshd] (URB-2503)
+    
+    - Add centrality to commercial licence
+      [daggelpop] (URB-3017)
+    
+    - Add 3 surface fields to commercial licence
+      [daggelpop] (URB-3117)
+    
+    - Add field `D.67 CoPat` to patrimony fieldset
+      daggelpop (URB-3167)
+
+
+    Bug fixes:
+
+
+    - Fix merge field getStreetAndNumber
+      [jchandelle] (SUP-38082)
+    
+    - Fix mail message encoding
+      [jchandelle] (SUP-39227)
+    
+    - Fix space causing bug
+      [dmshd] (URB-2676)
+    
+    - Fix typo in french translation
+      [dmshd] (URB-3128)
+
+    - Fix event_type condition for content rules
+      [jchandelle] (URB-3182)
+
+
+    Internal:
+
+
+    - Set buildout cache directories.
+
+      I had a network problem and I had to rerun from the beginning. Took a long time. I searched for a way to fasten and discovered that I could set the cache directories. I set the cache directories as the iA.Delib team does it at iMio.
+
+      [dmshd] (URB-3135-define_buildout_cache_directories)
+    - Ignore .python-version (pyenv file) and sort lines in .gitignore file.
+      [dmshd] (URB-3135-ignore-python-version-file-and-sort-lines)
+
+
+- urban.schedule 1.0.0a5 (2024-10-01)
+
+    Bug fixes:
+
+
+    - Add amended plans translations
+      [daggelpop] (URB-3005)
 
 
 2.7.19 (2024-07-25)
