@@ -6,7 +6,17 @@ Changes
 2.4.20-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.4 (2024-10-01)
+
+    New features:
+
+    - Add form_composition field to the export in `activity_report.py`.
+      [aduchene] (SUP-37960)
+
+    Bug fixes:
+
+    - Fix performance issue with `activity_report.py`.
+      [aduchene] (URB-3102)
 
 
 2.4.19-liege (2024-07-04)
