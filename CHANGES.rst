@@ -6,7 +6,14 @@ Changes
 2.4.21-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev10 (2024-10-01)
+
+    New features:
+
+    - Add validity date filter and index
+      [jchandelle] (URB-3090)
+    - Add field `D.67 CoPat` to patrimony fieldset
+      daggelpop (URB-3167)
 
 
 2.4.20-liege (2024-10-01)
