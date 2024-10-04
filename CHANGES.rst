@@ -6,7 +6,13 @@ Changes
 2.7.22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.19 (2024-10-04):
+
+    Bug fixes:
+
+
+    - Fix getInquiryRadius method
+      [jchandelle] (URB-2983)
 
 
 2.7.21 (2024-10-04)
