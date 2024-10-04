@@ -6,7 +6,13 @@ Changes
 2.4.22-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- urban.schedule 1.0.0a5 (2024-10-01)
+
+    Bug fixes:
+
+
+    - Add amended plans translations
+      [daggelpop] (URB-3005)
 
 
 2.4.21-liege (2024-10-01)
