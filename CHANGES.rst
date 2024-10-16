@@ -6,7 +6,7 @@ Changes
 2.4.24-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Fix versions for `imio.pm.wsclient` & `imio.ws.register`
 
 
 2.4.23-liege (2024-10-16)
