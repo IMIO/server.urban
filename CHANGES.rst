@@ -6,8 +6,38 @@ Changes
 2.4.23-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- urban.schedule 1.0.0a6 (2024-10-16)
 
+    New features:
+
+    - Add two new creation conditions `IsPloneMeetingCollegeDone` and `IsPloneMeetingCouncilDone`.
+      [aduchene]
+      Add two new start dates `PloneMeetingCollegeDecidedDate` and `PloneMeetingCouncilDecidedDate`.
+      [aduchene]
+      Add roaddecree tasks for liege.
+      [aduchene] (URB-3150)
+
+- Products.urban 2.5.0.dev11 (2024-10-16)
+
+    New features:
+
+    - Use imio.pm.wsclient 2.x version (REST).
+      [aduchene]
+      Add `get_last_plonemeeting_date`, `get_last_college_date` and `get_last_college_date` to CODT_BaseBuildLicence.
+      [aduchene] (URB-3148)
+
+- imio.pm.wsclient 2.0.0b2 (2024-10-16)
+
+    - Fix translation of overlay title
+      [mpeeters]
+    - Avoid an error if the user can not access to meetings
+      [mpeeters]
+    - Upgrade config for REST api
+      [mpeeters]
+    - Fixed all unit tests.
+      [aduchene]
+    - Add a new helper method `_rest_getDecidedMeetingDate` to get the actual decided meeting date.
+      [aduchene]
 
 2.4.22-liege (2024-10-04)
 -------------------------
