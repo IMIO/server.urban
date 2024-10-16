@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.23-liege (unreleased)
+2.4.23-liege (2024-10-16)
 -------------------------
 
 - urban.schedule 1.0.0a6 (2024-10-16)
