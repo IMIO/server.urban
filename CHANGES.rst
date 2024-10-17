@@ -6,7 +6,12 @@ Changes
 2.4.25-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.5 (2024-10-17)
+
+    New features:
+
+    - Compatible with imio.pm.wsclient 2.x.
+      [aduchene] (URB-3148)
 
 
 2.4.24-liege (2024-10-16)
