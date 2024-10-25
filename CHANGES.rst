@@ -6,7 +6,40 @@ Changes
 2.7.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.22 (2024-10-25)
+
+    New features:
+
+    - Add new condition in content rules for licence type
+      [jchandelle] (URB-3020)
+    - Add banner on top of event after mail send
+      [jchandelle] (URB-3204)
+
+    Bug fixes:
+
+    - Fix comment retrieval in transition form
+      [daggelpop] (SUP-35563)
+    - Fix address comparison in _areSameAdresses
+      [dmshd] (SUP-39098)
+    - Fix an issue when there was too many connection open that raised a SQLAlchemy error
+      [laulaz] (SUP-39919)
+    - Fix content rules for event type
+      [jchandelle] (SUP-40117)
+    - Translate `suspension` terms in French
+      [daggelpop] (URB-3007)
+    - Fix opinion condition text
+      [jchandelle] (URB-3020)
+    - Fix missing function to have multiple inquiry on CODT commercial licence
+      [jchandelle] (URB-3130)
+    - Fix export import des config
+      [jchandelle] (URB-3190)
+
+- urban.schedule 1.0.0a7 (2024-10-25)
+
+    Bug fixes:
+
+    - Update schedule config for reception (skip existing)
+      [daggelpop] (URB-3005)
 
 
 2.7.23 (2024-10-09)
