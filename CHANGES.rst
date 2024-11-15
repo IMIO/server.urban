@@ -6,7 +6,18 @@ Changes
 2.7.25 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.23 (2024-11-15)
+
+    Bug fixes:
+    
+    - Fix frozen_suspension state
+      [jchandelle] (SUP-39511)
+    - Fix Task config
+      [jchandelle] (URB-2680)
+    - Fix existing c13 title upgrade
+      [daggelpop] (URB-3090)
+    - Fix import pod templates
+      [jchandelle] (URB-3190)
 
 
 2.7.24 (2024-10-25)
