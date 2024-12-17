@@ -21,3 +21,5 @@ var/blobstorage/*
 var/filestorage/*
 var/log/*
 versions-picked.cfg
+docs/*/Makefile
+docs/*/_build/
