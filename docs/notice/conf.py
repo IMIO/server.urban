@@ -5,9 +5,9 @@ from pkg_resources import get_distribution
 import sys
 
 project = 'Notice'
-copyright = '2023, iMio'
+copyright = '2023-2024, iMio'
 
-version = release = "1.6.0"
+version = release = "1.7.0"
 
 
 # The suffix of source filenames.
