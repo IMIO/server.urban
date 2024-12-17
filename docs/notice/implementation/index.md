@@ -10,6 +10,7 @@ html_meta:
 
 - [Workflow](workflow)
 - [Types de contenu](contenttypes)
-- [Configuration](controlpanel)  
+- [Configuration](controlpanel)
 - [Webservice](webservice)
+- [Modifications V2](modifications-v2)
 - [Glossaire](glossary)

@@ -10,6 +10,7 @@ html_meta:
 
 | <div style="width: 15%; min-width: 55px;">Version</div> | <div style="width: 15%; min-width: 60px;">Date</div> | <div style="width: 15%; min-width: 60px;">Auteur</div> | Commentaire |
 | ------: | -------- | -------------- | ----------- |
+| 1.7.0   | 21/10/24 | Martin Peeters | Documentation des changements liés à la V2 des webservices |
 | 1.6.0   | 29/08/23 | Martin Peeters | Adaptation des mécanismes liés aux événéments |
 | 1.5.0   | 17/08/23 | Martin Peeters | Finalisation du début du workflow, ajout d'exemples pour le webservice |
 | 1.4.0   | 28/03/23 | Martin Peeters | Amélioration Glossaire et correction du markdown |

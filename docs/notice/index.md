@@ -13,6 +13,7 @@ html_meta:
 - [Types de contenu](implementation/contenttypes)
 - [Configuration](implementation/controlpanel)
 - [Webservice](implementation/webservice)
+- [Modifications V2](implementation/modifications-v2)
 - [Glossaire](implementation/glossary)
 
 ```{toctree}
@@ -24,5 +25,6 @@ implementation/workflow
 implementation/contenttypes
 implementation/controlpanel
 implementation/webservice
+implementation/modifications-v2
 implementation/glossary
 ```
