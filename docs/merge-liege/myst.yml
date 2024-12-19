@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 51e83dd8-6738-4dd5-80ab-2ccf484c5893
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/IMIO/server.urban
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
