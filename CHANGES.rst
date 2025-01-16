@@ -23,6 +23,21 @@ Changes
       [daggelpop] (SUP-33621)
 
 
+- liege.urban 1.0.6 (2025-01-16)
+
+    New features:
+
+    - Adjust permissions on `codt_buildlicence_workflow` to handle `RoadReader` role.
+      [aduchene]
+      Add a new group `Voirie_readers` that can read all road decrees.
+      [aduchene] (URBLIE-446)
+
+    Bug fixes:
+
+    - Don't dispatch on async instance in `MonthlyActivityReport`.
+      [aduchene] (URB-3225)
+
+
 2.4.25-liege (2024-10-17)
 -------------------------
 
