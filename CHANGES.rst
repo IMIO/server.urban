@@ -6,7 +6,13 @@ Changes
 2.7.27 (unreleased)
 -------------------
 
-- Nothing changed yet.
+
+- Products.urban 2.7.25 (2025-01-21)
+
+    Bug fixes:
+
+    - Fix upgrade step
+      [jchandelle] (URB-2680)
 
 
 2.7.26 (2024-12-03)
