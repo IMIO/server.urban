@@ -6,7 +6,12 @@ Changes
 2.7.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.28 (2025-02-02)
+    
+    Bug fixes:
+    
+    - Fix missing indentation
+      [jchandelle] (URB-3250)
 
 
 2.7.29 (2025-01-31)
