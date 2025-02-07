@@ -6,7 +6,27 @@ Changes
 2.4.27-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev13 (2025-02-07)
+
+    New features:
+    
+    - Modify obsolete state display order
+      [jchandelle] (SUP-36697)
+    
+    Bug fixes:
+    
+    - Fix sending zem document by mail
+      [jchandelle] (SUP-40979)
+    - Add missing translation in schedule config
+      [WBoudabous] (URB-3277)
+
+
+- liege.urban 1.0.7 (2025-02-07)
+
+    New features:
+    
+    - Modify obsolete state workflow and display order
+      [jchandelle] (SUP-36697)
 
 
 2.4.26-liege (2025-01-16)
