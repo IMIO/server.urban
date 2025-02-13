@@ -6,7 +6,12 @@ Changes
 2.4.28-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev14 (2025-02-13)
+
+    New features:
+    
+    - Add external method to delete duplicate task
+      [jchandelle] (SUP-42085)
 
 
 2.4.27-liege (2025-02-07)
