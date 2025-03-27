@@ -6,6 +6,13 @@ Changes
 2.7.35 (unreleased)
 -------------------
 
+- Products.urban 2.7.34 (2025-03-27)
+
+    Bug fixes:
+
+    - Fix licence type condition in content rules
+      [jchandelle] (SUP-43534)
+
 - Products.urban 2.7.33 (2025-03-27)
 
     Bug fixes:
