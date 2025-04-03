@@ -6,7 +6,8 @@ Changes
 2.4.30-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Add environnment-vars URBAN_SCHEDULE_CONFIGS
+  [aduchene] (URB-3210)
 
 
 2.4.29-liege (2025-02-14)
