@@ -6,7 +6,12 @@ Changes
 2.7.38 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.37 (2025-04-29)
+
+    Bug fixes:
+
+    - Fix encoding in mail send notification
+      [jchandelle] (SUP-43917)
 
 
 2.7.37 (2025-04-24)
