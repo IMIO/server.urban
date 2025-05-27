@@ -6,7 +6,58 @@ Changes
 2.7.39 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- urban.schedule 1.0.0 (2025-05-27)
+
+    New features:
+
+    - Add creation conditions `deposit_past_20days`, `deposit_under_20days` and `deposit_number_match`.
+      Add ending condition `is_suspended_ending`.
+      Update recurrence conditions for amended plans.
+      [mpeeters] (URB-3154)
+    - Add possiblity to specify key to update when updating config
+      [jchandelle] (URB-3331)
+
+    Internal:
+
+    - Do not import file that are not JSON
+      [mpeeters] (URB-3154)
+
+- imio.schedule 3.0.0 (2025-05-27)
+
+    Breaking changes:
+
+    - Fix interpretation logic of conditions that was wrong in few case (e.g. AND, OR, AND) (URB-3154)
+
+    New features:
+
+    - Allow additional delay to be a TAL expression
+      [mpeeters] (URB-3005)
+    - Add debug functionality
+      [mpeeters] (URB-3070)
+
+    Internal:
+
+    - Black
+      [mpeeters] (SUP-27104)
+    - Fix tests
+      [mpeeters] (URB-3005)
+
+- Products.urban 2.7.38 (2025-05-27)
+
+    New features:
+
+    - Add debug functionality for schedule task
+      [mpeeters] (URB-3070)
+
+    Bug fixes:
+
+    - Add RoadDecree to URBAN_TYPES so it can be used in the tests.
+      [aduchene] (URB-3293)
+
+    Internal:
+
+    - Move `urban.schedule.condition.deposit_past_20days` into urban.schedule package
+      [mpeeters] (URB-3154)
 
 
 2.7.38 (2025-04-29)
