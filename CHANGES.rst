@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.4.30-liege (unreleased)
+2.4.30-liege (2025-06-05)
 -------------------------
 
 - Add environnment-vars URBAN_SCHEDULE_CONFIGS
