@@ -6,7 +6,12 @@ Changes
 2.7.41 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.40 (2025-06-10)
+
+    Bug fixes:
+
+    - Revert "URB-3293 - Add RoadDecree to URBAN_TYPES (#340)"
+      [mpeeters] (URB-3293)
 
 
 2.7.40 (2025-06-07)
