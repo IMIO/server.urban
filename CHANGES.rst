@@ -6,7 +6,14 @@ Changes
 2.7.42 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.41 (2025-06-18)
+
+    New features:
+
+    - Add translation for nonapplicable state in Division
+      [jchandelle] (SUP-39760)
+    - Add building procedure's
+      [WBoudabous, aduchene] (URBBDC-3142)
 
 
 2.7.41 (2025-06-10)
@@ -23,7 +30,7 @@ Changes
 2.7.40 (2025-06-07)
 -------------------
 
-- Prodcuts.urban 2.7.39 (2025-06-07)
+- Products.urban 2.7.39 (2025-06-07)
 
     New features:
 
