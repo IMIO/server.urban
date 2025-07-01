@@ -6,7 +6,29 @@ Changes
 2.4.31-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev17 (2025-07-01)
+
+    New features:
+
+    - Give opinion editor roles on road decree's bound licence
+      [daggelpop] (SUP-29258)
+    - Add way to easily hide licence type
+      [jchandelle] (SUP-33793)
+    - Add centrality to every licence & make it a multiselect
+      [daggelpop]
+      Move centrality in first position in the fieldset
+      [daggelpop] (URB-3017)
+    - Add bound licences field to patrimony certificates
+      [daggelpop] (URB-3046)
+    - Add 3 surface fields to commercial licence
+      [daggelpop] (URB-3117)
+
+    Bug fixes:
+
+    - Fix history parcel view when missing capakey
+      [jchandelle] (SUP-36370)
+    - Fix encoding in mail send notification
+      [jchandelle] (SUP-43917)
 
 
 2.4.30-liege (2025-06-05)
@@ -51,7 +73,7 @@ Changes
 - Products.urban 2.5.0.dev15 (2025-02-14)
 
     Bug fixes:
-    
+
     - Fix sort transition function logic
       [jchandelle] (SUP-42697)
 
@@ -62,7 +84,7 @@ Changes
 - Products.urban 2.5.0.dev14 (2025-02-13)
 
     New features:
-    
+
     - Add external method to delete duplicate task
       [jchandelle] (SUP-42085)
 
@@ -73,12 +95,12 @@ Changes
 - Products.urban 2.5.0.dev13 (2025-02-07)
 
     New features:
-    
+
     - Modify obsolete state display order
       [jchandelle] (SUP-36697)
-    
+
     Bug fixes:
-    
+
     - Fix sending zem document by mail
       [jchandelle] (SUP-40979)
     - Add missing translation in schedule config
@@ -88,7 +110,7 @@ Changes
 - liege.urban 1.0.7 (2025-02-07)
 
     New features:
-    
+
     - Modify obsolete state workflow and display order
       [jchandelle] (SUP-36697)
 
