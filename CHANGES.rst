@@ -20,6 +20,11 @@ Changes
       Add value for SPW cyberattack
       [jchandelle] (URB-3337)
 
+    Bug fixes:
+
+    - Revert: Add building procedure's
+      [WBoudabous, aduchene] (URBBDC-3142)
+
 
 2.7.42 (2025-06-18)
 -------------------
