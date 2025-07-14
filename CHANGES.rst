@@ -3,10 +3,15 @@
 Changes
 =======
 
-2.4.32-liege.dev0 (unreleased)
-------------------------------
+2.4.32-liege (unreleased)
+-------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev18 (2025-07-14)
+
+    Internal:
+
+    - Improve performances for add views
+      [mpeeters] (URB-2903)
 
 
 2.4.31-liege (2025-07-01)
