@@ -6,7 +6,12 @@ Changes
 2.4.34-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.9 (2025-07-27)
+
+    Bug fixes:
+
+    - Add an upgrade step for workflows, permissions and allowed content types
+      [mpeeters] (SUP-45220)
 
 
 2.4.33-liege (2025-07-22)
