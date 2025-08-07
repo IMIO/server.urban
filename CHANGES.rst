@@ -6,7 +6,12 @@ Changes
 2.8.0a2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 2.8.0a2 (2025-08-07)
+
+    New features:
+
+    - Added a taxation field.
+      [WBoudabous] (URBBDC-3223)
 
 
 2.8.0a1 (2025-08-03)
