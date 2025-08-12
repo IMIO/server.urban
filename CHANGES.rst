@@ -6,7 +6,12 @@ Changes
 2.7.44 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.7.43 (2025-08-12)
+
+    Bug fixes:
+
+    - Fix patrimony certificates interface 
+      [jchandelle] (SUP-46330)
 
 
 2.7.43 (2025-07-08)
