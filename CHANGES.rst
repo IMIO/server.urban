@@ -17,6 +17,44 @@ Changes
     - Updated translations for workflow states in the housing procedure.
       [WBoudabous] (URBBDC-3229)
 
+- plonetheme.imioapps 2.53 (2025-08-21)
+
+    - URBBDC-3142: Change icon for Housing procedure.
+      [aduchene, WBoudabous]
+
+- plonetheme.imioapps 2.52 (2025-06-25)
+
+    - URBBDC-3142: Add icon for EmptyBuildings procedure.
+      [aduchene]
+    - SUP-44304. Change current state style in urban.
+      [jchandelle]
+    - Fixed edit bar height some times smaller than buttons.
+      [gbastien]
+
+- plonetheme.imioapps 2.51 (2025-03-11)
+
+    - If current URL contains `imio-acceptation`,
+      highlight `portal-header` (turn it red).
+      [gbastien]
+
+- plonetheme.imioapps 2.50 (2024-09-25)
+
+    - Fixed faceted dashboard header height to avoid 1px blank space between
+      global header and dashboard table header when scrolling
+      (sticky dashboard table header).
+      [gbastien]
+
+- plonetheme.imioapps 2.49 (2024-06-07)
+
+    - Use horizontal scroll when tooltipster is too large.
+      [gbastien]
+
+- plonetheme.imioapps 2.48 (2024-05-27)
+
+    - Be more defensive when changing header color to red for test instances
+      to avoid elements containing imio-test in id url being wrongly skinned.
+      [gbastien]
+
 
 2.8.0a2 (2025-08-07)
 --------------------
