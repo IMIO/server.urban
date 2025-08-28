@@ -3,8 +3,8 @@
 Changes
 =======
 
-2.4.35-liege (unreleased)
--------------------------
+2.5.0-liege (unreleased)
+------------------------
 
 - collective.archetypes.select2 1.0a2 (2023-09-19)
 
