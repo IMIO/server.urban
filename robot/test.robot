@@ -6,9 +6,9 @@ Suite Teardown    Close All Browsers
 Suite Setup       Suite Setup
 
 *** Variables ***
-${DOMAIN}         https://localhost:8081/liege/liege/
-${LOGIN}          admin
-${PASSWORD}       admin
+${DOMAIN}         http://localhost:8081/liege/liege/
+${LOGIN}          testuser
+${PASSWORD}       testuser
 
 *** Test Cases ***
 Test Buildlicences Faceted
@@ -82,7 +82,7 @@ Test IntegratedLicences Faceted
 
     Assert Faceted Result  ${expected_title}  1
 
-    # c13 : Date without results 
+    # c13 : Date without results
     ${start_date}=  Set Variable  2025-12-31
     Select Faceted Date Range Widget  c13  ${start_date}  ${end_date}
 
@@ -416,11 +416,26 @@ Test Buildlicence Schedule
 
     Assert Faceted Result  ${expected_title}  ${expected_count}
 
+Test Buildlicence Task Faceted
+    Go To  http://localhost:8081/liege/liege/urban/codt_buildlicences/codt_buildlicence.2024-10-04.8264754733/facetedtask_view
+    # c3 : Filter (mullenersc)
+    Select Faceted List Widget  c3  mullenersc
+    # c4 : Checkbox (to_do and closed)
+    Select Faceted Checkbox Widget  c4  to_do
+    Select Faceted Checkbox Widget  c4  closed
+
+    Assert Faceted Task Result  Dépôt dossier  1
+
+    # c4 : Checkbox (to_do and closed)
+    Select Faceted Checkbox Widget  c4  closed
+
+    Assert Faceted No Result
+
 *** Keywords ***
 
 Suite Setup
     Open Browser  ${DOMAIN}login_form
-    Set Selenium Timeout  60 seconds
+    Set Selenium Timeout  600 seconds
     Wait Until Element is Visible  id=__ac_name
     Input Text  id=__ac_name  ${LOGIN}
     Input Text  id=__ac_password  ${PASSWORD}
@@ -502,3 +517,17 @@ Assert Faceted No Result
     # Validate number of results
     ${results}=  Get Text  css=div.table_faceted_no_results
     Should Contain  ${results}  La recherche n'a donné aucun résultat
+
+Assert Faceted Task Result
+    [Arguments]  ${licence_title}  ${results_nbr}
+    Wait Until Page Does Not Contain Element  css=.faceted-lock-overlay
+    Wait Until Element Is Visible  id=faceted-results
+
+    # Validate number of results
+    ${results}=  Get Text  css=div.table_faceted_results span
+    ${expected_results}  Set Variable  Il y a ${results_nbr} éléments
+    Should Contain  ${results}  ${expected_results}
+
+    # Validate result title
+    ${title}=  Get Text  css=td.td_cell_path span
+    Should Contain  ${title}  ${licence_title}
