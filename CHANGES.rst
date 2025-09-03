@@ -11,6 +11,38 @@ Changes
     - Fix an issue when some data are encoded in utf8 [SUP-32523]
       [mpeeters]
 
+- collective.compoundcriterion 0.6 (2023-02-13)
+
+    - Added `negative-previous-index` and `negative-personal-labels` default adapters.
+      Rely on `imio.helpers`. Removed dependency on `unittest2`.
+      [gbastien]
+
+- collective.compoundcriterion 0.5 (2021-04-20)
+
+    - Add Transifex.net service integration to manage the translation process.
+      [macagua]
+    - Add Spanish translation
+      [macagua]
+
+- collective.compoundcriterion 0.4 (2018-08-31)
+
+    - When getting the adapter, if context is not the Collection, try to get real context
+      following various cases.  This is the case when using Collection
+      from plone.app.contenttypes.
+      [gbastien]
+    - Do not use a SelectionWidget to render the querystring widget as it does not
+      exist anymore for plone.app.contenttypes Collection.
+      Use the MultipleSelectionWidget.  This way finally we may select several
+      filters to build the query.
+      [gbastien]
+    - When using 'not' in queries for ZCatalog 3, 'query' level must be replaced by 'not' in query dictionary.
+      [sgeulette]
+
+- collective.compoundcriterion 0.3 (2016-12-08)
+
+    - Return clear message when a query format is not plone.app.querystring compliant.
+      [gbastien]
+
 - collective.eeafaceted.collectionwidget 1.16 (2023-07-27)
 
     - Use default value if available and if there is no parameter in request
@@ -392,6 +424,79 @@ Changes
     - Reintegrated js variables view that manages `no selected elements` message.
       [gbastien]
 
+- collective.excelexport 1.8 (2019-09-12)
+
+    - Explicit inclusion of plone.restapi zcml
+      [thomasdesvenain]
+    - Exclude dexterity 'allow discussion' and 'exclude_from_nav' fields
+      (previously, only archetypes fields were excluded)
+      [thomasdesvenain]
+    - Fix error when referenced object value has no Title method.
+      [thomasdesvenain]
+    - Fix: Don't ommit fields that are in the default fieldset if there is one
+      [petchesi-iulian]
+    - Fix error on eea.faceted when there is a widget operator.
+      [thomasdesvenain]
+    - Archetypes support,
+      Products.ATExtensions support (RecordField, RecordsField, FormattableNamesField).
+      [thomasdesvenain]
+    - Fix encoding issue.
+
+- collective.excelexport 1.7 (2018-06-22)
+
+    - Added plone.restapi service.
+      [thomasdesvenain]
+    - Fixed csv export mimetype.
+    - Added helper method get_exportable_for_fieldname.
+      [gbastien]
+
+- collective.excelexport 1.6 (2018-01-05)
+
+    - Fix: no limit for number of results in eeafaceted datasource.
+      [cedricmessiant]
+
+- collective.excelexport 1.5 (2017-11-28)
+
+    - Upgrade bootstrap.
+      [sgeulette]
+    - Fix: render choice field with source vocabulary
+      [sgeulette]
+
+- collective.excelexport 1.4 (2017-05-31)
+
+    - Prevent removal of exportables with similar names when ordering them
+      [thomasdesvenain]
+    - Refactor: view exposes method that creates data buffer from sheet data.
+      [thomasdesvenain]
+    - Made correct release
+      [sgeulette]
+
+- collective.excelexport 1.3 (2016-11-28)
+
+    - Fix: check if value_type is empty for collection field render.
+      [bsuttor]
+    - Fix: try to get the value of a method if the field is a method and translate
+      DateTime results to a unicode, this fixes the export for objects with the IPublication
+      Behavior.
+      [pcdummy]
+    - Fix: be sure to not retrieve an attribute on an object by acquisition.
+      [vincentfretin]
+    - Feature: render_style can now return a Style object with content and headers
+      attribute to be able to customise the header style per exportable.
+      [vincentfretin]
+    - Feature: the passed obj to render_value is now
+      exportable.field.bind(obj).context to make it easier to get data from
+      parent or grandparent.
+      [vincentfretin]
+    - Feature: BaseFieldRenderer.render_header method returns now the translated field
+      title instead of the Message object.
+      [vincentfretin]
+    - Fix: Ignore reverse parameter when creating export url.
+      [cedricmessiant]
+    - Feature: Add sort exportables feature using exportables_order list.
+      Works with field and non-field exportables.
+      [cedricmessiant, ebrehault, thomasdevenain]
+
 - collective.faceted.task 1.0.2 (2023-09-05)
 
     - Fix facet config xml on new urban install [URB-2870]
@@ -470,6 +575,192 @@ Changes
       [jensens]
     - Add search on audit logs and pagination (implements `#17 <https://github.com/collective/collective.fingerpointing/issues/17>`_).
       [jensens]
+
+- collective.messagesviewlet 1.0b2 (2022-12-26)
+
+    - Fix bundle registry upgrade step
+      [laulaz]
+
+- collective.messagesviewlet 1.0b1 (2022-12-22)
+
+    - Migrate to Plone 6.0.0: remove dexteritytextindexer, use new simplified
+      resources registry, fix styles, fix icons, ...
+      [boulch, laulaz]
+    - Add local messages feature. Local messages can be added in any folderish
+      content types and you can choose if / on which levels they display.
+      [boulch]
+    - Protect messages-config folder with one-state private workflow.
+      [boulch]
+    - Add control panel (with messages-config folder link).
+      [boulch]
+    - Use JS to show/hide messages when closed, to avoid caching problems (#12).
+      [laulaz]
+    - Update / improve translations.
+      [boulch, laulaz]
+
+- collective.messagesviewlet 0.23 (2020-04-17)
+
+    - Fix tests & travis build (#8).
+      [laulaz]
+    - Prevent a bug when compare 2 dates with different timezone format.
+      [boulch]
+
+- collective.messagesviewlet 0.22 (2020-01-15)
+
+    - Fix bug when message configuration don't permit to hide this message (close button stayed).
+      [boulch]
+    - Adapted code for Plone5.2/Py3.
+      [gbastien]
+
+- collective.messagesviewlet 0.21 (2019-10-14)
+
+    - Bypass allowed content types contraint when (post)install messagesConfig container
+      [boulch]
+
+- collective.messagesviewlet 0.20 (2019-08-23)
+
+    - Added parameter `caching=True` to `utils.get_messages_to_show`, if `True`,
+      the method result is cached in the request for given `context`.
+      [gbastien]
+
+- collective.messagesviewlet 0.19 (2019-07-15)
+
+    - Added PseudoMessage class that be be used in viewlet template.
+      [sgeulette]
+
+- collective.messagesviewlet 0.18 (2019-05-27)
+
+    - Define version to `2000` in `metadata.xml` of plone4 profile or upgrade step
+      to 2000 is always displayed.
+      [gbastien]
+
+- collective.messagesviewlet 0.17 (2019-04-23)
+
+    - Evaluate TAL condition using behavior `evaluate` method instead calling
+      directly submethod `utils.evaluateExpressionFor` so behavior method
+      `complete_extra_expr_ctx` is called.
+      [gbastien]
+    - Call JS on portal_url so it can be cached by the browser.
+      [gbastien]
+    - Tests on Plone5 and Plone4.
+      [bsuttor]
+    - Manage profiles differently
+      [sgeulette]
+    - Moved `MessagesViewlet.getAllMessages` code to `utils.get_messages_to_show`
+      so it is easily callable from outside.
+      [gbastien]
+    - Be defensive while managing TZ of message dates : do not set it if already
+      set, it fails, moreover, indexing a metadata from a date attribute that had
+      no TZ to one having TZ fails so undindex/reindex the entire message.
+      [gbastien]
+
+- collective.messagesviewlet 0.16 (2018-10-18)
+
+    - Corrected import step dependencies to avoid unresolved warning. Save really changes !
+      [sgeulette]
+
+- collective.messagesviewlet 0.15 (2018-10-11)
+
+    - Corrected import step dependencies to avoid unresolved warning.
+      [sgeulette]
+
+- collective.messagesviewlet 0.14 (2018-07-23)
+
+    - Generate new uid when message is activated or re-activated.
+      [sgeulette]
+
+- collective.messagesviewlet 0.13 (2018-06-13)
+
+    - Add <span> around cross <img> to ease override.
+      [mgennart]
+
+- collective.messagesviewlet 0.12 (2017-05-30)
+
+    - Corrected image path.
+      [sgeulette]
+    - Decrease space between messages
+      [sgeulette]
+
+- collective.messagesviewlet 0.11 (2017-03-16)
+
+    - Added default message to warn that application only runs correctly on Firefox
+      and Chrome, in addition to the already existing message that warned about the
+      application only running correctly on Firefox.
+      [gbastien]
+    - Use CheckBoxWidget for IMessage.required_roles` to ease selection when
+      displaying several elements.
+      [gbastien]
+    - Use RadioFieldWidget for Bool fields `IMessage.can_hide` and
+      `IMessage.use_local_roles` so it is displayed correctly on the view,
+      especially when it is False.
+      [gbastien]
+
+- collective.messagesviewlet 0.10 (2017-02-06)
+
+    - Use INavigationRoot instead of IPloneSiteRoot to check if context is homepage.
+      [bsuttor]
+
+- collective.messagesviewlet 0.9 (2016-03-30)
+
+    - Increased coverage by using vocabulary methods instead of redefining it in tests.
+      [gbastien]
+    - Added new example message: bad browser (not Firefox) warning
+      [sgeulette]
+    - Use plone.formwidget.datetime to have hour at 0 by default.
+      [sgeulette]
+    - CSS fix : display 'cursor: pointer;' when hovering the close button.
+      [gbastien]
+    - Added 'MessagesConfig' to site_properties.types_not_searched.
+      [gbastien]
+
+- collective.messagesviewlet 0.8 (2016-01-18)
+
+    - Added parameter 'activate' to utils.add_message that makes it possible to create
+      an 'activated' message directly.
+      [gbastien]
+    - Adapted tests to use utils.add_message instead of duplicating this code.
+      [gbastien]
+
+- collective.messagesviewlet 0.7 (2015-11-17)
+
+    - Do not pass a default 'context' in utils._ to avoid strange ConnectionStateError.
+      [gbastien]
+    - Give context to translate method.
+      [sgeulette]
+    - Corrected and added icon type images.
+      [sgeulette]
+
+- collective.messagesviewlet 0.6 (2015-09-18)
+
+    - Simplify workflow. Only one activated state. Unrestricted search results before filtering.
+      Added 'use local role' boolean attribute.
+      [sgeulette]
+    - Updated default messages
+      [sgeulette]
+    - Added local roles test
+      [sgeulette]
+    - Renamed bad transition name
+      [sgeulette]
+
+- collective.wfadaptations 1.1 (2021-04-20)
+
+    - Added reapply adaptation parameter to differentiate a reapply after a workflow reset.
+      [sgeulette]
+    - Kept keys as unicode in `get_applied_adaptations`
+      [sgeulette]
+
+- collective.z3cform.select2 2.0.1 (2018-08-27)
+
+    - Do not replace z3cform default widget for List/Set of Choice by
+      select2 widget by default.  The widget/adapters.zcml will need to be included
+      manually so this behavior is applied.
+      [gbastien]
+
+- collective.z3cform.select2 2.0.0 (2018-06-20)
+
+    - Make faceted widget compatible with eea.facetednavigation 10+.
+      This makes it no more compatible with eea.facetednavigation<10.
+      [gbastien]
 
 - imio.actionspanel 1.63 (2023-08-24)
 
@@ -1102,6 +1393,113 @@ Changes
       including sub tags.
       [gbastien]
 
+- imio.history 1.28 (2023-02-27)
+
+    - Added possibility to display an event preview under the comment
+      in the `@@contenthistory` view.
+      [gbastien]
+    - Make the `highlight_last_comment` functionnality generic, it was only used
+      with WF history but now any history may be set `highlight_last_comment=True`.
+      [gbastien]
+
+- imio.history 1.27 (2022-06-14)
+
+    - Added `safe_utils.py` that will only include safe utils.
+      [gbastien]
+
+- imio.history 1.26 (2022-03-08)
+
+    - Fixed display of actor fullname in `@@historyview`.
+      [gbastien]
+
+- imio.history 1.25 (2022-03-07)
+
+    - Optimized `@@contenthistory` view.
+      [gbastien]
+
+- imio.history 1.24 (2022-02-25)
+
+    - In `content_history` template, only fix date column width,
+      for other columns, let the browser optimize it.
+      [gbastien]
+
+- imio.history 1.23 (2021-04-21)
+
+    - Add Transifex.net service integration to manage the translation process.
+      [macagua]
+    - Add Spanish translation
+      [macagua]
+
+- imio.history 1.22 (2021-03-04)
+
+    - Changed default to `False` for parameters `checkMayViewEvent=False` and
+      `checkMayViewComment=False` of `utils.getLastAction`, this way, we get last
+      action even if current user may not, and it is quicker.
+      This fix a performance issue in `ImioWfHistoryAdapter.historyLastEventHasComments`
+      when called several times.
+      [gbastien]
+    - In `utils.getLastAction`, parameter `action` may be `before_last` and will
+      return the before last action if it exists.
+      [gbastien]
+
+- imio.migrator 1.32 (2022-07-01)
+
+    - Added `utils.ensure_upgraded` that will make sure a given `package_name` is upgraded,
+      this is useful when some content or registry records need to be present to handle some code.
+      Here the usecase is a Zope starting handler needing a registry record that may not be present
+      if package not upgraded.
+      [gbastien]
+
+- imio.migrator 1.31 (2022-05-16)
+
+    - Added `is_in_part` function to run partially a migration with imio.updates. (See
+      FUNC_PARTS in https://github.com/IMIO/imio.updates/blob/master/README.rst)
+      [sgeulette]
+
+- imio.migrator 1.30 (2021-11-15)
+
+    - Modified `runProfileSteps` method by changing default value of parameter `run_dependencies`.
+      Now it's False by default !!
+      [sgeulette]
+    - Added `runProfileSteps` docstring.
+      [sgeulette]
+
+- imio.migrator 1.29 (2021-07-16)
+
+    - Log more infos when updating workflows in `Migrator.refreshDatabase(workflows=True)`.
+      [gbastien]
+
+- imio.migrator 1.28 (2021-06-04)
+
+    - Added parameter `total_number=None` to `utils.end_time`, when an integer
+      is given, the generated message will include info about number of elements
+      processed per second.
+      [gbastien]
+
+- imio.migrator 1.27 (2021-03-24)
+
+    - Moved end time computation and display to `utils.end_time` so it is easy to
+      reuse in other contexts.
+      Display `days/hours/minutes` only if relevant.
+      [gbastien]
+
+- imio.migrator 1.26 (2020-09-07)
+
+    - Log every 1000 elements instead 100 in `Migrator.reindexIndexes` and
+      `Migrator.reindexIndexesFor`.
+      [gbastien]
+
+- imio.migrator 1.25 (2020-08-18)
+
+    - In `Migrator.removeUnusedPortalTypes`, remove also `portal_types` from
+      `site_properties.types_not_searched`.
+      [gbastien]
+
+- imio.migrator 1.24 (2020-06-29)
+
+    - Fix python 3.8 synthax error.
+      [odelaere]
+
 - imio.prettylink 1.21 (2023-08-24)
 
     - Adapted call to `imio.helpers.cache.obj_modified` as parameter `asstring=False`
@@ -1405,19 +1803,67 @@ Changes
       add some margin between data.
       [gbastien]
 
+- z3c.table 2.2 (2022-02-11)
+
+    - Add support for Python 3.8, 3.9 and 3.10.
+
+- z3c.table 2.1.1 (2019-03-26)
+
+    - Fix: escape special HTML characters at ``Column.renderHeadCell``,
+      ``NameColumn.getName``, ``CheckBoxColumn`` name and value,
+      ``RadioColumn`` name and value, ``LinkColumn`` href and link content.
+
+- z3c.table 2.1 (2019-01-27)
+
+    - Added support for Python 3.7 and PyPy3.
+    - Dropped support for running the tests using `python setup.py test`.
+    - Reformatted the code using black and flake8.
+
+- z3c.table 2.0.1 (2017-04-19)
+
+    - Required future>=0.14.0 so `html` package is available in Python 2.7.
+
+- z3c.table 2.0.0 (2017-04-17)
+
+    - Updated to support Python 2.7, 3.5, and 3.6 only.
+    - Added html title attribute on LinkColumn
+
+- z3c.table 2.0.0a1 (2013-02-26)
+
+    - Added support for Python 3.3, dropped support for Python 2.5 and below.
+    - Got rid of testing dependencies on z3.testing and zope.app.testing.
+
+- Pin package `defusedxml` to `0.7.1`
+
+- Pin package `plone.formwidget.namedfile` to `2.0.5`
+
+- Pin package `collective.upgrade` to `1.3`
+
 - Pin package `collective.eeafaceted.dashboard` to `0.20`
 
-- Pin package `urllib3` to `1.26.16`
+- Pin package `isodate` to `0.6.1`
 
-- Pin package `file-read-backwards` to `1.2.2`
+- Pin package `cached-property` to `1.5.2`
 
-- Pin package `imio.pyutils` to `0.30`
+- Pin package `appdirs` to `1.4.4`
+
+- Pin package `zodbupdate` to `0.5`
 
 - Pin package `collective.big.bang` to `1.0.3`
 
-- Pin package `certifi` to `2021.10.8`
+- Pin package `imio.pyutils` to `0.30`
 
-- Pin package `idna` to `2.10`
+- Pin package `zeep` to `3.4.0`
+
+- Pin package `file-read-backwards` to `1.2.2`
+
+- Pin package `plone.app.contenttypes` to `1.1.9`
+
+- Pin package `Products.PloneHotfix20210518` to `1.5`
+
+- Pin package `xmlsec` to `1.3.12`
+
+- Remove pinned packages that are direct plone dependencies
 
 
 2.4.34-liege (2025-07-27)
