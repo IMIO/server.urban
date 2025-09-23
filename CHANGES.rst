@@ -6,7 +6,13 @@ Changes
 2.8.0a5 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 2.8.0a5 (2025-09-23)
+
+    New features:
+
+    - [WBoudabous]
+      Add translation for the buildingType field in the housing procedure.
+      Fix setuphandler to return the existing config folder instead of None. (URBBDC-3142)
 
 
 2.8.0a4 (2025-09-22)
