@@ -1524,6 +1524,13 @@ Changes
     - Improve check for file when adding `@@download` in url.
       [laz, boulch]
 
+-imio.schedule 3.0.2 (2025-10-06)
+
+    Bug fixes:
+
+    - Fix an issue where images were escaped for assign user column
+      [mpeeters] (URBBDC-3204)
+
 - imio.schedule 3.0.1 (2025-10-01)
 
     Bug fixes:
