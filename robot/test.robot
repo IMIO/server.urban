@@ -416,6 +416,23 @@ Test Buildlicence Schedule
 
     Assert Faceted Result  ${expected_title}  ${expected_count}
 
+Test Buildlicence Schedule Sublevel
+    ${reference}=         Set Variable  90578
+    ${shore}=             Set Variable  G
+    ${expected_title}=    Set Variable  PU/${reference} ${shore} - aménager des abords - PV 1809050 - M. FORNIERI Francesco
+    ${expected_count}=    Set Variable  1
+    ${assignee}=          Set Variable  
+
+    Go To  ${DOMAIN}urban/schedule/codt_buildlicence#c1=9158267fa19941638c27451d6aa18174
+    # c7 : Shore (G)
+    Select Faceted Checkbox Widget  c7  ${shore}
+    # c2 : Reference
+    Select Faceted Search Widget  c2  ${reference}
+    # c5 : Assignee
+    Select Faceted List Widget  c5  ${assignee}
+
+    Assert Faceted Result  ${expected_title}  ${expected_count}
+
 Test Buildlicence Task Faceted
     Go To  http://localhost:8081/liege/liege/urban/codt_buildlicences/codt_buildlicence.2024-10-04.8264754733/facetedtask_view
     # c3 : Filter (mullenersc)
@@ -443,7 +460,7 @@ Suite Setup
     Wait Until Element is Visible  css=h1.documentFirstHeading
     ${title}=  Get Text  css=h1.documentFirstHeading
     Should Contain  ${title}  Votre session est maintenant ouverte
-    Set Selenium Timeout  300 seconds
+    Set Selenium Timeout  60 seconds
 
 Select Faceted Search Widget
     [Arguments]  ${widget_id}  ${value}
@@ -454,11 +471,11 @@ Select Faceted Search Widget
 
 Select Faceted Autocomplete Widget
     [Arguments]  ${widget_id}  ${value}
-    Wait Until Element Is Visible  id=${widget_id}
+    Wait Until Element Is Visible  css=#s2id_${widget_id} input#s2id_autogen5
     Wait Until Page Does Not Contain Element  css=.faceted-lock-overlay
-    Input Text  id=${widget_id}  ${value}
-    Wait Until Element Is Visible  xpath=/html/body/ul[contains(@class, 'ui-autocomplete') and last()]/li[2]/a
-    Click Element  xpath=/html/body/ul[contains(@class, 'ui-autocomplete') and last()]/li[2]/a
+    Input Text  css=#s2id_${widget_id} input#s2id_autogen5  ${value}
+    Wait Until Element is Visible  xpath=/html/body/div[contains(@class, 'select2-drop')]/ul/li[2]
+    Click Element  xpath=/html/body/div[contains(@class, 'select2-drop')]/ul/li[2]
     Click Button  id=${widget_id}_button
 
 Select Faceted Text Widget
@@ -515,7 +532,7 @@ Assert Faceted No Result
     Wait Until Element Is Visible  id=faceted-results
 
     # Validate number of results
-    ${results}=  Get Text  css=div.table_faceted_no_results
+    ${results}=  Get Text  css=.table_faceted_no_results
     Should Contain  ${results}  La recherche n'a donné aucun résultat
 
 Assert Faceted Task Result
