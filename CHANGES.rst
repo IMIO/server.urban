@@ -6,6 +6,21 @@ Changes
 2.5.0-liege (unreleased)
 ------------------------
 
+- Products.urban 2.5.0.dev20 (2025-10-08)
+
+    New features:
+
+    - Decode to `UTF-8` for `getSociety`
+      URB-2595: Add a new field "additional reference"
+      Add JSON Serializer and Deserializer for REST API
+      MURBARLA-25: Fix an issue with Products.ZCTextIndex that was interpreting `NOT` as token instead of a word for notary letter references
+      SUP-6566: Adapt validator for value "simple" for procedure choice of CODT_Buildlicence
+      Fix Exposant validator length
+      Update dashboard xml config
+      [mpeeters, jchandelle] (URBBDC-3204)
+    - Add function to have multiple dashbaord config
+      [jchandelle] (URBBDC-3231)
+
 - collective.archetypes.select2 1.0a2 (2023-09-19)
 
     - Fix an issue when some data are encoded in utf8 [SUP-32523]
