@@ -1524,7 +1524,7 @@ Changes
     - Improve check for file when adding `@@download` in url.
       [laz, boulch]
 
--imio.schedule 3.0.2 (2025-10-06)
+- imio.schedule 3.0.2 (2025-10-06)
 
     Bug fixes:
 
