@@ -6,6 +6,13 @@ Changes
 2.5.2-liege (unreleased)
 ------------------------
 
+- Products.urban 2.5.0.dev22 (2025-10-13)
+
+    Bug fixes:
+
+    - Fix an issue with translation for Road adaptation vocabulary
+      [mpeeters] (URBBDC-3204)
+
 - imio.pm.wsclient 2.0.3 (2025-08-07)
 
     - Fixed generated actions translations.
