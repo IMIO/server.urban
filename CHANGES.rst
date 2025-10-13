@@ -6,7 +6,59 @@ Changes
 2.5.2-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 2.0.3 (2025-08-07)
+
+    - Fixed generated actions translations.
+      [chris-adam]
+    - Fixed permissions in `upgrade_to_200`.
+      [WBoudabous]
+
+- imio.pm.wsclient 2.0.2 (2025-06-03)
+
+    - Fixed annexes with invalid characters in title.
+      [chris-adam]
+
+- imio.pm.wsclient 2.0.1 (2025-05-26)
+
+    - Improve `_rest_getDecidedMeetingDate` to make only one request.
+      [aduchene]
+    - Include some metadata_fields in `PloneMeetingInfosViewlet` to have proper translations.
+      [aduchene]
+    - Updated upgrade step 2.0.0 to include rolemap.xml.
+      [chris-adam]
+    - Remove "ignore_validation_for" and "ignore_not_used_data" field display from form.
+      [chris-adam]
+    - By default, send all annexes to plone meeting.
+      [chris-adam]
+
+- imio.pm.wsclient 2.0.0 (2025-03-27)
+
+    - Used UID key in `vocabularies.proposing_groups_for_user_vocabulary`.
+      [sgeulette]
+    - Fixed categories for user vocabulary after REST api migration and meeting dates vocabulary display.
+      [chris-adam]
+    - Use IMIO/gha actions and our own runners for the CI.
+      [aduchene]
+    - Fixed meeting dates vocabulary cache.
+      [chris-adam]
+
+- imio.pm.wsclient 2.0.0b2 (2024-10-16)
+
+    - Fix translation of overlay title
+      [mpeeters]
+    - Avoid an error if the user can not access to meetings
+      [mpeeters]
+    - Upgrade config for REST api
+      [mpeeters]
+    - Fixed all unit tests.
+      [aduchene]
+    - Add a new helper method `_rest_getDecidedMeetingDate` to get the actual decided meeting date.
+      [aduchene]
+
+- imio.pm.wsclient 2.0.0b1 (2022-11-18)
+
+    - Migrate to REST api
+      [mpeeters]
 
 
 2.5.1-liege (2025-10-10)
