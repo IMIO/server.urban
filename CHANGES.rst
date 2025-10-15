@@ -6,7 +6,12 @@ Changes
 2.5.3-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- liege.urban 1.0.10 (2025-10-15)
+
+    Bug fixes:
+
+    - Fix adapter for schedule collection icons
+      [mpeeters] (URBBDC-3204)
 
 
 2.5.2-liege (2025-10-13)
