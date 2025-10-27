@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.8.0a6 (unreleased)
+2.8.0b1 (2025-10-27)
 --------------------
 
 - Upgrade to zc.buildout 3.4 to be compatible with PEP-625
