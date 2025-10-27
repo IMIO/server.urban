@@ -6,7 +6,15 @@ Changes
 2.8.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Upgrade to zc.buildout 3.4 to be compatible with PEP-625
+  [mpeeters]
+
+- Products.urban 2.8.0b1 (2025-10-27)
+
+    New features:
+
+    - Activate `RoadDecree` in config.py.
+      [aduchene] (URB-3151)
 
 
 2.8.0a5 (2025-09-23)
