@@ -6,7 +6,8 @@ Changes
 2.8.0b2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- URB-3405: Add back dependency to `suds_jurko` this fix an issue with the catalog
+  [mpeeters]
 
 
 2.8.0b1 (2025-10-27)
