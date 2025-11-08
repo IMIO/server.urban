@@ -6,6 +6,9 @@ Changes
 2.5.4-liege (unreleased)
 ------------------------
 
+- Upgrade to zc.buildout `3.4` and setuptools `44.0.0` to be compatible with PEP-625
+  [mpeeters]
+
 - Products.urban 2.5.0.dev23 (2025-11-08)
 
     New features:
