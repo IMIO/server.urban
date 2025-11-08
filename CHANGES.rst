@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.5.4-liege (unreleased)
+2.5.4-liege (2025-11-08)
 ------------------------
 
 - Upgrade to zc.buildout `3.4` and setuptools `44.0.0` to be compatible with PEP-625
