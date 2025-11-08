@@ -6,7 +6,19 @@ Changes
 2.5.4-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev23 (2025-11-08)
+
+    New features:
+
+    - URBBDC-3204: Make field `additionalReference` optional
+      [mpeeters] (SUP-47891)
+
+    Bug fixes:
+
+    - URBBDC-3204: Add config for underlined schedule displayed delay date (orange / red)
+      [mpeeters] (SUP-48210)
+    - Fix interface for subscriber that set columns for dashboard
+      [mpeeters] (URBBDC-3204)
 
 
 2.5.3-liege (2025-10-15)
