@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.5.5-liege (unreleased)
+2.5.5-liege (2025-11-21)
 ------------------------
 
 - Add `eggs.imio.be` to find links for eea.facetednavigation `14.8.1`
