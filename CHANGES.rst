@@ -6,7 +6,15 @@ Changes
 2.5.7-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 2.0.5 (2025-11-24)
+
+    - SUP-48907: Add an upgrade step to force the refresh of js registry
+      [mpeeters]
+
+- imio.pm.wsclient 2.0.4 (2025-11-24)
+
+    - SUP-48907: Fix overlay for send to plone meeting combined with imio.actionspanel
+      [mpeeters]
 
 
 2.5.6-liege (2025-11-23)
