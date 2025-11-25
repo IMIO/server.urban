@@ -6,7 +6,21 @@ Changes
 2.5.8-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev24 (2025-11-25)
+
+    Bug fixes:
+
+    - Fix an error with actions on vocabulary terms
+      [mpeeters] (SUP-48930)
+    - Migrate patrimony certificates to their correct object class (instead of misc demand)
+      [daggelpop] (URB-3121)
+
+- imio.schedule 3.0.3 (2025-11-25)
+
+    Bug fixes:
+
+    - Fix a possible issue while comparing `datetime.date` and `datetime.datetime`
+      [mpeeters] (SUP-48926)
 
 
 2.5.7-liege (2025-11-24)
