@@ -6,7 +6,12 @@ Changes
 2.5.9-liege (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev25 (2025-12-15)
+
+    Bug fixes:
+
+    - Fix comment retrieval in transition form
+      [daggelpop] (SUP-35563)
 
 
 2.5.8-liege (2025-11-25)
