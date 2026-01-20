@@ -6,7 +6,8 @@ Changes
 2.9.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove Products.urban from auto-checkout
+  [mpeeters]
 
 
 2.9.0 (2026-01-20)
