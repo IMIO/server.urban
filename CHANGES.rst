@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.9.2 (unreleased)
+2.9.2 (2026-01-20)
 ------------------
 
 - Pin `imio-pm-wsclient` in addition of `imio.pm.wsclient`
