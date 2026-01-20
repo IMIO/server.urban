@@ -6,7 +6,8 @@ Changes
 2.9.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Pin `imio-pm-wsclient` in addition of `imio.pm.wsclient`
+  [mpeeters]
 
 
 2.9.1 (2026-01-20)
