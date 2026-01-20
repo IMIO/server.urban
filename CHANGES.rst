@@ -6,7 +6,8 @@ Changes
 2.9.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add `numpy` as an extra required dependency by default
+  [mpeeters]
 
 
 2.9.2 (2026-01-20)
