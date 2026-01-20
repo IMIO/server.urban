@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.9.3 (unreleased)
+2.9.3 (2026-01-20)
 ------------------
 
 - Add `numpy` as an extra required dependency by default
