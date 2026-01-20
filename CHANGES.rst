@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.9.1 (unreleased)
+2.9.1 (2026-01-20)
 ------------------
 
 - Remove Products.urban from auto-checkout
