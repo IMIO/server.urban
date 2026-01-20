@@ -6,7 +6,36 @@ Changes
 2.8.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.0 (2026-01-20)
+
+    New features:
+
+    - Implement Notice MVP
+      [ndemonte, wboudabous, mpeeters] (URB-2652)
+
+    Bug fixes:
+
+    - Add external method to fix `subdividerName` in parcellings
+      [jchandelle] (SUP-46704)
+    - Fix `get_all_rules_for_this_event` to filter on rule type
+      [jchandelle] (URB-3481)
+
+- imio.pm.wsclient 2.0.6 (2026-01-16)
+
+    - SUP-49033: Add option to choose to select by default all annexes (default behavior)
+      [jchandelle]
+    - Updated translations
+      [sgeulette]
+
+- imio.pm.wsclient 2.0.5 (2025-11-24)
+
+    - SUP-48907: Add an upgrade step to force the refresh of js registry
+      [mpeeters]
+
+- imio.pm.wsclient 2.0.4 (2025-11-24)
+
+    - SUP-48907: Fix overlay for send to plone meeting combined with imio.actionspanel
+      [mpeeters]
 
 
 2.8.0 (2026-01-18)
