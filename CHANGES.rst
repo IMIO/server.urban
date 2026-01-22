@@ -6,7 +6,19 @@ Changes
 2.8.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- urban.events 1.0.1 (2026-01-22)
+
+    Bug fixes:
+
+    - Fix python requirement
+      [mpeeters] (URB-3482)
+
+- urban.schedule 1.0.2 (2026-01-22)
+
+    Bug fixes:
+
+    - Fix python requirement
+      [mpeeters] (URB-3482)
 
 
 2.8.1 (2026-01-22)
@@ -41,6 +53,13 @@ Changes
 
     - Avoid an error during upgrade steps with collections recreated after a move or a delete
       [mpeeters] (URBBDC-3204)
+
+- urban.events 1.0.0 (2026-01-22)
+
+    New features:
+
+    - Add event config and upgrade step for roaddecree and housing
+      [jchandelle] (URBBDC-3142)
 
 - urban.schedule 1.0.1 (2026-01-22)
 
