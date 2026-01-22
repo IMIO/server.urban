@@ -6,7 +6,42 @@ Changes
 2.9.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.schedule 3.0.4 (2026-01-22)
+
+    Bug fixes:
+
+    - Move create dashboard collection function in utils
+      Add way to force dashboard creation
+      Change dashboard collection function
+      [jchandelle] (URBBDC-3205)
+
+- imio.schedule 3.0.3 (2025-11-25)
+
+    Bug fixes:
+
+    - Fix a possible issue while comparing `datetime.date` and `datetime.datetime`
+      [mpeeters] (SUP-48926)
+
+- imio.schedule 3.0.2 (2025-10-06)
+
+    Bug fixes:
+
+    - Fix an issue where images were escaped for assign user column
+      [mpeeters] (URBBDC-3204)
+
+- imio.schedule 3.0.1 (2025-10-01)
+
+    Bug fixes:
+
+    - Avoid an error during upgrade steps with collections recreated after a move or a delete
+      [mpeeters] (URBBDC-3204)
+
+- urban.schedule 1.0.1 (2026-01-22)
+
+    Bug fixes:
+
+    - Add task config and fix upgrade step for roaddecree
+      [jchandelle] (URBBDC-3142)
 
 
 2.9.4 (2026-01-21)
