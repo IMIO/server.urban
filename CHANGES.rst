@@ -6,6 +6,13 @@ Changes
 2.9.5 (unreleased)
 ------------------
 
+- Products.urban 2.9.2 (2026-01-22)
+
+    Bug fixes:
+
+    - Fix a portlet error when notice WS url is not defined
+      [mpeeters] (URB-2652)
+
 - imio.schedule 3.0.4 (2026-01-22)
 
     Bug fixes:
