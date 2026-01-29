@@ -6,7 +6,12 @@ Changes
 2.5.10-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 2.0.6 (2026-01-16)
+
+    - SUP-49033: Add option to choose to select by default all annexes (default behavior)
+      [jchandelle]
+    - Updated translations
+      [sgeulette]
 
 
 2.5.9-liege (2025-12-15)
