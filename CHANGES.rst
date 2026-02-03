@@ -6,7 +6,11 @@ Changes
 2.9.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 2.0.7 (2026-02-03)
+
+    - SUP-50498: Fix an issue in `PloneMeetingInfosViewlet.getPloneMeetingLinkedInfos`
+      when there is no userInNameOF.
+      [aduchene]
 
 
 2.9.5 (2026-01-22)
