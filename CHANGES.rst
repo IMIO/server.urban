@@ -6,6 +6,30 @@ Changes
 2.9.6 (unreleased)
 ------------------
 
+- Products.urban 2.9.3 (2026-02-07)
+
+    New features:
+
+    - Show form data sent to Notice
+      Refactor Notice responses with forms
+      Add Notice folder manager (for new installations)
+      Expand REST API to include Notice data
+      Rename college decision in Notice forms
+      [daggelpop] (PR-509)
+    - Include decision in Summary Report response
+      [daggelpop] (URB-3311)
+    - Add Notice response to send documents
+      Add vocabulary of licence documents available to send to Notice
+      Refactor LicenceDocumentsVocabulary for easier subclassing
+      [daggelpop] (URB-3514)
+    - Add housing vocabulary
+      [jchandelle] (URBBDC-3221, URBBDC-3222, URBBDC-3271)
+
+    Bug fixes:
+
+    - Fix base class for housing and roaddecree
+      [jchandelle] (SUP-50162)
+
 - imio.pm.wsclient 2.0.7 (2026-02-03)
 
     - SUP-50498: Fix an issue in `PloneMeetingInfosViewlet.getPloneMeetingLinkedInfos`
