@@ -6,7 +6,12 @@ Changes
 2.5.12-liege (unreleased)
 -------------------------
 
-- Nothing changed yet.
+- Products.urban 2.5.0.dev26 (2026-02-09)
+
+    Bug fixes:
+
+    - Fix history view with missing `site_url` required parameter
+      [jchandelle] (SUP-50324)
 
 
 2.5.11-liege (2026-02-04)
