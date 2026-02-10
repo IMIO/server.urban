@@ -6,7 +6,14 @@ Changes
 2.9.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.4 (2026-02-10)
+
+    Bug fixes:
+
+    - Fix broken release
+      [mpeeters] (PR-509)
+    - Fix history view with missing `site_url` required parameter
+      [jchandelle] (SUP-50324)
 
 
 2.9.6 (2026-02-08)
