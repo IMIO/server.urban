@@ -6,7 +6,23 @@ Changes
 2.9.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.6 (2026-02-16)
+
+    Bug fixes:
+
+    - Fix unicode error
+      [jchandelle] (SUP-36370)
+
+- Products.urban 2.9.5 (2026-02-16)
+
+    New features:
+
+    - Add upgrade step to cook javascript resources
+      Handle redirect on Notice response forms
+      Hide portlets on Notice response forms
+      Condition Notice response actions' visibility on presence of notice ID on licence
+      Remove `noticeId` fields
+      [daggelpop] (URB-2524)
 
 
 2.9.7 (2026-02-10)
