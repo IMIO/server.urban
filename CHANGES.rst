@@ -6,6 +6,18 @@ Changes
 2.9.8 (unreleased)
 ------------------
 
+- Products.urban 2.9.7 (2026-02-16)
+
+    Bug fixes:
+
+    - Fix encoding in table column
+      [jchandelle] (URB-3484)
+
+    Internal:
+
+    - Remove unused vocabulary
+      [jchandelle] (URB-3520)
+
 - Products.urban 2.9.6 (2026-02-16)
 
     Bug fixes:
