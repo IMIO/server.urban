@@ -6,7 +6,12 @@ Changes
 2.9.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.8 (2026-02-17)
+
+    Bug fixes:
+
+    - Avoid an error when event title contains special char
+      [mpeeters] (SUP-50992)
 
 
 2.9.8 (2026-02-16)
