@@ -6,7 +6,12 @@ Changes
 2.9.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.9 (2026-02-18)
+
+    Bug fixes:
+
+    - Add the key `pod_portal_types` in drop key in import config view
+      [jchandelle] (URB-3521)
 
 
 2.9.9 (2026-02-17)
