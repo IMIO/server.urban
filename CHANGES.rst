@@ -6,7 +6,12 @@ Changes
 3.0.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b3 (2026-02-22)
+
+    Bug fixes:
+
+    - Revert `Add missing environement procedure in config list`
+      [mpeeters] (SUP-50356)
 
 
 3.0.0a2 (2026-02-20)
