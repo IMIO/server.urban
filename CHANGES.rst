@@ -6,7 +6,14 @@ Changes
 2.9.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.11 (2026-02-20)
+
+    Bug fixes:
+
+    - URB-3485 Add architect folder view
+      [jchandelle] (URB-3485)
+    - Change documentation url
+      [jchandelle] (URB-3531)
 
 
 2.9.11 (2026-02-19)
