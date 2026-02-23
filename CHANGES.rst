@@ -6,7 +6,26 @@ Changes
 3.0.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b4 (2026-02-23)
+
+    Bug fixes:
+
+    - Avoid rendering errors if some informations from applicant are missing
+      [mpeeters] (SUP-51108)
+    - Avoid a `NotFound` error on licence view if there is no condition to evaluate for warnings
+      [mpeeters] (SUP-51134)
+
+- liege.urban 2.0.1 (2026-02-23)
+
+    Bug fixes:
+
+    - Ensure that `address_point` value is always an integer as expected by behavior schema
+      [mpeeters] (SUP-51112)
+
+    Internal:
+
+    - Cleanup content factory module and remove unused imports
+      [mpeeters] (SUP-51112)
 
 
 3.0.0a3 (2026-02-22)
