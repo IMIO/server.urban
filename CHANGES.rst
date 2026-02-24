@@ -6,7 +6,24 @@ Changes
 3.0.0a5 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b5 (2026-02-24)
+
+    New features:
+
+    - Change couple title format to the one from liege
+      [jchandelle] (SUP-51121)
+
+    Bug fixes:
+
+    - Add upgrade step and External method for fixing missing architect
+      [jchandelle] (SUP-51119)
+
+- liege.urban 2.0.2 (2026-02-24)
+
+    Bug fixes:
+
+    - Fix a display issue when address does not have a street number
+      [mpeeters] (SUP-51118)
 
 
 3.0.0a4 (2026-02-23)
