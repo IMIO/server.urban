@@ -6,7 +6,12 @@ Changes
 2.9.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.12 (2026-02-26)
+
+    Bug fixes:
+
+    - Recover `UrbanEventCollege` portal type in relevant EventConfig
+      [daggelpop] (URB-3540)
 
 
 2.9.12 (2026-02-23)
