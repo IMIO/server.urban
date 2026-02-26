@@ -6,7 +6,19 @@ Changes
 3.0.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b6 (2026-02-26)
+
+    Bug fixes:
+
+    - Fix merge field dor document
+      [jchandelle] (SUP-51121)
+
+- liege.urban 2.0.3 (2026-02-26)
+
+    Bug fixes:
+
+    - Fix missing access to voirie tab by voirie group
+      [jchandelle] (SUP-51146)
 
 
 3.0.0a5 (2026-02-24)
