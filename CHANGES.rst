@@ -6,7 +6,14 @@ Changes
 3.0.0a8 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b7 (2026-03-02)
+
+    Bug fixes:
+
+    - Add `CorporationTenant` in Inspection `allowed_content_types`
+      [jchandelle] (SUP-51237)
+    - Add an external method to reindex all licences dates that come from events
+      [mpeeters] (SUP-51321)
 
 
 3.0.0a7 (2026-03-02)
