@@ -6,7 +6,17 @@ Changes
 3.0.0a7 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.4 (2026-03-02)
+
+    Bug fixes:
+
+    - Adapt permissions to add `Parcel` content type
+      [mpeeters] (SUP-51228)
+
+    Internal:
+
+    - Fix folder manager title for tests
+      [mpeeters] (SUP-51197)
 
 
 3.0.0a6 (2026-02-26)
