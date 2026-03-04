@@ -6,7 +6,14 @@ Changes
 3.0.0a9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.5 (2026-03-04)
+
+    Bug fixes:
+
+    - Add missing french translations
+      [mpeeters] (SUP-51304)
+    - Add an upgrade step to reindex security for objects with some workflows
+      [mpeeters] (SUP-51308)
 
 
 3.0.0a8 (2026-03-02)
