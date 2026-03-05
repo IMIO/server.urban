@@ -6,7 +6,12 @@ Changes
 3.0.0a10 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.6 (2026-03-05)
+
+    Bug fixes:
+
+    - Add an upgrade step to reindex security for more objects with some workflows
+      [mpeeters] (SUP-51128)
 
 
 3.0.0a9 (2026-03-04)
