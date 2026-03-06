@@ -6,7 +6,25 @@ Changes
 3.0.0a11 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b8 (2026-03-06)
+
+    Bug fixes:
+
+    - Add `allow_duplicate` parameter for parcel creation to ensure that
+      multiple parcels can be created for the same capakey
+      [mpeeters] (SUP-51199)
+
+- liege.urban 2.0.7 (2026-03-06)
+
+    Bug fixes:
+
+    - Adapt upgrade step to include more workflows and reduce memory usage
+      [mpeeters] (SUP-51128)
+    - Use `allow_duplicate` parameter for parcel creation to allow
+      multiple addresses with the same parcel
+      [mpeeters] (SUP-51199)
+    - Fix encoding for env bordering title
+      [jchandelle] (SUP-51482)
 
 
 3.0.0a10 (2026-03-05)
