@@ -6,7 +6,26 @@ Changes
 3.0.0a12 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b9 (2026-03-09)
+
+    Bug fixes:
+
+    - Fix an issue with local role adapter when a method was overriding previous roles
+      [mpeeters] (SUP-51146)
+    - Add missing `Manage properties` permission to reorder uploaded files
+      [mpeeters] (SUP-51291)
+
+- liege.urban 2.0.8 (2026-03-09)
+
+    Bug fixes:
+
+    - Add missing `Manage properties` permission to reorder uploaded files
+      [mpeeters] (SUP-51291)
+
+    Internal:
+
+    - Add a test for road editors permissions on licence
+      [mpeeters] (SUP-51128)
 
 
 3.0.0a11 (2026-03-06)
