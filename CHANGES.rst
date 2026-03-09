@@ -6,7 +6,12 @@ Changes
 3.0.0a13 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b10 (2026-03-09)
+
+    Bug fixes:
+
+    - SUP-51291: Fix typo in zcml
+      [mpeeters] (SUP-51291)
 
 
 3.0.0a12 (2026-03-09)
