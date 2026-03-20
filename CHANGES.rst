@@ -6,7 +6,19 @@ Changes
 2.9.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.13 (2026-03-20)
+
+    New features:
+
+    - Use `referenceFT` as backup for NOTICE licence lookup
+      [daggelpop] (URB-3525)
+
+    Bug fixes:
+
+    - Fix encoding in work location in EnvClassBordering licence
+      [jchandelle] (SUP-51303)
+    - Ignore missing activated fields on events
+      [daggelpop] (URB-3578)
 
 
 2.9.13 (2026-02-26)
