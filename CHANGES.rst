@@ -6,7 +6,12 @@ Changes
 2.9.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.15 (2026-04-02)
+
+    Bug fixes:
+
+    - Fix utility view for fixing event config link
+      [jchandelle] (SUP-51567)
 
 
 2.9.15 (2026-03-27)
