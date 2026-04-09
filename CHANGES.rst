@@ -6,7 +6,12 @@ Changes
 2.9.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.16 (2026-04-09)
+
+    Bug fixes:
+
+    - Fix housing security and local role
+      [jchandelle] (URB-3573)
 
 
 2.9.16 (2026-04-02)
