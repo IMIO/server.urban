@@ -6,7 +6,12 @@ Changes
 2.9.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.17 (2026-04-10)
+
+    Bug fixes:
+
+    - Fix missing import
+      [jchandelle] (SUP-52327)
 
 
 2.9.17 (2026-04-09)
