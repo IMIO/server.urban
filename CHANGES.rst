@@ -6,7 +6,67 @@ Changes
 3.0.0b2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b13 (2026-04-18)
+
+    New features:
+
+    - Change inquiry date order
+      [jchandelle] (SUP-51116)
+
+    Bug fixes:
+
+    - Fix archive data for non env licence in activity report
+      [jchandelle] (SUP-46043)
+    - Ensure that displayed parcels include linked parcels licences and not the current licence
+      [mpeeters] (SUP-51103)
+
+- liege.urban 2.0.9 (2026-04-18)
+
+    Bug fixes:
+
+    - Fix opinion request permission
+      [jchandelle] (SUP-51111)
+
+- plonetheme.imioapps 2.63 (2026-04-18)
+
+    - SUP-51607: Add the event icon for every event types
+      [mpeeters]
+    - SUP-51123 Change state color for authorized and refused
+      [jchandelle]
+
+- plonetheme.imioapps 2.62 (2026-04-14)
+
+    - `plonemeetingskin`: styles for insert barcode batch action button.
+      [gbastien]
+
+- plonetheme.imioapps 2.61 (2026-03-27)
+
+    - Style `imio.esign` sessions table and highlight `draft` session.
+      [gbastien]
+
+- plonetheme.imioapps 2.60 (2026-03-24)
+
+    - Applied odd/even on files displayed in collapsible of the sessions view.
+      [gbastien]
+
+- plonetheme.imioapps 2.59 (2026-03-16)
+
+    - Style for eseal column (imio.esign).
+      [sgeulette]
+    - Added styles for collapsible viewlet (odd/even when several sessions).
+      [gbastien]
+
+- plonetheme.imioapps 2.58 (2026-03-03)
+
+    - Some more styles related to `imio.esign`.
+      [gbastien]
+
+- plonetheme.imioapps 2.57 (2026-02-06)
+
+    - Added `collapsible` related styles.
+      [gbastien]
+    - Added `imio.esign` related styles.
+      [gbastien]
 
 
 3.0.0b1 (2026-03-14)
