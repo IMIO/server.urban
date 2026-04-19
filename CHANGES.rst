@@ -6,7 +6,12 @@ Changes
 2.9.19 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.18 (2026-04-19)
+
+    Bug fixes:
+
+    - Add migration for updating manageableLicences notice folder manager
+      [wboudabous] (URB-3600)
 
 
 2.9.18 (2026-04-10)
