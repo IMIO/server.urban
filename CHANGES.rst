@@ -6,7 +6,12 @@ Changes
 3.0.0b3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.10 (2026-04-20)
+
+    Bug fixes:
+
+    - Fix archive data for non env licence in activity report
+      [jchandelle] (SUP-46043)
 
 
 3.0.0b2 (2026-04-19)
