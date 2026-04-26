@@ -6,7 +6,21 @@ Changes
 3.0.0b4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b14 (2026-04-26)
+
+    New features:
+
+    - Add guard for secure transtion to `frozen_suspension`
+      [jchandelle] (SUP-49174)
+
+- liege.urban 2.0.11 (2026-04-26)
+
+    Bug fixes:
+
+    - Add translation for inquiry workflow
+      [jchandelle] (SUP-51104)
+    - Add translation for receive_FD_opinion workflow state
+      [jchandelle] (SUP-52700)
 
 
 3.0.0b3 (2026-04-20)
