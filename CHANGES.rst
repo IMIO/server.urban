@@ -6,7 +6,71 @@ Changes
 2.9.21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- plonetheme.imioapps 2.63 (2026-04-18)
+
+    - SUP-51607: Add the event icon for every event types
+      [mpeeters]
+    - SUP-51123 Change state color for authorized and refused
+      [jchandelle]
+
+- plonetheme.imioapps 2.62 (2026-04-14)
+
+    - `plonemeetingskin`: styles for insert barcode batch action button.
+      [gbastien]
+
+- plonetheme.imioapps 2.61 (2026-03-27)
+
+    - Style `imio.esign` sessions table and highlight `draft` session.
+      [gbastien]
+
+- plonetheme.imioapps 2.60 (2026-03-24)
+
+    - Applied odd/even on files displayed in collapsible of the sessions view.
+      [gbastien]
+
+- plonetheme.imioapps 2.59 (2026-03-16)
+
+    - Style for eseal column (imio.esign).
+      [sgeulette]
+    - Added styles for collapsible viewlet (odd/even when several sessions).
+      [gbastien]
+
+- plonetheme.imioapps 2.58 (2026-03-03)
+
+    - Some more styles related to `imio.esign`.
+      [gbastien]
+
+- plonetheme.imioapps 2.57 (2026-02-06)
+
+    - Added `collapsible` related styles.
+      [gbastien]
+    - Added `imio.esign` related styles.
+      [gbastien]
+
+- plonetheme.imioapps 2.56 (2026-01-23)
+
+    - SUP-36249 Change state color for inspection in urban
+      [jchandelle
+    - SUP-49910: Fix missing icon
+      [jchandelle]
+
+- plonetheme.imioapps 2.55 (2025-12-22)
+
+    - Add missing CKEditor style from liege
+      [jchandelle]
+    - Fixed `skin.js` that was not setting correct CSS `top` value for faceted table
+      sticky behavior, the faceted table header was no more sticky.
+      [gbastien]
+    - Added some padding top before `Forgot password?` sentence on login form.
+      [gbastien]
+
+- plonetheme.imioapps 2.54 (2025-12-01)
+
+    - Make sure large images do not add horizontal scroll in tooltipsters.
+      [gbastien]
+    - Fixed not used and mismatch use of `evenRowBackgroundColor` and
+      `oddRowBackgroundColor`.
+      [gbastien]
 
 
 2.9.20 (2026-05-12)
