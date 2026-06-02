@@ -6,7 +6,20 @@ Changes
 2.9.23 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.22 (2026-06-02)
+
+    Bug fixes:
+
+    - Add external method to fix changesDescription field in parceling
+      [jchandelle] (SUP-46704)
+    - Fix `getInquiryRadius` method to retrieve correct radius
+      [jchandelle] (SUP-51548)
+    - Fix `getDecisionDate` indexer because of webservice change
+      [jchandelle] (SUP-52184)
+    - Change widget for prevent reset value when editing
+      [jchandelle] (SUP-53131)
+    - Fix typos in NOTICE translations
+      [daggelpop] (URB-3303)
 
 
 2.9.22 (2026-05-31)
