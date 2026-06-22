@@ -6,7 +6,13 @@ Changes
 3.0.0b5 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b15 (2026-06-22)
+
+    Bug fixes:
+
+    - Change reclamant import file template
+      Change column validation in reimport file template
+      [jchandelle] (SUP-41210)
 
 
 3.0.0b4 (2026-04-26)
