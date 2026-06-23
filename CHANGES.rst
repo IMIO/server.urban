@@ -6,7 +6,12 @@ Changes
 3.0.0b6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b16 (2026-06-23)
+
+    New features:
+
+    - Add index and filter for rubrics field in env licence
+      [jchandelle] (SUP-44868)
 
 
 3.0.0b5 (2026-06-22)
