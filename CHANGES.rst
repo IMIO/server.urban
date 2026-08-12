@@ -6,7 +6,21 @@ Changes
 2.9.29 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.28 (2026-08-12)
+
+    Bug fixes:
+
+    - Clarify translations for NOTICE response buttons
+      [daggelpop] (URB-3658)
+    - Fix decision display form
+      [daggelpop] (URB-3720)
+
+- urban.events 1.0.3 (2026-08-12)
+
+    New features:
+
+    - Import event config for free notification
+      [daggelpop] (URB-3561)
 
 
 2.9.28 (2026-07-24)
