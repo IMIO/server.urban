@@ -6,7 +6,19 @@ Changes
 2.9.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.29 (2026-08-21)
+
+    New features:
+
+    - Add upgrade step to hide `CODT_UniqueBorderingLicences` folder
+      [jchandelle] (SUP-52184)
+
+    Bug fixes:
+
+    - Avoid double import of NOTICe notification
+      [daggelpop] (URB-3711)
+    - Reorder actions in NOTICe forms: send documents first, then send the response
+      [daggelpop] (URB-3730)
 
 
 2.9.29 (2026-08-12)
