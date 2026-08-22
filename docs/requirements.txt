@@ -2,7 +2,7 @@ PyYAML==6.0
 Sphinx==4.4.0
 importlib-metadata==4.11.2
 livereload==2.6.3
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
 mdit-py-plugins==0.3.0
 mdurl==0.1.1
 myst-parser==0.18.0
