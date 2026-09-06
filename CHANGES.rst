@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.9.33 (unreleased)
+2.9.33 (2026-09-06)
 -------------------
 
 - URB-3652: Add `host` parameter to clock-server
