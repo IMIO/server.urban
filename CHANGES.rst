@@ -6,7 +6,8 @@ Changes
 2.9.33 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- URB-3652: Add `host` parameter to clock-server
+  [mpeeters]
 
 
 2.9.32 (2026-09-03)
