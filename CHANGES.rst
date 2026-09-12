@@ -6,7 +6,8 @@ Changes
 3.0.0b9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Pin dm.historical to `2.0.4`
+  [mpeeters]
 
 
 3.0.0b8 (2026-09-12)
