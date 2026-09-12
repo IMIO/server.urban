@@ -6,7 +6,29 @@ Changes
 3.0.0b8 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.12 (2026-09-11)
+
+    Bug fixes:
+
+    - Add an upgrade step to ensure that the correct specific workflows are defined
+      [mpeeters] (URBBDC-3272)
+
+- Products.urban 3.0.0b18 (2026-09-11)
+
+    New features:
+
+    - Adapt dashboard config for Liege / Classic
+      [mpeeters] (URBBDC-3272)
+
+    Bug fixes:
+
+    - Fix merge conflicts
+      [mpeeters] (URBBDC-3272)
+
+    Internal:
+
+    - Adapt upgrade steps to be compatible with Liege current state
+      [mpeeters] (URBBDC-3272)
 
 
 3.0.0b7 (2026-06-26)
