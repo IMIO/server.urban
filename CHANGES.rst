@@ -3,7 +3,7 @@
 Changes
 =======
 
-3.0.0b9 (unreleased)
+3.0.0b9 (2026-09-12)
 --------------------
 
 - Pin dm.historical to `2.0.4`
