@@ -6,7 +6,15 @@ Changes
 3.0.0b10 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Downgrade Products.urban to `3.0.0b17`
+  [mpeeters]
+
+- liege.urban 2.0.13 (2026-09-19)
+
+    Bug fixes:
+
+    - Fix street_name unicode in list 220
+      [jchandelle] (SUP-49906)
 
 
 3.0.0b9 (2026-09-12)
