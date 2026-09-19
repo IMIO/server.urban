@@ -3,7 +3,7 @@
 Changes
 =======
 
-3.0.0b10 (unreleased)
+3.0.0b10 (2026-09-19)
 ---------------------
 
 - Downgrade Products.urban to `3.0.0b17`
