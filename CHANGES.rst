@@ -6,7 +6,59 @@ Changes
 2.9.34 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.32 (2026-10-16)
+
+    New features:
+
+    - Add new marker interface for event
+      [jchandelle] (SUP-56325)
+    - Implement notifications `ARRET_PLAN_MODIF_COMMUNE`, `ARRET_PLAN_MODIF_COMMUNE_MANUELLE`
+      [daggelpop] (URB-3550)
+    - Add handling of ABANDON_COMMUNE_MANUELLE, PM_ABANDON_COMMUNE_EP, and PM_ABANDON_COMMUNE_EP_FTFD notification.
+      [WBoudabous] (URB-3568)
+    - Implement ACTE_CESSION_COMMUNE NOTICe notification and add cession type vocabulary
+      [WBoudabous] (URB-3636)
+    - Handle PM_EP_COURRIER_COMMUNE notification
+      [WBoudabous] (URB-3640)
+    - Add due date to imported summary report events
+      [daggelpop] (URB-3659)
+    - Add event marker interfaces for the special conditions revision events (deposit, project, decision), tacit refusal, information, abandon and cession events
+      [WBoudabous] (URB-3669)
+    - Add a random sleep to cron-based NOTICe listing calls
+      [daggelpop] (URB-3769)
+
+    Bug fixes:
+
+    - Fix interface for walloonregion_decision_date starting date for task
+      [jchandelle] (SUP-45885)
+    - Fix list 220 to support unicode characters.
+      [WBoudabous] (SUP-46077)
+    - Add prefix to urban configs forms
+      [jchandelle] (SUP-56733)
+    - Set `urbanConfigId` property for PUL
+      [daggelpop] (URB-3735)
+    - Close incoming notice events regardless of their workflow
+      [WBoudabous] (URB-3777)
+    - Forcing send mail rules title in form modal title
+      [jchandelle] (URB-3787)
+    - Fix automatic owner encoding for housing
+      [WBoudabous] (URBBDC-3374)
+
+- urban.events 1.0.4 (2026-10-17)
+
+    New features:
+
+    - Add the Prise de connaissance de la cession event config for unique and environmental (class 1 and 2) licences
+      [WBoudabous] (URB-3636)
+    - Add special conditions revision events (deposit, project, decision), tacit refusal, information, abandon and cession events
+      [wboudabous] (URB-3669)
+
+- urban.schedule 1.0.3 (2026-10-17)
+
+    New features:
+
+    - Add start and end conditions for the cession task.
+      [WBoudabous] (URB-3636)
 
 
 2.9.33 (2026-09-06)
