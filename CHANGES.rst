@@ -6,7 +6,29 @@ Changes
 3.0.0b11 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b19 (2026-10-16)
+
+    New features:
+
+    - Port changes from version 2.9.29 to 2.9.32
+      [mpeeters] (URB-3795)
+
+- Products.urban 3.0.0b18 (2026-09-11)
+
+    New features:
+
+    - Adapt dashboard config for Liege / Classic
+      [mpeeters] (URBBDC-3272)
+
+    Bug fixes:
+
+    - Fix merge conflicts
+      [mpeeters] (URBBDC-3272)
+
+    Internal:
+
+    - Adapt upgrade steps to be compatible with Liege current state
+      [mpeeters] (URBBDC-3272)
 
 
 3.0.0b10 (2026-09-19)
