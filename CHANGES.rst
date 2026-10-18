@@ -6,7 +6,28 @@ Changes
 3.0.0b12 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- urban.events 1.0.4 (2026-10-17)
+
+    New features:
+
+    - Add the Prise de connaissance de la cession event config for unique and environmental (class 1 and 2) licences
+      [WBoudabous] (URB-3636)
+    - Add special conditions revision events (deposit, project, decision), tacit refusal, information, abandon and cession events
+      [wboudabous] (URB-3669)
+
+- urban.events 1.0.3 (2026-08-12)
+
+    New features:
+
+    - Import event config for free notification
+      [daggelpop] (URB-3561)
+
+- urban.events 1.0.2 (2026-05-12)
+
+    New features:
+
+    - Add events for EnvClassBordering and CODT_UniqueBorderingLicence
+      [daggelpop] (URB-3470)
 
 
 3.0.0b11 (2026-10-17)
