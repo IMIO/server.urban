@@ -6,7 +6,19 @@ Changes
 3.0.0b13 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- liege.urban 2.0.14 (2026-11-05)
+
+    Bug fixes:
+
+    - Correctly set allowed types to include liege specific events
+      [mpeeters] (URB-3795)
+
+- urban.schedule 1.0.3 (2026-10-17)
+
+    New features:
+
+    - Add start and end conditions for the cession task.
+      [WBoudabous] (URB-3636)
 
 
 3.0.0b12 (2026-10-18)
