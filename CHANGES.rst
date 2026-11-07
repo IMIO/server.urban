@@ -6,7 +6,14 @@ Changes
 3.0.0b14 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Products.urban 3.0.0b20 (2026-11-07)
+
+    Bug fixes:
+
+    - Fix recursive fonction in rubrics vocabulary
+      [jchandelle] (SUP-54388)
+    - Add missing translations for notice
+      [mpeeters] (URB-3795)
 
 
 3.0.0b13 (2026-11-05)
