@@ -6,7 +6,9 @@ Changes
 3.0.0b15 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+
+- Add `Products.PloneHotfix20261110`
+  [mpeeters]
 
 
 3.0.0b14 (2026-11-07)
