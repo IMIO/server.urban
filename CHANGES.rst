@@ -3,7 +3,7 @@
 Changes
 =======
 
-2.9.35 (unreleased)
+2.9.35 (2026-11-11)
 -------------------
 
 - Add `Products.PloneHotfix20261110`
