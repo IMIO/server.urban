@@ -6,7 +6,10 @@ Changes
 2.9.36 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.pm.wsclient 2.0.8 (2026-11-13)
+
+    - URB-3817: Fix upgrade step
+      [jchandelle]
 
 
 2.9.35 (2026-11-11)
