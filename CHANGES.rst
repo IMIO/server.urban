@@ -6,7 +6,48 @@ Changes
 2.9.37 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.34 (2026-11-26)
+
+    New features:
+
+    - Add cron4plone instruction for notice import
+      Switch NOTICe API default URL to production
+      [daggelpop] (URB-3702)
+    - Import buttons for GESPER forms
+      [daggelpop] (URB-3722)
+    - Add upgrade step to unhide CODT_UniqueBorderingLicences folder
+      [jchandelle] (URB-3781)
+    - Add basic auth to NOTICe API requests
+      [daggelpop] (URB-3814)
+
+    Bug fixes:
+
+    - Add upgrade step to reindex getDecisionDate on existing licences
+      [WBoudabous] (SUP-52501)
+    - Set digital deposit type on the deposit event of licences created from NOTICe.
+      [WBoudabous] (URB-3445)
+
+- urban.events 1.0.5 (2026-11-26)
+
+    New features:
+
+    - Fix empty RichText description on imported event configs and add an upgrade step to fix existing ones
+      [WBoudabous] (URB-3568)
+    - Add the modification registry decision event config for unique, unique bordering and environmental (class 1 and 2) licences, used by the DECISION_REGISTRE_COMMUNE notice notification
+      [WBoudabous] (URB-3674)
+    - Add abandon register modification event config
+      [WBoudabous] (URB-3676)
+    - Add the provision of security event config for unique, unique bordering and environmental (class 1 and 2) licences
+      [WBoudabous] (URB-3678)
+    - Add event configs for Article 65
+      [daggelpop] (URB-3779)
+
+- urban.schedule 1.0.4 (2026-11-26)
+
+    New features:
+
+    - Add start and end conditions for the provision of security task.
+      [WBoudabous] (URB-3678)
 
 
 2.9.36 (2026-11-13)
