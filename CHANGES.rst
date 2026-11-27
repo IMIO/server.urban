@@ -6,7 +6,17 @@ Changes
 2.9.39 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Products.urban 2.9.35 (2026-11-27)
+
+    New features:
+
+    - Check transfer of licence on ACTE_CESSION_COMMUNE NOTICe notification
+      [WBoudabous] (URB-3826)
+
+    Bug fixes:
+
+    - Skip cron import if NOTICe isn't set up
+      [daggelpop] (URB-3702)
 
 
 2.9.38 (2026-11-27)
