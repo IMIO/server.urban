@@ -6,7 +6,8 @@ Changes
 2.9.38 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix broken tag 2.9.37
+  [mpeeters]
 
 
 2.9.37 (2026-11-26)
